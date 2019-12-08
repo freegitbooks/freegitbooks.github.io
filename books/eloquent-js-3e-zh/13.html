@@ -1,0 +1,631 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>十三、浏览器中的 JavaScript · JavaScript 编程精解 中文第三版</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Marijn Haverbeke">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-encourage/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="14.html" />
+    
+    
+    <link rel="prev" href="12.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    JavaScript 编程精解 中文第三版
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="0.html">
+            
+                <a href="0.html">
+            
+                    
+                    零、前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    一、值，类型和运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    二、程序结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    三、函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    四、数据结构：对象和数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    五、高阶函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    六、对象的秘密
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    七、项目：机器人
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    八、Bug 和错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    九、正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    十、模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="11.html">
+            
+                <a href="11.html">
+            
+                    
+                    十一、异步编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="12.html">
+            
+                <a href="12.html">
+            
+                    
+                    十二、项目：编程语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="13.html">
+            
+                <a href="13.html">
+            
+                    
+                    十三、浏览器中的 JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="14.html">
+            
+                <a href="14.html">
+            
+                    
+                    十四、文档对象模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="15.html">
+            
+                <a href="15.html">
+            
+                    
+                    十五、处理事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="16.html">
+            
+                <a href="16.html">
+            
+                    
+                    十六、项目：平台游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="17.html">
+            
+                <a href="17.html">
+            
+                    
+                    十七、在画布上绘图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="18.html">
+            
+                <a href="18.html">
+            
+                    
+                    十八、HTTP 和表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="19.html">
+            
+                <a href="19.html">
+            
+                    
+                    十九、项目：像素艺术编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="20.html">
+            
+                <a href="20.html">
+            
+                    
+                    二十、Node.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="21.html">
+            
+                <a href="21.html">
+            
+                    
+                    二十一、项目：技能分享网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >十三、浏览器中的 JavaScript</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5341;&#x4E09;&#x3001;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x7684;-javascript">&#x5341;&#x4E09;&#x3001;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x7684; JavaScript</h2>
+<blockquote>
+<p>&#x539F;&#x6587;&#xFF1A;<a href="https://eloquentjavascript.net/13_browser.html" target="_blank">JavaScript and the Browser</a></p>
+<p>&#x8BD1;&#x8005;&#xFF1A;<a href="https://github.com/wizardforcel" target="_blank">&#x98DE;&#x9F99;</a></p>
+<p>&#x534F;&#x8BAE;&#xFF1A;<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></p>
+<p>&#x81EA;&#x8C6A;&#x5730;&#x91C7;&#x7528;<a href="https://translate.google.cn/" target="_blank">&#x8C37;&#x6B4C;&#x7FFB;&#x8BD1;</a></p>
+<p>&#x90E8;&#x5206;&#x53C2;&#x8003;&#x4E86;<a href="https://book.douban.com/subject/26707144/" target="_blank">&#x300A;JavaScript &#x7F16;&#x7A0B;&#x7CBE;&#x89E3;&#xFF08;&#x7B2C; 2 &#x7248;&#xFF09;&#x300B;</a></p>
+<p>Web &#x80CC;&#x540E;&#x7684;&#x68A6;&#x60F3;&#x662F;&#x516C;&#x5171;&#x4FE1;&#x606F;&#x7A7A;&#x95F4;&#xFF0C;&#x5176;&#x4E2D;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x5171;&#x4EAB;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x4EA4;&#x6D41;&#x3002; &#x5176;&#x666E;&#x904D;&#x6027;&#x81F3;&#x5173;&#x91CD;&#x8981;&#xFF1A;&#x8D85;&#x6587;&#x672C;&#x94FE;&#x63A5;&#x53EF;&#x6307;&#x5411;&#x4EFB;&#x4F55;&#x4E1C;&#x897F;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x4E2A;&#x4EBA;&#x7684;&#xFF0C;&#x672C;&#x5730;&#x7684;&#x8FD8;&#x662F;&#x5168;&#x7403;&#x7684;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x8349;&#x7A3F;&#x8FD8;&#x662F;&#x9AD8;&#x5EA6;&#x6DA6;&#x8272;&#x7684;&#x3002;</p>
+<p>Douglas Crockford&#xFF0C;&#x300A;JavaScript &#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x300B;&#xFF08;&#x89C6;&#x9891;&#x8BB2;&#x5EA7;&#xFF09;</p>
+</blockquote>
+<p><img src="img/13-0.jpg" alt=""></p>
+<p>&#x672C;&#x4E66;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x7AE0;&#x8282;&#x5C06;&#x4F1A;&#x4ECB;&#x7ECD; Web &#x6D4F;&#x89C8;&#x5668;&#x3002;&#x53EF;&#x4EE5;&#x8BF4;&#xFF0C;&#x6CA1;&#x6709;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x5C31;&#x6CA1;&#x6709; JavaScript&#x3002;&#x5C31;&#x7B97;&#x6709;&#xFF0C;&#x4F30;&#x8BA1;&#x4E5F;&#x4E0D;&#x4F1A;&#x6709;&#x591A;&#x5C11;&#x4EBA;&#x53BB;&#x5173;&#x5FC3;&#x8FD9;&#x95E8;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x3002;</p>
+<p>Web &#x6280;&#x672F;&#x81EA;&#x51FA;&#x73B0;&#x4F0A;&#x59CB;&#xFF0C;&#x5176;&#x6F14;&#x53D8;&#x65B9;&#x5F0F;&#x548C;&#x6280;&#x672F;&#x4E0A;&#x5C31;&#x662F;&#x4EE5;&#x5206;&#x6563;&#x7684;&#x65B9;&#x5F0F;&#x53D1;&#x5C55;&#x7684;&#x3002;&#x8BB8;&#x591A;&#x6D4F;&#x89C8;&#x5668;&#x5382;&#x5546;&#x4E13;&#x95E8;&#x4E3A;&#x5176;&#x5F00;&#x53D1;&#x65B0;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x6709;&#x65F6;&#x8FD9;&#x4E9B;&#x65B0;&#x529F;&#x80FD;&#x88AB;&#x5927;&#x4F17;&#x91C7;&#x7EB3;&#xFF0C;&#x6709;&#x65F6;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x88AB;&#x5176;&#x4ED6;&#x529F;&#x80FD;&#x6240;&#x4EE3;&#x66FF;&#xFF0C;&#x6700;&#x7EC8;&#x5F62;&#x6210;&#x4E86;&#x4E00;&#x5957;&#x6807;&#x51C6;&#x3002;</p>
+<p>&#x8FD9;&#x79CD;&#x53D1;&#x5C55;&#x6A21;&#x5F0F;&#x662F;&#x628A;&#x53CC;&#x5203;&#x5251;&#x3002;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x4E0D;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x96C6;&#x4E2D;&#x5F0F;&#x7684;&#x7EC4;&#x7EC7;&#x6765;&#x7BA1;&#x7406;&#x6280;&#x672F;&#x7684;&#x6F14;&#x8FDB;&#xFF0C;&#x53D6;&#x800C;&#x4EE3;&#x4E4B;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x591A;&#x65B9;&#x5229;&#x76CA;&#x96C6;&#x56E2;&#x7684;&#x677E;&#x6563;&#x534F;&#x4F5C;&#x67B6;&#x6784;&#xFF08;&#x5076;&#x5C14;&#x4F1A;&#x51FA;&#x73B0;&#x5BF9;&#x7ACB;&#xFF09;&#x3002;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x4E92;&#x8054;&#x7F51;&#x8FD9;&#x79CD;&#x65E0;&#x8BA1;&#x5212;&#x7684;&#x53D1;&#x5C55;&#x65B9;&#x5F0F;&#x6240;&#x5F00;&#x53D1;&#x51FA;&#x6765;&#x7684;&#x7CFB;&#x7EDF;&#xFF0C;&#x5176;&#x5185;&#x90E8;&#x5F88;&#x96BE;&#x5B9E;&#x73B0;&#x4E00;&#x81F4;&#x6027;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x5B83;&#x7684;&#x4E00;&#x4E9B;&#x90E8;&#x5206;&#x4EE4;&#x4EBA;&#x7591;&#x60D1;&#xFF0C;&#x5E76;&#x4E14;&#x6BEB;&#x65E0;&#x8BBE;&#x8BA1;&#x3002;</p>
+<h2 id="&#x7F51;&#x7EDC;&#x548C;-internet">&#x7F51;&#x7EDC;&#x548C; Internet</h2>
+<p>&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;&#x51FA;&#x73B0;&#x5728; 20 &#x4E16;&#x7EAA; 50 &#x5E74;&#x4EE3;&#x3002;&#x5982;&#x679C;&#x5728;&#x4E24;&#x53F0;&#x6216;&#x591A;&#x53F0;&#x8BA1;&#x7B97;&#x673A;&#x4E4B;&#x95F4;&#x94FA;&#x8BBE;&#x7535;&#x7F06;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E9B;&#x7535;&#x7F06;&#x4E92;&#x76F8;&#x6536;&#x53D1;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x5B9E;&#x73B0;&#x4E00;&#x4E9B;&#x795E;&#x5947;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x901A;&#x8FC7;&#x8FDE;&#x63A5;&#x540C;&#x4E00;&#x4E2A;&#x5EFA;&#x7B51;&#x4E2D;&#x7684;&#x4E24;&#x53F0;&#x673A;&#x5668;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4E00;&#x4E9B;&#x795E;&#x5947;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x90A3;&#x4E48;&#x5982;&#x679C;&#x53EF;&#x4EE5;&#x8FDE;&#x63A5;&#x5168;&#x4E16;&#x754C;&#x7684;&#x673A;&#x5668;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x66F4;&#x4F1F;&#x5927;&#x7684;&#x5DE5;&#x4F5C;&#x4E86;&#x3002;20 &#x4E16;&#x7EAA; 80 &#x5E74;&#x4EE3;&#xFF0C;&#x4EBA;&#x4EEC;&#x5F00;&#x53D1;&#x4E86;&#x76F8;&#x5173;&#x6280;&#x672F;&#x6765;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x613F;&#x666F;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5176;&#x4EA7;&#x751F;&#x7684;&#x7F51;&#x7EDC;&#x79F0;&#x4E3A; Internet&#x3002;&#x800C; Internet &#x7684;&#x8868;&#x73B0;&#x540D;&#x526F;&#x5176;&#x5B9E;&#x3002;</p>
+<p>&#x8BA1;&#x7B97;&#x673A;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x7F51;&#x7EDC;&#x5411;&#x5176;&#x4ED6;&#x8BA1;&#x7B97;&#x673A;&#x53D1;&#x9001;&#x4F4D;&#x6570;&#x636E;&#x3002;&#x4E3A;&#x4E86;&#x5728;&#x4F20;&#x8F93;&#x4F4D;&#x6570;&#x636E;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x5B9E;&#x73B0;&#x8BA1;&#x7B97;&#x673A;&#x4E4B;&#x95F4;&#x7684;&#x6709;&#x6548;&#x901A;&#x4FE1;&#xFF0C;&#x7F51;&#x7EDC;&#x4E24;&#x7AEF;&#x7684;&#x673A;&#x5668;&#x5FC5;&#x987B;&#x77E5;&#x9053;&#x8FD9;&#x4E9B;&#x4F4D;&#x6240;&#x8868;&#x8FBE;&#x7684;&#x5B9E;&#x9645;&#x542B;&#x4E49;&#x3002;&#x5BF9;&#x4E8E;&#x7ED9;&#x5B9A;&#x7684;&#x4F4D;&#x5E8F;&#x5217;&#xFF0C;&#x5176;&#x542B;&#x4E49;&#x5B8C;&#x5168;&#x53D6;&#x51B3;&#x4E8E;&#x4F4D;&#x5E8F;&#x5217;&#x63CF;&#x8FF0;&#x7684;&#x4FE1;&#x606F;&#x7C7B;&#x578B;&#x4E0E;&#x4F7F;&#x7528;&#x7684;&#x7F16;&#x7801;&#x673A;&#x5236;&#x3002;</p>
+<p>&#x7F51;&#x7EDC;&#x534F;&#x8BAE;&#x63CF;&#x8FF0;&#x4E86;&#x4E00;&#x79CD;&#x7F51;&#x7EDC;&#x901A;&#x4FE1;&#x65B9;&#x5F0F;&#x3002;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;&#x975E;&#x5E38;&#x591A;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x62EC;&#x90AE;&#x4EF6;&#x53D1;&#x9001;&#x3001;&#x90AE;&#x4EF6;&#x6536;&#x53D6;&#x548C;&#x90AE;&#x4EF6;&#x5171;&#x4EAB;&#xFF0C;&#x751A;&#x81F3;&#x8FDE;&#x75C5;&#x6BD2;&#x8F6F;&#x4EF6;&#x611F;&#x67D3;&#x63A7;&#x5236;&#x8BA1;&#x7B97;&#x673A;&#x90FD;&#x6709;&#x76F8;&#x5E94;&#x7684;&#x534F;&#x8BAE;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;HTTP&#xFF08;&#x8D85;&#x6587;&#x672C;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#xFF0C;Hypertext Transfer Protocol&#xFF09;&#x662F;&#x7528;&#x4E8E;&#x68C0;&#x7D22;&#x547D;&#x540D;&#x8D44;&#x6E90;&#xFF08;&#x4FE1;&#x606F;&#x5757;&#xFF0C;&#x5982;&#x7F51;&#x9875;&#x6216;&#x56FE;&#x7247;&#xFF09;&#x7684;&#x534F;&#x8BAE;&#x3002; &#x5B83;&#x6307;&#x5B9A;&#x53D1;&#x51FA;&#x8BF7;&#x6C42;&#x7684;&#x4E00;&#x65B9;&#x5E94;&#x8BE5;&#x4EE5;&#x8FD9;&#x6837;&#x7684;&#x4E00;&#x884C;&#x5F00;&#x59CB;&#xFF0C;&#x547D;&#x540D;&#x8D44;&#x6E90;&#x548C;&#x5B83;&#x6B63;&#x5728;&#x5C1D;&#x8BD5;&#x4F7F;&#x7528;&#x7684;&#x534F;&#x8BAE;&#x7684;&#x7248;&#x672C;&#x3002;</p>
+<pre><code>GET /index.html HTTP/1.1
+</code></pre><p>&#x6709;&#x5F88;&#x591A;&#x89C4;&#x5219;&#xFF0C;&#x5173;&#x4E8E;&#x8BF7;&#x6C42;&#x8005;&#x5728;&#x8BF7;&#x6C42;&#x4E2D;&#x5305;&#x542B;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x4EE5;&#x53CA;&#x53E6;&#x4E00;&#x65B9;&#x8FD4;&#x56DE;&#x8D44;&#x6E90;&#x5E76;&#x6253;&#x5305;&#x5176;&#x5185;&#x5BB9;&#x7684;&#x65B9;&#x5F0F;&#x3002; &#x6211;&#x4EEC;&#x5C06;&#x5728;&#x7B2C; 18 &#x7AE0;&#x4E2D;&#x66F4;&#x8BE6;&#x7EC6;&#x5730;&#x89C2;&#x5BDF; HTTP&#x3002;</p>
+<p>&#x5927;&#x591A;&#x6570;&#x534F;&#x8BAE;&#x90FD;&#x5EFA;&#x7ACB;&#x5728;&#x5176;&#x4ED6;&#x534F;&#x8BAE;&#x4E4B;&#x4E0A;&#x3002; HTTP &#x5C06;&#x7F51;&#x7EDC;&#x89C6;&#x4E3A;&#x4E00;&#x79CD;&#x6D41;&#x5F0F;&#x8BBE;&#x5907;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x5C06;&#x4F4D;&#x653E;&#x5165;&#x8FD9;&#x4E9B;&#x8BBE;&#x5907;&#xFF0C;&#x5E76;&#x4F7F;&#x5176;&#x6309;&#x6B63;&#x786E;&#x7684;&#x987A;&#x5E8F;&#x5230;&#x8FBE;&#x6B63;&#x786E;&#x7684;&#x76EE;&#x7684;&#x5730;&#x3002; &#x6211;&#x4EEC;&#x5728;&#x7B2C; 11 &#x7AE0;]&#x4E2D;&#x770B;&#x5230;&#xFF0C;&#x786E;&#x4FDD;&#x8FD9;&#x4E9B;&#x4E8B;&#x60C5;&#x5DF2;&#x7ECF;&#x662F;&#x4E00;&#x4E2A;&#x76F8;&#x5F53;&#x56F0;&#x96BE;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>TCP&#xFF08;&#x4F20;&#x8F93;&#x63A7;&#x5236;&#x534F;&#x8BAE;&#xFF0C;Transmission Control Protocol&#xFF09;&#x5C31;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x89E3;&#x51B3;&#x8BE5;&#x95EE;&#x9898;&#x3002;&#x6240;&#x6709;&#x8FDE;&#x63A5;&#x5230;&#x4E92;&#x8054;&#x7F51;&#x7684;&#x8BBE;&#x5907;&#x90FD;&#x4F1A;&#x4F7F;&#x7528;&#x5230;&#x8FD9;&#x79CD;&#x534F;&#x8BAE;&#xFF0C;&#x800C;&#x591A;&#x6570;&#x4E92;&#x8054;&#x7F51;&#x901A;&#x4FE1;&#x90FD;&#x6784;&#x5EFA;&#x5728;&#x8FD9;&#x79CD;&#x534F;&#x8BAE;&#x4E4B;&#x4E0A;&#x3002;</p>
+<p>TCP &#x8FDE;&#x63A5;&#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x662F;&#x4E00;&#x53F0;&#x7535;&#x8111;&#x5FC5;&#x987B;&#x7B49;&#x5F85;&#x6216;&#x8005;&#x76D1;&#x542C;&#xFF0C;&#x800C;&#x53E6;&#x4E00;&#x53F0;&#x7535;&#x8111;&#x5219;&#x5F00;&#x59CB;&#x4E0E;&#x4E4B;&#x901A;&#x4FE1;&#x3002;&#x4E00;&#x53F0;&#x673A;&#x5668;&#x4E3A;&#x4E86;&#x540C;&#x65F6;&#x76D1;&#x542C;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x901A;&#x4FE1;&#x4FE1;&#x606F;&#xFF0C;&#x4F1A;&#x4E3A;&#x6BCF;&#x4E2A;&#x76D1;&#x542C;&#x5668;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x4E0E;&#x4E4B;&#x5173;&#x8054;&#x7684;&#x6570;&#x5B57;&#xFF08;&#x6211;&#x4EEC;&#x79F0;&#x4E4B;&#x4E3A;&#x7AEF;&#x53E3;&#xFF09;&#x3002;&#x5927;&#x591A;&#x6570;&#x534F;&#x8BAE;&#x90FD;&#x6307;&#x5B9A;&#x4E86;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x7AEF;&#x53E3;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x5411;&#x4F7F;&#x7528; SMTP &#x534F;&#x8BAE;&#x53D1;&#x9001;&#x4E00;&#x5C01;&#x90AE;&#x4EF6;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x4E00;&#x53F0;&#x673A;&#x5668;&#x6765;&#x53D1;&#x9001;&#x90AE;&#x4EF6;&#xFF0C;&#x800C;&#x53D1;&#x9001;&#x90AE;&#x4EF6;&#x7684;&#x673A;&#x5668;&#x9700;&#x8981;&#x76D1;&#x542C;&#x7AEF;&#x53E3; 25&#x3002;</p>
+<p>&#x968F;&#x540E;&#x53E6;&#x4E00;&#x53F0;&#x673A;&#x5668;&#x8FDE;&#x63A5;&#x5230;&#x4F7F;&#x7528;&#x4E86;&#x6B63;&#x786E;&#x7AEF;&#x53E3;&#x53F7;&#x7684;&#x76EE;&#x6807;&#x673A;&#x5668;&#x4E0A;&#x3002;&#x5982;&#x679C;&#x53EF;&#x4EE5;&#x8FDE;&#x63A5;&#x5230;&#x76EE;&#x6807;&#x673A;&#x5668;&#xFF0C;&#x800C;&#x4E14;&#x76EE;&#x6807;&#x673A;&#x5668;&#x5728;&#x76D1;&#x542C;&#x5BF9;&#x5E94;&#x7AEF;&#x53E3;&#xFF0C;&#x5219;&#x8BF4;&#x660E;&#x8FDE;&#x63A5;&#x521B;&#x5EFA;&#x6210;&#x529F;&#x3002;&#x8D1F;&#x8D23;&#x76D1;&#x542C;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x540D;&#x4E3A;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x800C;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x540D;&#x4E3A;&#x5BA2;&#x6237;&#x7AEF;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x8BE5;&#x8FDE;&#x63A5;&#x770B;&#x6210;&#x53CC;&#x5411;&#x7BA1;&#x9053;&#xFF0C;&#x4F4D;&#x53EF;&#x4EE5;&#x5728;&#x5176;&#x4E2D;&#x6D41;&#x52A8;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x4E24;&#x7AEF;&#x7684;&#x673A;&#x5668;&#x90FD;&#x53EF;&#x4EE5;&#x5411;&#x8FDE;&#x63A5;&#x4E2D;&#x5199;&#x5165;&#x6570;&#x636E;&#x3002;&#x5F53;&#x6210;&#x529F;&#x4F20;&#x8F93;&#x5B8C;&#x8FD9;&#x4E9B;&#x4F4D;&#x6570;&#x636E;&#x540E;&#xFF0C;&#x53CC;&#x65B9;&#x90FD;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x53E6;&#x4E00;&#x7AEF;&#x4F20;&#x6765;&#x7684;&#x6570;&#x636E;&#x3002;TCP &#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x4FBF;&#x5229;&#x7684;&#x6A21;&#x578B;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BF4;TCP&#x5C31;&#x662F;&#x4E00;&#x79CD;&#x7F51;&#x7EDC;&#x7684;&#x62BD;&#x8C61;&#x3002;</p>
+<h2 id="web">Web</h2>
+<p>&#x4E07;&#x7EF4;&#x7F51;&#xFF08;World Wide Web&#xFF0C;&#x4E0D;&#x8981;&#x5C06;&#x5176;&#x4E0E; Internet &#x6DF7;&#x6DC6;&#xFF09;&#x662F;&#x5305;&#x542B;&#x4E00;&#x7CFB;&#x5217;&#x534F;&#x8BAE;&#x548C;&#x683C;&#x5F0F;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE;&#x7F51;&#x9875;&#x3002;&#x8BCD;&#x7EC4;&#x4E2D;&#x7684; Web &#x6307;&#x7684;&#x662F;&#x8FD9;&#x4E9B;&#x9875;&#x9762;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5730;&#x94FE;&#x63A5;&#x5176;&#x4ED6;&#x7F51;&#x9875;&#xFF0C;&#x56E0;&#x6B64;&#x6700;&#x540E;&#x53EF;&#x4EE5;&#x8FDE;&#x63A5;&#x6210;&#x4E00;&#x5F20;&#x5DE8;&#x5927;&#x7684;&#x7F51;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5728;&#x7F51;&#x7EDC;&#x4E2D;&#x6D4F;&#x89C8;&#x3002;</p>
+<p>&#x4F60;&#x53EA;&#x9700;&#x5C06;&#x4E00;&#x53F0;&#x8BA1;&#x7B97;&#x673A;&#x8FDE;&#x63A5;&#x5230; Internet &#x5E76;&#x4F7F;&#x7528; HTTP &#x76D1;&#x542C; 80 &#x7AEF;&#x53E3;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x6210;&#x4E3A; Web &#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;&#x5176;&#x4ED6;&#x8BA1;&#x7B97;&#x673A;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#xFF0C;&#x5E76;&#x4F7F;&#x7528; HTTP &#x534F;&#x8BAE;&#x83B7;&#x53D6;&#x5176;&#x4ED6;&#x8BA1;&#x7B97;&#x673A;&#x4E0A;&#x7684;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6587;&#x4EF6;&#x90FD;&#x80FD;&#x901A;&#x8FC7; URL&#xFF08;&#x7EDF;&#x4E00;&#x8D44;&#x6E90;&#x5B9A;&#x4F4D;&#x7B26;&#xFF0C;Universal Resource Locator&#xFF09;&#x8BBF;&#x95EE;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>  http://eloquentjavascript.net/13_browser.html
+ |      |                      |               |
+ protocol       server               path
+</code></pre><p>&#x8BE5;&#x5730;&#x5740;&#x7684;&#x7B2C;&#x4E00;&#x90E8;&#x5206;&#x544A;&#x8BC9;&#x6211;&#x4EEC; URL &#x4F7F;&#x7528;&#x7684;&#x662F; HTTP &#x534F;&#x8BAE;&#xFF08;&#x52A0;&#x5BC6;&#x7684; HTTP &#x8FDE;&#x63A5;&#x5219;&#x4F7F;&#x7528;<code>https://</code>&#x6765;&#x8868;&#x793A;&#xFF09;&#x3002;&#x7B2C;&#x4E8C;&#x90E8;&#x5206;&#x6307;&#x7684;&#x662F;&#x83B7;&#x53D6;&#x6587;&#x4EF6;&#x7684;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x3002;&#x7B2C;&#x4E09;&#x90E8;&#x5206;&#x662F;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x83B7;&#x53D6;&#x7684;&#x5177;&#x4F53;&#x6587;&#x4EF6;&#xFF08;&#x6216;&#x8D44;&#x6E90;&#xFF09;&#x7684;&#x8DEF;&#x5F84;&#x3002;</p>
+<p>&#x8FDE;&#x63A5;&#x5230;&#x4E92;&#x8054;&#x7F51;&#x7684;&#x673A;&#x5668;&#x83B7;&#x5F97;&#x4E00;&#x4E2A; IP &#x5730;&#x5740;&#xFF0C;&#x8BE5;&#x5730;&#x5740;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x5C06;&#x6D88;&#x606F;&#x53D1;&#x9001;&#x5230;&#x8BE5;&#x673A;&#x5668;&#x7684;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;<code>&quot;149.210.142.219&quot;</code>&#x6216;<code>&quot;2001:4860:4860::8888&quot;</code>&#x3002; &#x4F46;&#x662F;&#x6216;&#x591A;&#x6216;&#x5C11;&#x7684;&#x968F;&#x673A;&#x6570;&#x5B57;&#x5217;&#x8868;&#x5F88;&#x96BE;&#x8BB0;&#x4F4F;&#xFF0C;&#x800C;&#x4E14;&#x8F93;&#x5165;&#x8D77;&#x6765;&#x5F88;&#x7B28;&#x62D9;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x53EF;&#x4EE5;&#x4E3A;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x5730;&#x5740;&#x6216;&#x4E00;&#x7EC4;&#x5730;&#x5740;&#x6CE8;&#x518C;&#x4E00;&#x4E2A;&#x57DF;&#x540D;&#x3002; &#x6211;&#x6CE8;&#x518C;&#x4E86;<code>eloquentjavascript.net</code>&#xFF0C;&#x6765;&#x6307;&#x5411;&#x6211;&#x63A7;&#x5236;&#x7684;&#x673A;&#x5668;&#x7684; IP &#x5730;&#x5740;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8BE5;&#x57DF;&#x540D;&#x6765;&#x63D0;&#x4F9B;&#x7F51;&#x9875;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x5730;&#x5740;&#x680F;&#x4E2D;&#x8F93;&#x5165;&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684; URL&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x5C1D;&#x8BD5;&#x83B7;&#x53D6;&#x5E76;&#x663E;&#x793A;&#x8BE5; URL &#x5BF9;&#x5E94;&#x7684;&#x6587;&#x6863;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x4F60;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x9700;&#x8981;&#x627E;&#x51FA;&#x57DF;&#x540D;<code>eloquentjavascript.net</code>&#x6307;&#x5411;&#x7684;&#x5730;&#x5740;&#x3002;&#x7136;&#x540E;&#x4F7F;&#x7528; HTTP &#x534F;&#x8BAE;&#xFF0C;&#x8FDE;&#x63A5;&#x5230;&#x8BE5;&#x5730;&#x5740;&#x5904;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5E76;&#x8BF7;&#x6C42;<code>/13_browser.html</code>&#x8FD9;&#x4E2A;&#x8D44;&#x6E90;&#x3002;&#x5982;&#x679C;&#x4E00;&#x5207;&#x987A;&#x5229;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x53D1;&#x56DE;&#x4E00;&#x4E2A;&#x6587;&#x6863;&#xFF0C;&#x7136;&#x540E;&#x60A8;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x5C06;&#x663E;&#x793A;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x3002;</p>
+<h2 id="html">HTML</h2>
+<p>HTML&#xFF0C;&#x5373;&#x8D85;&#x6587;&#x672C;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF08;Hypertext Markup Language&#xFF09;&#xFF0C;&#x662F;&#x5728;&#x7F51;&#x9875;&#x4E2D;&#x5F97;&#x5230;&#x5E7F;&#x6CDB;&#x4F7F;&#x7528;&#x7684;&#x6587;&#x6863;&#x683C;&#x5F0F;&#x3002;HTML &#x6587;&#x6863;&#x4E0D;&#x4EC5;&#x5305;&#x542B;&#x6587;&#x672C;&#xFF0C;&#x8FD8;&#x5305;&#x542B;&#x4E86;&#x6807;&#x7B7E;&#xFF0C;&#x7528;&#x4E8E;&#x8BF4;&#x660E;&#x6587;&#x672C;&#x7ED3;&#x6784;&#xFF0C;&#x63CF;&#x8FF0;&#x4E86;&#x8BF8;&#x5982;&#x94FE;&#x63A5;&#x3001;&#x6BB5;&#x843D;&#x3001;&#x6807;&#x9898;&#x4E4B;&#x7C7B;&#x7684;&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x7B80;&#x77ED;&#x7684; HTML &#x6587;&#x6863;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>My home page<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>My home page<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hello, I am Marijn and this is my home page.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>I also wrote a book! Read it
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://eloquentjavascript.net&quot;</span>&gt;</span>here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>&#x6807;&#x7B7E;&#x5305;&#x88F9;&#x5728;&#x5C16;&#x62EC;&#x53F7;&#x4E4B;&#x95F4;&#xFF08;<code>&lt;</code>&#x548C;<code>&gt;</code>&#xFF0C;&#x5C0F;&#x4E8E;&#x548C;&#x5927;&#x4E8E;&#x53F7;&#xFF09;&#xFF0C;&#x63D0;&#x4F9B;&#x5173;&#x4E8E;&#x6587;&#x6863;&#x7ED3;&#x6784;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x5176;&#x4ED6;&#x6587;&#x672C;&#x5219;&#x662F;&#x7EAF;&#x6587;&#x672C;&#x3002;</p>
+<p>&#x6587;&#x6863;&#x4EE5;<code>&lt;!doctype html&gt;</code>&#x5F00;&#x5934;&#xFF0C;&#x544A;&#x8BC9;&#x6D4F;&#x89C8;&#x5668;&#x5C06;&#x9875;&#x9762;&#x89E3;&#x91CA;&#x4E3A;&#x73B0;&#x4EE3; HTML&#xFF0C;&#x4EE5;&#x522B;&#x4E8E;&#x8FC7;&#x53BB;&#x4F7F;&#x7528;&#x7684;&#x5404;&#x79CD;&#x65B9;&#x8A00;&#x3002;</p>
+<p>HTML &#x6587;&#x6863;&#x6709;&#x5934;&#x90E8;&#xFF08;head&#xFF09;&#x548C;&#x4E3B;&#x4F53;&#xFF08;body&#xFF09;&#x3002;&#x5934;&#x90E8;&#x5305;&#x542B;&#x4E86;&#x6587;&#x6863;&#x4FE1;&#x606F;&#xFF0C;&#x800C;&#x4E3B;&#x4F53;&#x5219;&#x5305;&#x542B;&#x6587;&#x6863;&#x81EA;&#x8EAB;&#x3002;&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#xFF0C;&#x5934;&#x90E8;&#x5C06;&#x6587;&#x6863;&#x6807;&#x9898;&#x58F0;&#x660E;&#x4E3A;<code>&quot;My home page&quot;</code>&#xFF0C;&#x5E76;&#x4F7F;&#x7528; UTF-8 &#x7F16;&#x7801;&#xFF0C;&#x5B83;&#x662F;&#x5C06; Unicode  &#x6587;&#x672C;&#x7F16;&#x7801;&#x4E3A;&#x4E8C;&#x8FDB;&#x5236;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x6587;&#x6863;&#x7684;&#x4E3B;&#x4F53;&#x5305;&#x542B;&#x6807;&#x9898;&#xFF08;<code>&lt;h1&gt;</code>&#xFF0C;&#x8868;&#x793A;&#x4E00;&#x7EA7;&#x6807;&#x9898;&#xFF0C;<code>&lt;h2&gt;</code>&#x5230;<code>&lt;h6&gt;</code>&#x53EF;&#x4EE5;&#x4EA7;&#x751F;&#x4E0D;&#x540C;&#x7B49;&#x7EA7;&#x7684;&#x5B50;&#x6807;&#x9898;&#xFF09;&#x548C;&#x4E24;&#x4E2A;&#x6BB5;&#x843D;&#xFF08;<code>&lt;p&gt;</code>&#xFF09;&#x3002;</p>
+<p>&#x6807;&#x7B7E;&#x6709;&#x51E0;&#x79CD;&#x5F62;&#x5F0F;&#x3002;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x6BD4;&#x5982;&#x4E3B;&#x4F53;&#x3001;&#x6BB5;&#x843D;&#x6216;&#x94FE;&#x63A5;&#x4EE5;&#x4E00;&#x4E2A;&#x8D77;&#x59CB;&#x6807;&#x7B7E;&#xFF08;&#x6BD4;&#x5982;<code>&lt;p&gt;</code>&#xFF09;&#x5F00;&#x59CB;&#xFF0C;&#x5E76;&#x4EE5;&#x4E00;&#x4E2A;&#x95ED;&#x5408;&#x6807;&#x7B7E;&#xFF08;&#x6BD4;&#x5982;<code>&lt;/p&gt;</code>&#xFF09;&#x7ED3;&#x675F;&#x3002;&#x4E00;&#x4E9B;&#x8D77;&#x59CB;&#x6807;&#x7B7E;&#xFF0C;&#x6BD4;&#x5982;&#x4E00;&#x4E2A;&#x94FE;&#x63A5;&#xFF08;<code>&lt;a&gt;</code>&#xFF09;&#xFF0C;&#x4F1A;&#x5305;&#x542B;&#x4E00;&#x4E9B;&#x989D;&#x5916;&#x4FE1;&#x606F;&#xFF0C;&#x5176;&#x5F62;&#x5F0F;&#x662F;<code>name=&quot;value&quot;</code>&#x8FD9;&#x79CD;&#x952E;&#x503C;&#x5BF9;&#xFF0C;&#x6211;&#x4EEC;&#x79F0;&#x4E4B;&#x4E3A;&#x5C5E;&#x6027;&#x3002;&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#xFF0C;&#x4F7F;&#x7528;&#x5C5E;&#x6027;<code>href=&quot;http://eloquentjavascript.net&quot;</code>&#x6307;&#x5B9A;&#x94FE;&#x63A5;&#x7684;&#x76EE;&#x6807;&#xFF0C;&#x5176;&#x4E2D;<code>href</code>&#x8868;&#x793A;&#x201C;&#x8D85;&#x6587;&#x672C;&#x94FE;&#x63A5;&#xFF08;Hypertext Reference&#xFF09;&#x201D;&#x3002;</p>
+<p>&#x67D0;&#x4E9B;&#x7C7B;&#x578B;&#x7684;&#x6807;&#x7B7E;&#x4E0D;&#x4F1A;&#x5305;&#x542B;&#x4EFB;&#x4F55;&#x5143;&#x7D20;&#xFF0C;&#x8FD9;&#x79CD;&#x6807;&#x7B7E;&#x4E0D;&#x9700;&#x8981;&#x95ED;&#x5408;&#x3002;&#x5143;&#x6570;&#x636E;&#x6807;&#x7B7E;<code>&lt;meta charset=&quot;utf-8&quot;&gt;</code>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x3002;</p>
+<blockquote>
+<p>&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x6700;&#x597D;&#x8FD8;&#x662F;&#x8FD9;&#x6837;&#x95ED;&#x5408;&#x5B83;&#x4EEC;&#xFF1A;<code>&lt;meta charset=&quot;utf-8&quot; /&gt;</code>&#x3002;</p>
+</blockquote>
+<p>&#x5C3D;&#x7BA1; HTML &#x4E2D;&#x5C16;&#x62EC;&#x53F7;&#x6709;&#x7279;&#x6B8A;&#x542B;&#x4E49;&#xFF0C;&#x4F46;&#x4E3A;&#x4E86;&#x5728;&#x6587;&#x6863;&#x7684;&#x6587;&#x672C;&#x4E2D;&#x5305;&#x542B;&#x8FD9;&#x4E9B;&#x7B26;&#x53F7;&#xFF0C;&#x53EF;&#x4EE5;&#x5F15;&#x5165;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x5F62;&#x5F0F;&#x7684;&#x7279;&#x6B8A;&#x6807;&#x8BB0;&#x65B9;&#x6CD5;&#x3002;&#x666E;&#x901A;&#x6587;&#x672C;&#x4E2D;&#x7684;&#x8D77;&#x59CB;&#x5C16;&#x62EC;&#x53F7;&#x5199;&#x6210;<code>&amp;lt;</code>&#xFF08;less than&#xFF09;&#xFF0C;&#x800C;&#x95ED;&#x5408;&#x5C16;&#x62EC;&#x53F7;&#x5199;&#x6210;<code>&amp;gt;</code>&#xFF08;greater than&#xFF09;&#x3002;&#x5728; HTML &#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4E00;&#x4E2A;<code>&amp;</code>&#x5B57;&#x7B26;&#x540E;&#x8DDF;&#x7740;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x548C;&#x5206;&#x53F7;&#xFF08;<code>;</code>&#xFF09;&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x79F0;&#x4E3A;&#x4E00;&#x4E2A;&#x5B9E;&#x4F53;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x4F7F;&#x7528;&#x5B9E;&#x4F53;&#x7F16;&#x7801;&#x5BF9;&#x5E94;&#x7684;&#x5B57;&#x7B26;&#x66FF;&#x6362;&#x5B83;&#x4EEC;&#x3002;</p>
+<p>&#x4E0E;&#x4E4B;&#x7C7B;&#x4F3C;&#x7684;&#x662F; JavaScript &#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x53CD;&#x659C;&#x6760;&#x7684;&#x4F7F;&#x7528;&#x3002;&#x7531;&#x4E8E; HTML &#x4E2D;&#x7684;&#x5B9E;&#x4F53;&#x673A;&#x5236;&#x8D4B;&#x4E88;&#x4E86;<code>&amp;</code>&#x7279;&#x6B8A;&#x542B;&#x4E49;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4F7F;&#x7528;<code>&amp;amp;</code>&#x6765;&#x8868;&#x793A;&#x4E00;&#x4E2A;<code>&amp;</code>&#x5B57;&#x7B26;&#x3002;&#x5728;&#x5C5E;&#x6027;&#x7684;&#x503C;&#xFF08;&#x5305;&#x5728;&#x53CC;&#x5F15;&#x53F7;&#x4E2D;&#xFF09;&#x4E2D;&#x4F7F;&#x7528;<code>&amp;quot;</code>&#x53EF;&#x4EE5;&#x63D2;&#x5165;&#x5B9E;&#x9645;&#x7684;&#x5F15;&#x53F7;&#x5B57;&#x7B26;&#x3002;</p>
+<p>HTML &#x7684;&#x89E3;&#x6790;&#x8FC7;&#x7A0B;&#x5BB9;&#x9519;&#x6027;&#x975E;&#x5E38;&#x5F3A;&#x3002;&#x5F53;&#x5E94;&#x6709;&#x7684;&#x6807;&#x7B7E;&#x4E22;&#x5931;&#x65F6;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x91CD;&#x65B0;&#x6784;&#x5EFA;&#x8FD9;&#x4E9B;&#x6807;&#x7B7E;&#x3002;&#x6807;&#x7B7E;&#x7684;&#x91CD;&#x65B0;&#x6784;&#x5EFA;&#x5DF2;&#x7ECF;&#x6807;&#x51C6;&#x5316;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x6240;&#x6709;&#x73B0;&#x4EE3;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x884C;&#x4E3A;&#x90FD;&#x662F;&#x4E00;&#x81F4;&#x7684;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x6587;&#x4EF6;&#x4E0E;&#x4E4B;&#x524D;&#x7248;&#x672C;&#x663E;&#x793A;&#x6548;&#x679C;&#x76F8;&#x540C;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!doctype html&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">utf-8</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>My home page<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>My home page<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hello, I am Marijn and this is my home page.
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>I also wrote a book! Read it
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">http:</span>//<span class="hljs-attr">eloquentjavascript.net</span>&gt;</span>here<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.
+</code></pre>
+<p><code>&lt;html&gt;</code>&#x3001;<code>&lt;head&gt;</code>&#x548C;<code>&lt;body&gt;</code>&#x6807;&#x7B7E;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x4E22;&#x5F03;&#x3002;&#x6D4F;&#x89C8;&#x5668;&#x77E5;&#x9053;<code>&lt;meta&gt;</code>&#x548C;<code>&lt;title&gt;</code>&#x5C5E;&#x4E8E;&#x5934;&#x90E8;&#xFF0C;&#x800C;<code>&lt;h1&gt;</code>&#x5C5E;&#x4E8E;&#x4E3B;&#x4F53;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x6211;&#x518D;&#x4E5F;&#x4E0D;&#x7528;&#x660E;&#x786E;&#x5173;&#x95ED;&#x67D0;&#x4E2A;&#x6BB5;&#x843D;&#xFF0C;&#x56E0;&#x4E3A;&#x65B0;&#x6BB5;&#x843D;&#x5F00;&#x59CB;&#x6216;&#x6587;&#x6863;&#x7ED3;&#x675F;&#x65F6;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x9690;&#x5F0F;&#x5173;&#x95ED;&#x6BB5;&#x843D;&#x6807;&#x7B7E;&#x3002;&#x76EE;&#x6807;&#x94FE;&#x63A5;&#x4E24;&#x8FB9;&#x7684;&#x5F15;&#x53F7;&#x4E5F;&#x53EF;&#x4EE5;&#x4E22;&#x5F03;&#x3002;</p>
+<p>&#x672C;&#x4E66;&#x7684;&#x793A;&#x4F8B;&#x901A;&#x5E38;&#x90FD;&#x4F1A;&#x7701;&#x7565;<code>&lt;html&gt;</code>&#x3001;<code>&lt;head&gt;</code>&#x548C;<code>&lt;body&gt;</code>&#x6807;&#x7B7E;&#xFF0C;&#x4EE5;&#x4FDD;&#x6301;&#x6E90;&#x4EE3;&#x7801;&#x7B80;&#x77ED;&#xFF0C;&#x907F;&#x514D;&#x592A;&#x8FC7;&#x6742;&#x4E71;&#x3002;&#x4F46;&#x6211;&#x4F1A;&#x660E;&#x786E;&#x5173;&#x95ED;&#x6240;&#x6709;&#x6807;&#x7B7E;&#x5E76;&#x5728;&#x5C5E;&#x6027;&#x4E24;&#x65C1;&#x5305;&#x542B;&#x5F15;&#x53F7;&#x3002;</p>
+<p>&#x672C;&#x4E66;&#x4E5F;&#x4F1A;&#x7ECF;&#x5E38;&#x5FFD;&#x7565;<code>doctype</code>&#x548C;<code>charset</code>&#x58F0;&#x660E;&#x3002;&#x8FD9;&#x5E76;&#x4E0D;&#x662F;&#x9F13;&#x52B1;&#x5927;&#x5BB6;&#x7701;&#x7565;&#x5B83;&#x4EEC;&#x3002;&#x5F53;&#x4F60;&#x5FD8;&#x8BB0;&#x5B83;&#x4EEC;&#x65F6;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x5F80;&#x5F80;&#x4F1A;&#x505A;&#x51FA;&#x8352;&#x8C2C;&#x7684;&#x4E8B;&#x60C5;&#x3002; &#x60A8;&#x5E94;&#x8BE5;&#x8BA4;&#x4E3A;<code>doctype</code>&#x548C;<code>charset</code>&#x5143;&#x6570;&#x636E;&#x9690;&#x5F0F;&#x51FA;&#x73B0;&#x5728;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x5373;&#x4F7F;&#x5B83;&#x4EEC;&#x6CA1;&#x6709;&#x5B9E;&#x9645;&#x663E;&#x793A;&#x5728;&#x6587;&#x672C;&#x4E2D;&#x3002;</p>
+<h2 id="html-&#x548C;-javascript">HTML &#x548C; JavaScript</h2>
+<p>&#x5BF9;&#x4E8E;&#x672C;&#x4E66;&#x6765;&#x8BF4;&#xFF0C;&#x6700;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x4E2A; HTML &#x6807;&#x7B7E;&#x662F;<code>&lt;script&gt;</code>&#x3002;&#x8BE5;&#x6807;&#x7B7E;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x5728;&#x6587;&#x6863;&#x4E2D;&#x5305;&#x542B;&#x4E00;&#x6BB5; JavaScript &#x4EE3;&#x7801;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Testing alert<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">alert(<span class="hljs-string">&quot;hello!&quot;</span>);</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x5F53;&#x6D4F;&#x89C8;&#x5668;&#x5728;&#x8BFB;&#x53D6; HTML &#x65F6;&#xFF0C;&#x4E00;&#x65E6;&#x9047;&#x5230;<code>&lt;script&gt;</code>&#x6807;&#x7B7E;&#x5C31;&#x4F1A;&#x6267;&#x884C;&#x8BE5;&#x4EE3;&#x7801;&#x3002;&#x8FD9;&#x4E2A;&#x9875;&#x9762;&#x5728;&#x6253;&#x5F00;&#x65F6;&#x4F1A;&#x5F39;&#x51FA;&#x4E00;&#x4E2A;&#x5BF9;&#x8BDD;&#x6846; - <code>alert</code>&#x51FD;&#x6570;&#x7C7B;&#x4F3C;<code>prompt</code>&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x5F39;&#x51FA;&#x4E00;&#x4E2A;&#x5C0F;&#x7A97;&#x53E3;&#xFF0C;&#x4F46;&#x53EA;&#x663E;&#x793A;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x800C;&#x4E0D;&#x8BF7;&#x6C42;&#x8F93;&#x5165;&#x3002;</p>
+<p>&#x5728; HTML &#x6587;&#x6863;&#x4E2D;&#x5305;&#x542B;&#x5927;&#x7A0B;&#x5E8F;&#x662F;&#x4E0D;&#x5207;&#x5B9E;&#x9645;&#x7684;&#x3002;<code>&lt;script&gt;</code>&#x6807;&#x7B7E;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;<code>src</code>&#x5C5E;&#x6027;&#xFF0C;&#x4ECE;&#x4E00;&#x4E2A; URL &#x83B7;&#x53D6;&#x811A;&#x672C;&#x6587;&#x4EF6;&#xFF08;&#x5305;&#x542B; JavaScript &#x7A0B;&#x5E8F;&#x7684;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF09;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Testing alert<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;code/hello.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x5305;&#x542B;&#x7684;&#x6587;&#x4EF6;<code>code/hello.js</code>&#x662F;&#x548C;&#x4E0A;&#x6587;&#x4E2D;&#x76F8;&#x540C;&#x7684;&#x4E00;&#x6BB5;&#x7A0B;&#x5E8F;&#xFF0C;<code>alert(&quot;hello&quot;)</code>&#x3002;&#x5F53;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x5C06;&#x5176;&#x4ED6; URL &#x5F15;&#x7528;&#x4E3A;&#x81EA;&#x8EAB;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x65F6;&#xFF08;&#x6BD4;&#x5982;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x6216;&#x811A;&#x672C;&#xFF09;&#xFF0C;&#x7F51;&#x9875;&#x6D4F;&#x89C8;&#x5668;&#x5C06;&#x4F1A;&#x7ACB;&#x5373;&#x83B7;&#x53D6;&#x8FD9;&#x4E9B;&#x8D44;&#x6E90;&#x5E76;&#x5C06;&#x5176;&#x5305;&#x542B;&#x5728;&#x9875;&#x9762;&#x4E2D;&#x3002;</p>
+<p>&#x5373;&#x4F7F;<code>script</code>&#x6807;&#x7B7E;&#x5F15;&#x7528;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x4E14;&#x5E76;&#x672A;&#x5305;&#x542B;&#x4EFB;&#x4F55;&#x4EE3;&#x7801;&#xFF0C;&#x4F60;&#x4E5F;&#x5FC5;&#x987B;&#x4F7F;&#x7528;<code>&lt;/script&gt;</code>&#x6765;&#x95ED;&#x5408;&#x6807;&#x7B7E;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5FD8;&#x8BB0;&#x4E86;&#x8FD9;&#x70B9;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x5C06;&#x5269;&#x4F59;&#x7684;&#x9875;&#x9762;&#x4F1A;&#x4F5C;&#x4E3A;&#x811A;&#x672C;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x8FDB;&#x884C;&#x89E3;&#x6790;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x52A0;&#x8F7D;ES&#x6A21;&#x5757;&#xFF08;&#x53C2;&#x89C1;&#x7B2C; 10 &#x7AE0;&#xFF09;&#xFF0C;&#x5411;&#x811A;&#x672C;&#x6807;&#x7B7E;&#x63D0;&#x4F9B;<code>type =&quot;module&quot;</code>&#x5C5E;&#x6027;&#x3002; &#x8FD9;&#x4E9B;&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x4F9D;&#x8D56;&#x4E8E;&#x5176;&#x4ED6;&#x6A21;&#x5757;&#xFF0C;&#x901A;&#x8FC7;&#x5C06;&#x76F8;&#x5BF9;&#x4E8E;&#x81EA;&#x5DF1;&#x7684; URL &#x7528;&#x4F5C;<code>import</code>&#x58F0;&#x660E;&#x4E2D;&#x7684;&#x6A21;&#x5757;&#x540D;&#x79F0;&#x3002;</p>
+<p>&#x67D0;&#x4E9B;&#x5C5E;&#x6027;&#x4E5F;&#x53EF;&#x4EE5;&#x5305;&#x542B; JavaScript &#x7A0B;&#x5E8F;&#x3002;&#x4E0B;&#x9762;&#x5C55;&#x793A;&#x7684;<code>&lt;button&gt;</code>&#x6807;&#x7B7E;&#xFF08;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x6309;&#x94AE;&#xFF09;&#x6709;&#x4E00;&#x4E2A;<code>onclick</code>&#x5C5E;&#x6027;&#x3002;&#x8BE5;&#x5C5E;&#x6027;&#x7684;&#x503C;&#x5C06;&#x5728;&#x70B9;&#x51FB;&#x6309;&#x94AE;&#x65F6;&#x8FD0;&#x884C;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;alert(&apos;Boom!&apos;);&quot;</span>&gt;</span>DO NOT PRESS<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+</code></pre>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x5728;<code>onclick</code>&#x5C5E;&#x6027;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x4F7F;&#x7528;&#x4E86;&#x5355;&#x5F15;&#x53F7;&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5728;&#x4F7F;&#x7528;&#x4E86;&#x53CC;&#x5F15;&#x53F7;&#x6765;&#x5F15;&#x7528;&#x6574;&#x4E2A;&#x5C5E;&#x6027;&#x3002;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>&amp;quot;</code>&#x3002;</p>
+<h2 id="&#x6C99;&#x7BB1;">&#x6C99;&#x7BB1;</h2>
+<p>&#x76F4;&#x63A5;&#x6267;&#x884C;&#x4ECE;&#x56E0;&#x7279;&#x7F51;&#x4E2D;&#x4E0B;&#x8F7D;&#x7684;&#x7A0B;&#x5E8F;&#x5B58;&#x5728;&#x6F5C;&#x5728;&#x5371;&#x9669;&#x3002;&#x4F60;&#x4E0D;&#x4E86;&#x89E3;&#x5927;&#x591A;&#x6570;&#x7684;&#x7F51;&#x9875;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x4ED6;&#x4EEC;&#x4E0D;&#x4E00;&#x5B9A;&#x90FD;&#x5FC3;&#x6000;&#x5584;&#x610F;&#x3002;&#x4E00;&#x65E6;&#x8FD0;&#x884C;&#x67D0;&#x4E9B;&#x4E0D;&#x6000;&#x597D;&#x610F;&#x7684;&#x4EBA;&#x63D0;&#x4F9B;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x4F60;&#x7684;&#x7535;&#x8111;&#x53EF;&#x80FD;&#x4F1A;&#x611F;&#x67D3;&#x75C5;&#x6BD2;&#xFF0C;&#x8FD9;&#x4E9B;&#x7A0B;&#x5E8F;&#x8FD8;&#x4F1A;&#x7A83;&#x53D6;&#x6570;&#x636E;&#x4F1A;&#x5E76;&#x76D7;&#x8D70;&#x8D26;&#x53F7;&#x3002;</p>
+<p>&#x4F46;&#x7F51;&#x7EDC;&#x7684;&#x5438;&#x5F15;&#x529B;&#x5C31;&#x5728;&#x4E8E;&#x4F60;&#x53EF;&#x4EE5;&#x6D4F;&#x89C8;&#x7F51;&#x7AD9;&#xFF0C;&#x800C;&#x4E0D;&#x5FC5;&#x8981;&#x4FE1;&#x4EFB;&#x6240;&#x6709;&#x7F51;&#x7AD9;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x6D4F;&#x89C8;&#x5668;&#x4E25;&#x91CD;&#x9650;&#x5236;&#x4E86; JavaScript &#x7A0B;&#x5E8F;&#x7684;&#x80FD;&#x529B;&#x2014;&#x2014; JavaScript &#x65E0;&#x6CD5;&#x67E5;&#x770B;&#x7535;&#x8111;&#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x6587;&#x4EF6;&#xFF0C;&#x4E5F;&#x65E0;&#x6CD5;&#x4FEE;&#x6539;&#x4E0E;&#x5176;&#x6240;&#x5728;&#x9875;&#x9762;&#x65E0;&#x5173;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x8FD9;&#x79CD;&#x9694;&#x79BB;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x7684;&#x6280;&#x672F;&#x79F0;&#x4E3A;&#x6C99;&#x7BB1;&#x3002;&#x4EE5;&#x8BE5;&#x601D;&#x60F3;&#x7F16;&#x5199;&#x7684;&#x7A0B;&#x5E8F;&#x5728;&#x6C99;&#x7BB1;&#x4E2D;&#x8FD0;&#x884C;&#xFF0C;&#x4E0D;&#x4F1A;&#x5BF9;&#x8BA1;&#x7B97;&#x673A;&#x9020;&#x6210;&#x4EFB;&#x4F55;&#x4F24;&#x5BB3;&#x3002;&#x4F46;&#x662F;&#x4F60;&#x5E94;&#x8BE5;&#x60F3;&#x8C61;&#xFF0C;&#x8FD9;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x6C99;&#x7BB1;&#x4E0A;&#x9762;&#x6709;&#x4E00;&#x4E2A;&#x539A;&#x94A2;&#x7B4B;&#x7B3C;&#x5B50;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x5176;&#x4E2D;&#x8FD0;&#x884C;&#x7684;&#x7A0B;&#x5E8F;&#x5B9E;&#x9645;&#x4E0A;&#x4E0D;&#x4F1A;&#x51FA;&#x53BB;&#x3002;</p>
+<p>&#x5B9E;&#x73B0;&#x6C99;&#x7BB1;&#x7684;&#x96BE;&#x70B9;&#x662F;&#xFF1A;&#x4E00;&#x65B9;&#x9762;&#x6211;&#x4EEC;&#x8981;&#x7ED9;&#x4E88;&#x7A0B;&#x5E8F;&#x4E00;&#x5B9A;&#x7684;&#x81EA;&#x7531;&#x4F7F;&#x5F97;&#x7A0B;&#x5E8F;&#x80FD;&#x6709;&#x5B9E;&#x9645;&#x7528;&#x5904;&#xFF0C;&#x4F46;&#x53C8;&#x8981;&#x9650;&#x5236;&#x7A0B;&#x5E8F;&#xFF0C;&#x9632;&#x6B62;&#x5176;&#x6267;&#x884C;&#x5371;&#x9669;&#x7684;&#x884C;&#x4E3A;&#x3002;&#x8BB8;&#x591A;&#x5B9E;&#x7528;&#x529F;&#x80FD;&#xFF08;&#x6BD4;&#x5982;&#x4E0E;&#x670D;&#x52A1;&#x5668;&#x901A;&#x4FE1;&#x6216;&#x4ECE;&#x526A;&#x8D34;&#x677F;&#x8BFB;&#x53D6;&#x5185;&#x5BB9;&#xFF09;&#x4E5F;&#x4F1A;&#x5B58;&#x5728;&#x95EE;&#x9898;&#xFF0C;&#x6709;&#x4E9B;&#x4FB5;&#x5165;&#x8005;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x6765;&#x4FB5;&#x5165;&#x4F60;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x3002;</p>
+<p>&#x65F6;&#x4E0D;&#x65F6;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x4EBA;&#x60F3;&#x5230;&#x65B0;&#x65B9;&#x6CD5;&#xFF0C;&#x7A81;&#x7834;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x9650;&#x5236;&#xFF0C;&#x5E76;&#x5BF9;&#x4F60;&#x7684;&#x673A;&#x5668;&#x9020;&#x6210;&#x4F24;&#x5BB3;&#xFF0C;&#x4ECE;&#x7A83;&#x53D6;&#x5C11;&#x91CF;&#x7684;&#x79C1;&#x4EBA;&#x4FE1;&#x606F;&#x5230;&#x638C;&#x63E1;&#x6267;&#x884C;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x6574;&#x4E2A;&#x673A;&#x5668;&#x3002;&#x6D4F;&#x89C8;&#x5668;&#x5F00;&#x53D1;&#x8005;&#x7684;&#x5BF9;&#x7B56;&#x662F;&#x4FEE;&#x8865;&#x6F0F;&#x6D1E;&#xFF0C;&#x7136;&#x540E;&#x4E00;&#x5207;&#x90FD;&#x6062;&#x590D;&#x6B63;&#x5E38;&#x3002;&#x76F4;&#x5230;&#x4E0B;&#x4E00;&#x6B21;&#x95EE;&#x9898;&#x88AB;&#x53D1;&#x73B0;&#x5E76;&#x5E7F;&#x4E3A;&#x4F20;&#x64AD;&#x4E4B;&#x524D;&#xFF0C;&#x67D0;&#x4E9B;&#x653F;&#x5E9C;&#x6216;&#x79D8;&#x5BC6;&#x7EC4;&#x7EC7;&#x53EF;&#x4EE5;&#x79C1;&#x4E0B;&#x5229;&#x7528;&#x8FD9;&#x4E9B;&#x6F0F;&#x6D1E;&#x3002;</p>
+<h2 id="&#x517C;&#x5BB9;&#x6027;&#x4E0E;&#x6D4F;&#x89C8;&#x5668;&#x4E4B;&#x4E89;">&#x517C;&#x5BB9;&#x6027;&#x4E0E;&#x6D4F;&#x89C8;&#x5668;&#x4E4B;&#x4E89;</h2>
+<p>&#x5728; Web &#x6280;&#x672F;&#x53D1;&#x5C55;&#x7684;&#x65E9;&#x671F;&#xFF0C;&#x4E00;&#x6B3E;&#x540D;&#x4E3A; Mosaic &#x7684;&#x6D4F;&#x89C8;&#x5668;&#x7EDF;&#x6CBB;&#x4E86;&#x6574;&#x4E2A;&#x5E02;&#x573A;&#x3002;&#x51E0;&#x5E74;&#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x79CD;&#x5E73;&#x8861;&#x88AB; Netscape &#x516C;&#x53F8;&#x6253;&#x7834;&#xFF0C;&#x968F;&#x540E;&#x53C8;&#x88AB;&#x5FAE;&#x8F6F;&#x7684; Internet Explorer &#x6392;&#x6324;&#x51FA;&#x5E02;&#x573A;&#x3002;&#x65E0;&#x8BBA;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#xFF0C;&#x5F53;&#x4E00;&#x6B3E;&#x6D4F;&#x89C8;&#x5668;&#x7EDF;&#x6CBB;&#x4E86;&#x6574;&#x4E2A;&#x5E02;&#x573A;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x4F9B;&#x5E94;&#x5546;&#x5C31;&#x4F1A;&#x89C9;&#x5F97;&#x4ED6;&#x4EEC;&#x6709;&#x6743;&#x5229;&#x5355;&#x65B9;&#x9762;&#x4E3A;&#x7F51;&#x7EDC;&#x7814;&#x53D1;&#x65B0;&#x7684;&#x7279;&#x6027;&#x3002;&#x7531;&#x4E8E;&#x5927;&#x591A;&#x6570;&#x4EBA;&#x90FD;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x56E0;&#x6B64;&#x7F51;&#x7AD9;&#x4F1A;&#x5F00;&#x59CB;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x72EC;&#x6709;&#x7279;&#x6027;&#xFF0C;&#x4E5F;&#x5C31;&#x4E0D;&#x518D;&#x8003;&#x8651;&#x5176;&#x4ED6;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x517C;&#x5BB9;&#x6027;&#x95EE;&#x9898;&#x4E86;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x517C;&#x5BB9;&#x6027;&#x7684;&#x9ED1;&#x6697;&#x65F6;&#x4EE3;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x5E38;&#x79F0;&#x4E4B;&#x4E3A;&#x6D4F;&#x89C8;&#x5668;&#x4E4B;&#x4E89;&#x3002;&#x7F51;&#x7EDC;&#x5F00;&#x53D1;&#x8005;&#x603B;&#x662F;&#x4E3A;&#x7F3A;&#x4E4F;&#x7EDF;&#x4E00;&#x7684; Web &#x6807;&#x51C6;&#xFF0C;&#x800C;&#x9700;&#x8981;&#x53BB;&#x8003;&#x8651;&#x4E24;&#x5230;&#x4E09;&#x79CD;&#x4E92;&#x4E0D;&#x517C;&#x5BB9;&#x7684;&#x5E73;&#x53F0;&#x800C;&#x611F;&#x5230;&#x70E6;&#x607C;&#x3002;&#x8BA9;&#x4E8B;&#x60C5;&#x53D8;&#x5F97;&#x66F4;&#x7CDF;&#x7CD5;&#x7684;&#x662F; 2003 &#x5E74;&#x5DE6;&#x53F3;&#x4F7F;&#x7528;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x5145;&#x6EE1;&#x4E86;&#x6F0F;&#x6D1E;&#xFF0C;&#x5F53;&#x7136;&#x4E0D;&#x540C;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x6F0F;&#x6D1E;&#x90FD;&#x4E0D;&#x4E00;&#x6837;&#x3002;&#x7F51;&#x9875;&#x7F16;&#x5199;&#x8005;&#x7684;&#x751F;&#x6D3B;&#x9887;&#x4E3A;&#x8270;&#x8F9B;&#x3002;</p>
+<p>Mozilla Firefox&#xFF0C;&#x4F5C;&#x4E3A; Netscape &#x6D4F;&#x89C8;&#x5668;&#x7684;&#x975E;&#x76C8;&#x5229;&#x6027;&#x5206;&#x652F;&#xFF0C;&#x5728;20&#x4E16;&#x7EAA;&#x521D;&#x672B;&#x671F;&#x5F00;&#x59CB;&#x6311;&#x6218; Internet Explorer &#x7684;&#x9738;&#x4E3B;&#x5730;&#x4F4D;&#x3002;&#x56E0;&#x4E3A;&#x5F53;&#x65F6;&#x5FAE;&#x8F6F;&#x5E76;&#x672A;&#x7279;&#x522B;&#x5173;&#x5FC3;&#x4E0E;&#x5176;&#x7ADE;&#x4E89;&#xFF0C;&#x5BFC;&#x81F4; Firefox &#x8FC5;&#x901F;&#x5360;&#x9886;&#x4E86;&#x5F88;&#x5927;&#x7684;&#x5E02;&#x573A;&#x4EFD;&#x989D;&#x3002;&#x4E0E;&#x6B64;&#x540C;&#x65F6;&#xFF0C;Google &#x53D1;&#x5E03;&#x4E86;&#x5B83;&#x7684; Chrome &#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x800C; Apple &#x7684; Safari &#x4E5F;&#x5F97;&#x5230;&#x666E;&#x53CA;&#xFF0C;&#x5BFC;&#x81F4;&#x73B0;&#x5728;&#x6210;&#x4E3A;&#x56DB;&#x4E2A;&#x4E3B;&#x8981;&#x9009;&#x624B;&#x7684;&#x7ADE;&#x4E89;&#xFF0C;&#x800C;&#x975E;&#x4E00;&#x5BB6;&#x72EC;&#x5927;&#x3002;</p>
+<p>&#x65B0;&#x7684;&#x53C2;&#x4E0E;&#x8005;&#x5BF9;&#x6807;&#x51C6;&#x6709;&#x7740;&#x66F4;&#x8BA4;&#x771F;&#x7684;&#x6001;&#x5EA6;&#xFF0C;&#x548C;&#x66F4;&#x597D;&#x7684;&#x5DE5;&#x7A0B;&#x5B9E;&#x8DF5;&#xFF0C;&#x4E3A;&#x6211;&#x4EEC;&#x51CF;&#x5C11;&#x4E86;&#x4E0D;&#x517C;&#x5BB9;&#x6027;&#x548C;&#x9519;&#x8BEF;&#x3002; &#x5FAE;&#x8F6F;&#x770B;&#x5230;&#x5176;&#x5E02;&#x573A;&#x4EFD;&#x989D;&#x6781;&#x901F;&#x4E0B;&#x964D;&#xFF0C;&#x5728;&#x5176; Edge &#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x91C7;&#x53D6;&#x4E86;&#x8FD9;&#x4E9B;&#x6001;&#x5EA6;&#xFF0C;&#x53D6;&#x4EE3;&#x4E86; Internet Explorer&#x3002; &#x5982;&#x679C;&#x60A8;&#x4ECA;&#x5929;&#x5F00;&#x59CB;&#x5B66;&#x4E60;&#x7F51;&#x7EDC;&#x5F00;&#x53D1;&#xFF0C;&#x8BF7;&#x8BA4;&#x4E3A;&#x81EA;&#x5DF1;&#x662F;&#x5E78;&#x8FD0;&#x7684;&#x3002; &#x4E3B;&#x6D41;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x6700;&#x65B0;&#x7248;&#x672C;&#x884C;&#x4E3A;&#x975E;&#x5E38;&#x4E00;&#x81F4;&#xFF0C;&#x5E76;&#x4E14;&#x9519;&#x8BEF;&#x76F8;&#x5BF9;&#x8F83;&#x5C11;&#x3002;</p>
+<p>&#x8FD9;&#x5E76;&#x4E0D;&#x662F;&#x8BF4;&#x5C31;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#x4E86;&#x3002;&#x67D0;&#x4E9B;&#x4F7F;&#x7528;&#x7F51;&#x7EDC;&#x7684;&#x4EBA;&#xFF0C;&#x51FA;&#x4E8E;&#x60F0;&#x6027;&#x6216;&#x516C;&#x53F8;&#x653F;&#x7B56;&#xFF0C;&#x88AB;&#x8FEB;&#x4F7F;&#x7528;&#x65E7;&#x7248;&#x672C;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x3002;&#x76F4;&#x5230;&#x8FD9;&#x4E9B;&#x6D4F;&#x89C8;&#x5668;&#x5B8C;&#x5168;&#x9000;&#x51FA;&#x5E02;&#x573A;&#x4E4B;&#x524D;&#xFF0C;&#x4E3A;&#x65E7;&#x7248;&#x672C;&#x6D4F;&#x89C8;&#x5668;&#x7F16;&#x5199;&#x7F51;&#x7AD9;&#x4ECD;&#x9700;&#x8981;&#x638C;&#x63E1;&#x5F88;&#x591A;&#x4E0D;&#x5E38;&#x89C1;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x4E86;&#x89E3;&#x65E7;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x7F3A;&#x9677;&#x548C;&#x7279;&#x6B8A;&#x4E4B;&#x5904;&#x3002;&#x672C;&#x4E66;&#x4E0D;&#x4F1A;&#x8BA8;&#x8BBA;&#x8FD9;&#x4E9B;&#x7279;&#x6B8A;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x800C;&#x7740;&#x773C;&#x4E8E;&#x4ECB;&#x7ECD;&#x73B0;&#x4EE3;&#x4E14;&#x5065;&#x5168;&#x7684;&#x7F51;&#x7EDC;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x98CE;&#x683C;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="12.html" class="navigation navigation-prev " aria-label="Previous page: 十二、项目：编程语言">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="14.html" class="navigation navigation-next " aria-label="Next page: 十四、文档对象模型">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"十三、浏览器中的 JavaScript","level":"1.15","depth":1,"next":{"title":"十四、文档对象模型","level":"1.16","depth":1,"path":"14.md","ref":"14.md","articles":[]},"previous":{"title":"十二、项目：编程语言","level":"1.14","depth":1,"path":"12.md","ref":"12.md","articles":[]},"dir":"ltr"},"config":{"plugins":["encourage@1.0.1"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"encourage":{"title":"","button":"打赏","wechat":"img/qr_alipay.png","alipay":"","wechatText":"欢迎鼓励项目一杯 coffee~","alipayText":"支付宝打赏"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Marijn Haverbeke","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript 编程精解 中文第三版","language":"zh-hans","gitbook":"*"},"file":{"path":"13.md","mtime":"2019-12-08T16:07:04.984Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-12-08T16:21:15.068Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-encourage/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

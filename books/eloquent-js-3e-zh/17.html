@@ -1,0 +1,1064 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>十七、在画布上绘图 · JavaScript 编程精解 中文第三版</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="Marijn Haverbeke">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-encourage/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="18.html" />
+    
+    
+    <link rel="prev" href="16.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    JavaScript 编程精解 中文第三版
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="0.html">
+            
+                <a href="0.html">
+            
+                    
+                    零、前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    一、值，类型和运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    二、程序结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    三、函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    四、数据结构：对象和数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    五、高阶函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    六、对象的秘密
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    七、项目：机器人
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    八、Bug 和错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    九、正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    十、模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="11.html">
+            
+                <a href="11.html">
+            
+                    
+                    十一、异步编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="12.html">
+            
+                <a href="12.html">
+            
+                    
+                    十二、项目：编程语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="13.html">
+            
+                <a href="13.html">
+            
+                    
+                    十三、浏览器中的 JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="14.html">
+            
+                <a href="14.html">
+            
+                    
+                    十四、文档对象模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="15.html">
+            
+                <a href="15.html">
+            
+                    
+                    十五、处理事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="16.html">
+            
+                <a href="16.html">
+            
+                    
+                    十六、项目：平台游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.19" data-path="17.html">
+            
+                <a href="17.html">
+            
+                    
+                    十七、在画布上绘图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="18.html">
+            
+                <a href="18.html">
+            
+                    
+                    十八、HTTP 和表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="19.html">
+            
+                <a href="19.html">
+            
+                    
+                    十九、项目：像素艺术编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="20.html">
+            
+                <a href="20.html">
+            
+                    
+                    二十、Node.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="21.html">
+            
+                <a href="21.html">
+            
+                    
+                    二十一、项目：技能分享网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >十七、在画布上绘图</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5341;&#x4E03;&#x3001;&#x5728;&#x753B;&#x5E03;&#x4E0A;&#x7ED8;&#x56FE;">&#x5341;&#x4E03;&#x3001;&#x5728;&#x753B;&#x5E03;&#x4E0A;&#x7ED8;&#x56FE;</h2>
+<blockquote>
+<p>&#x539F;&#x6587;&#xFF1A;<a href="https://eloquentjavascript.net/17_canvas.html" target="_blank">Drawing on Canvas</a></p>
+<p>&#x8BD1;&#x8005;&#xFF1A;<a href="https://github.com/wizardforcel" target="_blank">&#x98DE;&#x9F99;</a></p>
+<p>&#x534F;&#x8BAE;&#xFF1A;<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a></p>
+<p>&#x81EA;&#x8C6A;&#x5730;&#x91C7;&#x7528;<a href="https://translate.google.cn/" target="_blank">&#x8C37;&#x6B4C;&#x7FFB;&#x8BD1;</a></p>
+<p>&#x90E8;&#x5206;&#x53C2;&#x8003;&#x4E86;<a href="https://book.douban.com/subject/26707144/" target="_blank">&#x300A;JavaScript &#x7F16;&#x7A0B;&#x7CBE;&#x89E3;&#xFF08;&#x7B2C; 2 &#x7248;&#xFF09;&#x300B;</a></p>
+<p>&#x7ED8;&#x56FE;&#x5C31;&#x662F;&#x6B3A;&#x9A97;&#x3002;</p>
+<p>M.C. Escher&#xFF0C;&#x7531; Bruno Ernst &#x5728;&#x300A;The Magic Mirror of M.C. Escher&#x300B;&#x4E2D;&#x5F15;&#x7528;</p>
+</blockquote>
+<p><img src="img/17-0.jpg" alt=""></p>
+<p>&#x6D4F;&#x89C8;&#x5668;&#x4E3A;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x591A;&#x79CD;&#x7ED8;&#x56FE;&#x65B9;&#x5F0F;&#x3002;&#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x7528;&#x6837;&#x5F0F;&#x6765;&#x89C4;&#x5B9A;&#x666E;&#x901A; DOM &#x5BF9;&#x8C61;&#x7684;&#x4F4D;&#x7F6E;&#x548C;&#x989C;&#x8272;&#x3002;&#x5C31;&#x50CF;&#x5728;&#x4E0A;&#x4E00;&#x7AE0;&#x4E2D;&#x90A3;&#x4E2A;&#x6E38;&#x620F;&#x5C55;&#x793A;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#x5F88;&#x591A;&#x529F;&#x80FD;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4E3A;&#x8282;&#x70B9;&#x6DFB;&#x52A0;&#x534A;&#x900F;&#x660E;&#x7684;&#x80CC;&#x666F;&#x56FE;&#x7247;&#xFF0C;&#x6765;&#x83B7;&#x5F97;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x7684;&#x8282;&#x70B9;&#x5916;&#x89C2;&#x3002;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>transform</code>&#x6837;&#x5F0F;&#x6765;&#x65CB;&#x8F6C;&#x6216;&#x503E;&#x659C;&#x8282;&#x70B9;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x5728;&#x4E00;&#x4E9B;&#x573A;&#x666F;&#x4E2D;&#xFF0C;&#x4F7F;&#x7528; DOM &#x5E76;&#x4E0D;&#x7B26;&#x5408;&#x6211;&#x4EEC;&#x7684;&#x8BBE;&#x8BA1;&#x521D;&#x8877;&#x3002;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x5F88;&#x96BE;&#x4F7F;&#x7528;&#x666E;&#x901A;&#x7684; HTML &#x5143;&#x7D20;&#x753B;&#x51FA;&#x4EFB;&#x610F;&#x4E24;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x7EBF;&#x6BB5;&#x8FD9;&#x7C7B;&#x56FE;&#x5F62;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x6709;&#x4E24;&#x79CD;&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#x3002;&#x7B2C;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x57FA;&#x4E8E; DOM&#xFF0C;&#x4F46;&#x4F7F;&#x7528;&#x53EF;&#x7F29;&#x653E;&#x77E2;&#x91CF;&#x56FE;&#x5F62;&#xFF08;SVG&#xFF0C;Scalable Vector Graphics&#xFF09;&#x4EE3;&#x66FF; HTML&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06; SVG &#x770B;&#x6210;&#x6587;&#x6863;&#x6807;&#x8BB0;&#x65B9;&#x8A00;&#xFF0C;&#x4E13;&#x7528;&#x4E8E;&#x63CF;&#x8FF0;&#x56FE;&#x5F62;&#x800C;&#x975E;&#x6587;&#x5B57;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728; HTML &#x6587;&#x6863;&#x4E2D;&#x5D4C;&#x5165; SVG&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5728;<code>&lt;img&gt;</code>&#x6807;&#x7B7E;&#x4E2D;&#x5F15;&#x7528;&#x5B83;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x7B2C;&#x4E8C;&#x79CD;&#x65B9;&#x6CD5;&#x79F0;&#x4E3A;&#x753B;&#x5E03;&#xFF08;canvas&#xFF09;&#x3002;&#x753B;&#x5E03;&#x662F;&#x4E00;&#x4E2A;&#x80FD;&#x591F;&#x5C01;&#x88C5;&#x56FE;&#x7247;&#x7684; DOM &#x5143;&#x7D20;&#x3002;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x5728;&#x7A7A;&#x767D;&#x7684;<code>html</code>&#x8282;&#x70B9;&#x4E0A;&#x7ED8;&#x5236;&#x56FE;&#x5F62;&#x7684;&#x7F16;&#x7A0B;&#x63A5;&#x53E3;&#x3002;SVG &#x4E0E;&#x753B;&#x5E03;&#x7684;&#x6700;&#x4E3B;&#x8981;&#x533A;&#x522B;&#x5728;&#x4E8E; SVG &#x4FDD;&#x5B58;&#x4E86;&#x5BF9;&#x4E8E;&#x56FE;&#x50CF;&#x7684;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x968F;&#x65F6;&#x79FB;&#x52A8;&#x6216;&#x4FEE;&#x6539;&#x56FE;&#x50CF;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x753B;&#x5E03;&#x5728;&#x7ED8;&#x5236;&#x56FE;&#x50CF;&#x7684;&#x540C;&#x65F6;&#x4F1A;&#x628A;&#x56FE;&#x50CF;&#x8F6C;&#x6362;&#x6210;&#x50CF;&#x7D20;&#xFF08;&#x5728;&#x6805;&#x683C;&#x4E2D;&#x7684;&#x5177;&#x6709;&#x989C;&#x8272;&#x7684;&#x70B9;&#xFF09;&#x5E76;&#x4E14;&#x4E0D;&#x4F1A;&#x4FDD;&#x5B58;&#x8FD9;&#x4E9B;&#x50CF;&#x7D20;&#x8868;&#x793A;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x552F;&#x4E00;&#x7684;&#x79FB;&#x52A8;&#x56FE;&#x5F62;&#x7684;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x6E05;&#x7A7A;&#x753B;&#x5E03;&#xFF08;&#x6216;&#x8005;&#x56F4;&#x7ED5;&#x7740;&#x56FE;&#x5F62;&#x7684;&#x90E8;&#x5206;&#x753B;&#x5E03;&#xFF09;&#x5E76;&#x5728;&#x65B0;&#x7684;&#x4F4D;&#x7F6E;&#x91CD;&#x753B;&#x56FE;&#x5F62;&#x3002;</p>
+<h2 id="svg">SVG</h2>
+<p>&#x672C;&#x4E66;&#x4E0D;&#x4F1A;&#x6DF1;&#x5165;&#x7814;&#x7A76; SVG &#x7684;&#x7EC6;&#x8282;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4F1A;&#x7B80;&#x5355;&#x5730;&#x89E3;&#x91CA;&#x5176;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x3002;&#x5728;&#x672C;&#x7AE0;&#x7684;&#x7ED3;&#x5C3E;&#xFF0C;&#x6211;&#x4F1A;&#x518D;&#x6B21;&#x6765;&#x8BA8;&#x8BBA;&#xFF0C;&#x5BF9;&#x4E8E;&#x67D0;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x5E94;&#x7528;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x6743;&#x8861;&#x5229;&#x5F0A;&#x9009;&#x62E9;&#x4E00;&#x79CD;&#x7ED8;&#x56FE;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5E26;&#x6709;&#x7B80;&#x5355;&#x7684; SVG &#x56FE;&#x7247;&#x7684; HTML &#x6587;&#x6863;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Normal HTML here.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;http://www.w3.org/2000/svg&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">circle</span> <span class="hljs-attr">r</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">cx</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">cy</span>=<span class="hljs-string">&quot;50&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;red&quot;</span>/&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">rect</span> <span class="hljs-attr">x</span>=<span class="hljs-string">&quot;120&quot;</span> <span class="hljs-attr">y</span>=<span class="hljs-string">&quot;5&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;90&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;90&quot;</span>
+        <span class="hljs-attr">stroke</span>=<span class="hljs-string">&quot;blue&quot;</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">&quot;none&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+</code></pre>
+<p><code>xmlns</code>&#x5C5E;&#x6027;&#x628A;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF08;&#x4EE5;&#x53CA;&#x4ED6;&#x7684;&#x5B50;&#x5143;&#x7D20;&#xFF09;&#x5207;&#x6362;&#x5230;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x7684; XML &#x547D;&#x540D;&#x7A7A;&#x95F4;&#x3002;&#x8FD9;&#x4E2A;&#x7531;<code>url</code>&#x5B9A;&#x4E49;&#x7684;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF0C;&#x89C4;&#x5B9A;&#x4E86;&#x6211;&#x4EEC;&#x5F53;&#x524D;&#x4F7F;&#x7528;&#x7684;&#x8BED;&#x8A00;&#x3002;&#x5728; HTML &#x4E2D;&#x4E0D;&#x5B58;&#x5728;<code>&lt;circle&gt;</code>&#x4E0E;<code>&lt;rect&gt;</code>&#x6807;&#x7B7E;&#xFF0C;&#x4F46;&#x8FD9;&#x4E9B;&#x6807;&#x7B7E;&#x5728; SVG &#x4E2D;&#x662F;&#x6709;&#x610F;&#x4E49;&#x7684;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E9B;&#x6807;&#x7B7E;&#x7684;&#x5C5E;&#x6027;&#x6765;&#x7ED8;&#x5236;&#x56FE;&#x50CF;&#x5E76;&#x6307;&#x5B9A;&#x6837;&#x5F0F;&#x4E0E;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x548C; HTML &#x6807;&#x7B7E;&#x4E00;&#x6837;&#xFF0C;&#x8FD9;&#x4E9B;&#x6807;&#x7B7E;&#x4F1A;&#x521B;&#x5EFA; DOM &#x5143;&#x7D20;&#xFF0C;&#x811A;&#x672C;&#x53EF;&#x4EE5;&#x548C;&#x5B83;&#x4EEC;&#x4EA4;&#x4E92;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x628A;<code>&lt;circle&gt;</code>&#x5143;&#x7D20;&#x7684;&#x989C;&#x8272;&#x66FF;&#x6362;&#x4E3A;&#x9752;&#x8272;&#x3002;</p>
+<pre><code class="lang-html">let circle = document.querySelector(&quot;circle&quot;);
+circle.setAttribute(&quot;fill&quot;, &quot;cyan&quot;);
+</code></pre>
+<h2 id="canvas&#x5143;&#x7D20;"><code>canvas</code>&#x5143;&#x7D20;</h2>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;<code>&lt;canvas&gt;</code>&#x5143;&#x7D20;&#x4E2D;&#x7ED8;&#x5236;&#x753B;&#x5E03;&#x56FE;&#x5F62;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;<code>width</code>&#x4E0E;<code>height</code>&#x5C5E;&#x6027;&#x6765;&#x786E;&#x5B9A;&#x753B;&#x5E03;&#x5C3A;&#x5BF8;&#xFF08;&#x5355;&#x4F4D;&#x4E3A;&#x50CF;&#x7D20;&#xFF09;&#x3002;</p>
+<p>&#x65B0;&#x7684;&#x753B;&#x5E03;&#x662F;&#x7A7A;&#x7684;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x5B83;&#x662F;&#x5B8C;&#x5168;&#x900F;&#x660E;&#x7684;&#xFF0C;&#x770B;&#x8D77;&#x6765;&#x5C31;&#x50CF;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x7A7A;&#x767D;&#x533A;&#x57DF;&#x4E00;&#x6837;&#x3002;</p>
+<p><code>&lt;canvas&gt;</code>&#x6807;&#x7B7E;&#x5141;&#x8BB8;&#x591A;&#x79CD;&#x4E0D;&#x540C;&#x98CE;&#x683C;&#x7684;&#x7ED8;&#x56FE;&#x3002;&#x8981;&#x83B7;&#x53D6;&#x771F;&#x6B63;&#x7684;&#x7ED8;&#x56FE;&#x63A5;&#x53E3;&#xFF0C;&#x9996;&#x5148;&#x6211;&#x4EEC;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x80FD;&#x591F;&#x63D0;&#x4F9B;&#x7ED8;&#x56FE;&#x63A5;&#x53E3;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#xFF08;context&#xFF09;&#x3002;&#x76EE;&#x524D;&#x6709;&#x4E24;&#x79CD;&#x5F97;&#x5230;&#x5E7F;&#x6CDB;&#x652F;&#x6301;&#x7684;&#x7ED8;&#x56FE;&#x63A5;&#x53E3;&#xFF1A;&#x7528;&#x4E8E;&#x7ED8;&#x5236;&#x4E8C;&#x7EF4;&#x56FE;&#x5F62;&#x7684;<code>&quot;2d&quot;</code>&#x4E0E;&#x901A;&#x8FC7;openGL&#x63A5;&#x53E3;&#x7ED8;&#x5236;&#x4E09;&#x7EF4;&#x56FE;&#x5F62;&#x7684;<code>&quot;webgl&quot;</code>&#x3002;</p>
+<p>&#x672C;&#x4E66;&#x53EA;&#x8BA8;&#x8BBA;&#x4E8C;&#x7EF4;&#x56FE;&#x5F62;&#xFF0C;&#x800C;&#x4E0D;&#x8BA8;&#x8BBA; WebGL&#x3002;&#x4F46;&#x662F;&#x5982;&#x679C;&#x4F60;&#x5BF9;&#x4E09;&#x7EF4;&#x56FE;&#x5F62;&#x611F;&#x5174;&#x8DA3;&#xFF0C;&#x6211;&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x5927;&#x5BB6;&#x81EA;&#x884C;&#x6DF1;&#x5165;&#x7814;&#x7A76; WebGL&#x3002;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x73B0;&#x4EE3;&#x56FE;&#x5F62;&#x786C;&#x4EF6;&#x63A5;&#x53E3;&#xFF0C;&#x540C;&#x65F6;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; JavaScript &#x6765;&#x9AD8;&#x6548;&#x5730;&#x6E32;&#x67D3;&#x975E;&#x5E38;&#x590D;&#x6742;&#x7684;&#x573A;&#x666F;&#x3002;</p>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x7528;<code>getContext</code>&#x65B9;&#x6CD5;&#x5728;<code>&lt;canvas&gt;</code> DOM &#x5143;&#x7D20;&#x4E0A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4E0A;&#x4E0B;&#x6587;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Before canvas.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;120&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;60&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>After canvas.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> canvas = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;canvas&quot;</span>);
+  <span class="hljs-keyword">let</span> context = canvas.getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+  context.fillStyle = <span class="hljs-string">&quot;red&quot;</span>;
+  context.fillRect(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">100</span>, <span class="hljs-number">50</span>);
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x5728;&#x521B;&#x5EFA;&#x5B8C;<code>context</code>&#x5BF9;&#x8C61;&#x4E4B;&#x540E;&#xFF0C;&#x4F5C;&#x4E3A;&#x793A;&#x4F8B;&#xFF0C;&#x6211;&#x4EEC;&#x753B;&#x51FA;&#x4E00;&#x4E2A;&#x7EA2;&#x8272;&#x77E9;&#x5F62;&#x3002;&#x8BE5;&#x77E9;&#x5F62;&#x5BBD; 100 &#x50CF;&#x7D20;&#xFF0C;&#x9AD8; 50 &#x50CF;&#x7D20;&#xFF0C;&#x5B83;&#x7684;&#x5DE6;&#x4E0A;&#x70B9;&#x5750;&#x6807;&#x4E3A;(10,10)&#x3002;</p>
+<p>&#x4E0E; HTML&#xFF08;&#x6216;&#x8005; SVG&#xFF09;&#x76F8;&#x540C;&#xFF0C;&#x753B;&#x5E03;&#x4F7F;&#x7528;&#x7684;&#x5750;&#x6807;&#x7CFB;&#x7EDF;&#x5C06;<code>(0,0)</code>&#x653E;&#x7F6E;&#x5728;&#x5DE6;&#x4E0A;&#x89D2;&#xFF0C;&#x5E76;&#x4E14;<code>y</code>&#x8F74;&#x5411;&#x4E0B;&#x589E;&#x957F;&#x3002;&#x6240;&#x4EE5;<code>(10,10)</code>&#x662F;&#x76F8;&#x5BF9;&#x4E8E;&#x5DE6;&#x4E0A;&#x89D2;&#x5411;&#x4E0B;&#x5E76;&#x5411;&#x53F3;&#x5404;&#x504F;&#x79FB; 10 &#x50CF;&#x7D20;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<h2 id="&#x76F4;&#x7EBF;&#x548C;&#x5E73;&#x9762;">&#x76F4;&#x7EBF;&#x548C;&#x5E73;&#x9762;</h2>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x753B;&#x5E03;&#x63A5;&#x53E3;&#x586B;&#x5145;&#x56FE;&#x5F62;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8D4B;&#x4E88;&#x67D0;&#x4E2A;&#x533A;&#x57DF;&#x4E00;&#x4E2A;&#x56FA;&#x5B9A;&#x7684;&#x586B;&#x5145;&#x989C;&#x8272;&#x6216;&#x586B;&#x5145;&#x6A21;&#x5F0F;&#x3002;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x63CF;&#x8FB9;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6CBF;&#x7740;&#x56FE;&#x5F62;&#x7684;&#x8FB9;&#x6CBF;&#x753B;&#x51FA;&#x7EBF;&#x6BB5;&#x3002;SVG &#x4E5F;&#x4F7F;&#x7528;&#x4E86;&#x76F8;&#x540C;&#x7684;&#x6280;&#x672F;&#x3002;</p>
+<p><code>fillRect</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x586B;&#x5145;&#x4E00;&#x4E2A;&#x77E9;&#x5F62;&#x3002;&#x4ED6;&#x7684;&#x8F93;&#x5165;&#x4E3A;&#x77E9;&#x5F62;&#x6846;&#x5DE6;&#x4E0A;&#x89D2;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;<code>x</code>&#x548C;<code>y</code>&#x5750;&#x6807;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x5B83;&#x7684;&#x5BBD;&#x548C;&#x9AD8;&#x3002;&#x76F8;&#x4F3C;&#x5730;&#xFF0C;<code>strokeRect</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x753B;&#x51FA;&#x4E00;&#x4E2A;&#x77E9;&#x5F62;&#x7684;&#x5916;&#x6846;&#x3002;</p>
+<p>&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x90FD;&#x4E0D;&#x9700;&#x8981;&#x5176;&#x4ED6;&#x4EFB;&#x4F55;&#x53C2;&#x6570;&#x3002;&#x586B;&#x5145;&#x7684;&#x989C;&#x8272;&#x4EE5;&#x53CA;&#x8F6E;&#x5ED3;&#x7684;&#x7C97;&#x7EC6;&#x7B49;&#x7B49;&#x90FD;&#x4E0D;&#x80FD;&#x7531;&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x51B3;&#x5B9A;&#xFF08;&#x50CF;&#x4F60;&#x7684;&#x5408;&#x7406;&#x9884;&#x671F;&#x4E00;&#x6837;&#xFF09;&#xFF0C;&#x800C;&#x662F;&#x7531;&#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x51B3;&#x5B9A;&#x3002;</p>
+<p>&#x8BBE;&#x7F6E;<code>fillStyle</code>&#x53C2;&#x6570;&#x63A7;&#x5236;&#x56FE;&#x5F62;&#x7684;&#x586B;&#x5145;&#x65B9;&#x5F0F;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x8BBE;&#x7F6E;&#x4E3A;&#x63CF;&#x8FF0;&#x989C;&#x8272;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4F7F;&#x7528; CSS &#x6240;&#x7528;&#x7684;&#x989C;&#x8272;&#x8868;&#x793A;&#x6CD5;&#x3002;</p>
+<p><code>strokeStyle</code>&#x5C5E;&#x6027;&#x7684;&#x4F5C;&#x7528;&#x5F88;&#x76F8;&#x4F3C;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x7528;&#x4E8E;&#x89C4;&#x5B9A;&#x8F6E;&#x5ED3;&#x7EBF;&#x7684;&#x989C;&#x8272;&#x3002;&#x7EBF;&#x6761;&#x7684;&#x5BBD;&#x5EA6;&#x7531;<code>lineWidth</code>&#x5C5E;&#x6027;&#x51B3;&#x5B9A;&#x3002;<code>lineWidth</code>&#x7684;&#x503C;&#x90FD;&#x4E3A;&#x6B63;&#x503C;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> cx = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;canvas&quot;</span>).getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+  cx.strokeStyle = <span class="hljs-string">&quot;blue&quot;</span>;
+  cx.strokeRect(<span class="hljs-number">5</span>, <span class="hljs-number">5</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+  cx.lineWidth = <span class="hljs-number">5</span>;
+  cx.strokeRect(<span class="hljs-number">135</span>, <span class="hljs-number">5</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span>);
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x5F53;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;<code>width</code>&#x6216;&#x8005;<code>height</code>&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x6B63;&#x5982;&#x793A;&#x4F8B;&#x4E00;&#x6837;&#xFF0C;&#x753B;&#x5E03;&#x5143;&#x7D20;&#x7684;&#x9ED8;&#x8BA4;&#x5BBD;&#x5EA6;&#x4E3A; 300 &#x50CF;&#x7D20;&#xFF0C;&#x9ED8;&#x8BA4;&#x9AD8;&#x5EA6;&#x4E3A; 150 &#x50CF;&#x7D20;&#x3002;</p>
+<h2 id="&#x8DEF;&#x5F84;">&#x8DEF;&#x5F84;</h2>
+<p>&#x8DEF;&#x5F84;&#x662F;&#x7EBF;&#x6BB5;&#x7684;&#x5E8F;&#x5217;&#x3002;2D <code>canvas</code>&#x63A5;&#x53E3;&#x4F7F;&#x7528;&#x4E00;&#x79CD;&#x5947;&#x7279;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x63CF;&#x8FF0;&#x8FD9;&#x6837;&#x7684;&#x8DEF;&#x5F84;&#x3002;&#x8DEF;&#x5F84;&#x7684;&#x7ED8;&#x5236;&#x90FD;&#x662F;&#x95F4;&#x63A5;&#x5B8C;&#x6210;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x65E0;&#x6CD5;&#x5C06;&#x8DEF;&#x5F84;&#x4FDD;&#x5B58;&#x4E3A;&#x53EF;&#x4EE5;&#x540E;&#x7EED;&#x4FEE;&#x6539;&#x5E76;&#x4F20;&#x9012;&#x7684;&#x503C;&#x3002;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4FEE;&#x6539;&#x8DEF;&#x5F84;&#xFF0C;&#x5FC5;&#x987B;&#x8981;&#x8C03;&#x7528;&#x591A;&#x4E2A;&#x65B9;&#x6CD5;&#x6765;&#x63CF;&#x8FF0;&#x4ED6;&#x7684;&#x5F62;&#x72B6;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> cx = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;canvas&quot;</span>).getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+  cx.beginPath();
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> y = <span class="hljs-number">10</span>; y &lt; <span class="hljs-number">100</span>; y += <span class="hljs-number">10</span>) {
+    cx.moveTo(<span class="hljs-number">10</span>, y);
+    cx.lineTo(<span class="hljs-number">90</span>, y);
+  }
+  cx.stroke();
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x672C;&#x4F8B;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x5305;&#x542B;&#x5F88;&#x591A;&#x6C34;&#x5E73;&#x7EBF;&#x6BB5;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x7136;&#x540E;&#x7528;<code>stroke</code>&#x65B9;&#x6CD5;&#x52FE;&#x52D2;&#x8F6E;&#x5ED3;&#x3002;&#x6BCF;&#x4E2A;&#x7EBF;&#x6BB5;&#x90FD;&#x662F;&#x7531;<code>lineTo</code>&#x4EE5;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x4E3A;&#x8DEF;&#x5F84;&#x8D77;&#x70B9;&#x7ED8;&#x5236;&#x7684;&#x3002;&#x9664;&#x975E;&#x8C03;&#x7528;&#x4E86;<code>moveTo</code>&#xFF0C;&#x5426;&#x5219;&#x8FD9;&#x4E2A;&#x4F4D;&#x7F6E;&#x901A;&#x5E38;&#x662F;&#x4E0A;&#x4E00;&#x4E2A;&#x7EBF;&#x6BB5;&#x7684;&#x7EC8;&#x70B9;&#x4F4D;&#x7F6E;&#x3002;&#x5982;&#x679C;&#x8C03;&#x7528;&#x4E86;<code>moveTo</code>&#xFF0C;&#x4E0B;&#x4E00;&#x6761;&#x7EBF;&#x6BB5;&#x4F1A;&#x4ECE;<code>moveTo</code>&#x6307;&#x5B9A;&#x7684;&#x4F4D;&#x7F6E;&#x5F00;&#x59CB;&#x3002;</p>
+<p>&#x5F53;&#x4F7F;&#x7528;<code>fill</code>&#x65B9;&#x6CD5;&#x586B;&#x5145;&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5206;&#x522B;&#x586B;&#x5145;&#x8FD9;&#x4E9B;&#x56FE;&#x5F62;&#x3002;&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x56FE;&#x5F62;&#xFF0C;&#x6BCF;&#x4E2A;<code>moveTo</code>&#x90FD;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x56FE;&#x5F62;&#x3002;&#x4F46;&#x662F;&#x5728;&#x586B;&#x5145;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5C01;&#x95ED;&#x8DEF;&#x5F84;&#xFF08;&#x8DEF;&#x5F84;&#x7684;&#x8D77;&#x59CB;&#x8282;&#x70B9;&#x4E0E;&#x7EC8;&#x6B62;&#x8282;&#x70B9;&#x5FC5;&#x987B;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x70B9;&#xFF09;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#x5C1A;&#x672A;&#x5C01;&#x95ED;&#xFF0C;&#x4F1A;&#x51FA;&#x73B0;&#x4E00;&#x6761;&#x4ECE;&#x7EC8;&#x70B9;&#x5230;&#x8D77;&#x70B9;&#x7684;&#x7EBF;&#x6BB5;&#xFF0C;&#x7136;&#x540E;&#x624D;&#x4F1A;&#x586B;&#x5145;&#x6574;&#x4E2A;&#x5C01;&#x95ED;&#x56FE;&#x5F62;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> cx = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;canvas&quot;</span>).getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+  cx.beginPath();
+  cx.moveTo(<span class="hljs-number">50</span>, <span class="hljs-number">10</span>);
+  cx.lineTo(<span class="hljs-number">10</span>, <span class="hljs-number">70</span>);
+  cx.lineTo(<span class="hljs-number">90</span>, <span class="hljs-number">70</span>);
+  cx.fill();
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x672C;&#x4F8B;&#x753B;&#x51FA;&#x4E86;&#x4E00;&#x4E2A;&#x88AB;&#x586B;&#x5145;&#x7684;&#x4E09;&#x89D2;&#x5F62;&#x3002;&#x6CE8;&#x610F;&#x53EA;&#x663E;&#x793A;&#x5730;&#x753B;&#x51FA;&#x4E86;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x4E24;&#x6761;&#x8FB9;&#x3002;&#x7B2C;&#x4E09;&#x6761;&#x4ECE;&#x53F3;&#x4E0B;&#x89D2;&#x56DE;&#x5230;&#x4E0A;&#x9876;&#x70B9;&#x7684;&#x8FB9;&#x662F;&#x6CA1;&#x6709;&#x663E;&#x793A;&#x5730;&#x753B;&#x51FA;&#xFF0C;&#x56E0;&#x800C;&#x5728;&#x52FE;&#x52D2;&#x8DEF;&#x5F84;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x4E0D;&#x4F1A;&#x5B58;&#x5728;&#x3002;</p>
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>closePath</code>&#x65B9;&#x6CD5;&#x663E;&#x793A;&#x5730;&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x4E00;&#x6761;&#x56DE;&#x5230;&#x8DEF;&#x5F84;&#x8D77;&#x59CB;&#x8282;&#x70B9;&#x7684;&#x7EBF;&#x6BB5;&#x6765;&#x5C01;&#x95ED;&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#x3002;&#x8FD9;&#x6761;&#x7EBF;&#x6BB5;&#x5728;&#x52FE;&#x52D2;&#x8DEF;&#x5F84;&#x7684;&#x65F6;&#x5019;&#x5C06;&#x88AB;&#x663E;&#x793A;&#x5730;&#x753B;&#x51FA;&#x3002;</p>
+<h2 id="&#x66F2;&#x7EBF;">&#x66F2;&#x7EBF;</h2>
+<p>&#x8DEF;&#x5F84;&#x4E5F;&#x53EF;&#x80FD;&#x4F1A;&#x5305;&#x542B;&#x66F2;&#x7EBF;&#x3002;&#x7ED8;&#x5236;&#x66F2;&#x7EBF;&#x66F4;&#x52A0;&#x590D;&#x6742;&#x3002;</p>
+<p><code>quadraticCurveTo</code>&#x65B9;&#x6CD5;&#x7ED8;&#x5236;&#x5230;&#x67D0;&#x4E00;&#x4E2A;&#x70B9;&#x7684;&#x66F2;&#x7EBF;&#x3002;&#x4E3A;&#x4E86;&#x786E;&#x5B9A;&#x4E00;&#x6761;&#x7EBF;&#x6BB5;&#x7684;&#x66F2;&#x7387;&#xFF0C;&#x9700;&#x8981;&#x8BBE;&#x5B9A;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x70B9;&#x4EE5;&#x53CA;&#x4E00;&#x4E2A;&#x76EE;&#x6807;&#x70B9;&#x3002;&#x8BBE;&#x60F3;&#x8FD9;&#x4E2A;&#x63A7;&#x5236;&#x70B9;&#x4F1A;&#x5438;&#x5F15;&#x8FD9;&#x6761;&#x7EBF;&#x6BB5;&#xFF0C;&#x4F7F;&#x5176;&#x6210;&#x4E3A;&#x66F2;&#x7EBF;&#x3002;&#x7EBF;&#x6BB5;&#x4E0D;&#x4F1A;&#x7A7F;&#x8FC7;&#x63A7;&#x5236;&#x70B9;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5B83;&#x8D77;&#x70B9;&#x4E0E;&#x7EC8;&#x70B9;&#x7684;&#x65B9;&#x5411;&#x4F1A;&#x4E0E;&#x4E24;&#x4E2A;&#x70B9;&#x5230;&#x63A7;&#x5236;&#x70B9;&#x7684;&#x65B9;&#x5411;&#x5E73;&#x884C;&#x3002;&#x89C1;&#x4E0B;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> cx = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;canvas&quot;</span>).getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+  cx.beginPath();
+  cx.moveTo(<span class="hljs-number">10</span>, <span class="hljs-number">90</span>);
+  <span class="hljs-comment">// control=(60,10) goal=(90,90)</span>
+  cx.quadraticCurveTo(<span class="hljs-number">60</span>, <span class="hljs-number">10</span>, <span class="hljs-number">90</span>, <span class="hljs-number">90</span>);
+  cx.lineTo(<span class="hljs-number">60</span>, <span class="hljs-number">10</span>);
+  cx.closePath();
+  cx.stroke();
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x7ED8;&#x5236;&#x4E00;&#x4E2A;&#x4E8C;&#x6B21;&#x66F2;&#x7EBF;&#xFF0C;&#x66F2;&#x7EBF;&#x7684;&#x63A7;&#x5236;&#x70B9;&#x5750;&#x6807;&#x4E3A;<code>(60,10)</code>&#xFF0C;&#x7136;&#x540E;&#x753B;&#x51FA;&#x4E24;&#x6761;&#x7A7F;&#x8FC7;&#x63A7;&#x5236;&#x70B9;&#x5E76;&#x4E14;&#x56DE;&#x5230;&#x7EBF;&#x6BB5;&#x8D77;&#x70B9;&#x7684;&#x7EBF;&#x6BB5;&#x3002;&#x7ED8;&#x5236;&#x7684;&#x7ED3;&#x679C;&#x7C7B;&#x4F3C;&#x4E00;&#x4E2A;&#x661F;&#x9645;&#x8FF7;&#x822A;&#x7684;&#x56FE;&#x7AE0;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x89C2;&#x5BDF;&#x5230;&#x63A7;&#x5236;&#x70B9;&#x7684;&#x6548;&#x679C;&#xFF1A;&#x4ECE;&#x4E0B;&#x7AEF;&#x7684;&#x89D2;&#x843D;&#x91CC;&#x53D1;&#x51FA;&#x7684;&#x7EBF;&#x6BB5;&#x671D;&#x5411;&#x63A7;&#x5236;&#x70B9;&#x5E76;&#x5411;&#x4ED6;&#x4EEC;&#x7684;&#x76EE;&#x6807;&#x70B9;&#x5F2F;&#x66F2;&#x3002;</p>
+<p><code>bezierCurve</code>&#xFF08;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;&#xFF09;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7ED8;&#x5236;&#x4E00;&#x79CD;&#x7C7B;&#x4F3C;&#x7684;&#x66F2;&#x7EBF;&#x3002;&#x4E0D;&#x540C;&#x7684;&#x662F;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;&#x9700;&#x8981;&#x4E24;&#x4E2A;&#x63A7;&#x5236;&#x70B9;&#x800C;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#xFF0C;&#x7EBF;&#x6BB5;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x7AEF;&#x70B9;&#x90FD;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x70B9;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x63CF;&#x8FF0;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;&#x7684;&#x7B80;&#x5355;&#x793A;&#x4F8B;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> cx = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;canvas&quot;</span>).getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+  cx.beginPath();
+  cx.moveTo(<span class="hljs-number">10</span>, <span class="hljs-number">90</span>);
+  <span class="hljs-comment">// control1=(10,10) control2=(90,10) goal=(50,90)</span>
+  cx.bezierCurveTo(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span class="hljs-number">90</span>, <span class="hljs-number">10</span>, <span class="hljs-number">50</span>, <span class="hljs-number">90</span>);
+  cx.lineTo(<span class="hljs-number">90</span>, <span class="hljs-number">10</span>);
+  cx.lineTo(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>);
+  cx.closePath();
+  cx.stroke();
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x4E24;&#x4E2A;&#x63A7;&#x5236;&#x70B9;&#x89C4;&#x5B9A;&#x4E86;&#x66F2;&#x7EBF;&#x4E24;&#x4E2A;&#x7AEF;&#x70B9;&#x7684;&#x65B9;&#x5411;&#x3002;&#x4E24;&#x4E2A;&#x63A7;&#x5236;&#x70B9;&#x76F8;&#x5BF9;&#x4E24;&#x4E2A;&#x7AEF;&#x70B9;&#x7684;&#x8DDD;&#x79BB;&#x8D8A;&#x8FDC;&#xFF0C;&#x66F2;&#x7EBF;&#x5C31;&#x4F1A;&#x8D8A;&#x5411;&#x8FD9;&#x4E2A;&#x65B9;&#x5411;&#x51F8;&#x51FA;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x660E;&#x786E;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6765;&#x627E;&#x51FA;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x7ED8;&#x5236;&#x56FE;&#x5F62;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x63A7;&#x5236;&#x70B9;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x79CD;&#x66F2;&#x7EBF;&#x8FD8;&#x662F;&#x5F88;&#x96BE;&#x64CD;&#x63A7;&#x3002;&#x6709;&#x65F6;&#x5019;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x4ED6;&#x4EEC;&#xFF0C;&#x800C;&#x6709;&#x65F6;&#x5019;&#x4F60;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x4E0D;&#x65AD;&#x7684;&#x5C1D;&#x8BD5;&#x6765;&#x627E;&#x5230;&#x5408;&#x9002;&#x7684;&#x503C;&#x3002;</p>
+<p><code>arc</code>&#x65B9;&#x6CD5;&#x662F;&#x4E00;&#x79CD;&#x6CBF;&#x7740;&#x5706;&#x7684;&#x8FB9;&#x7F18;&#x7ED8;&#x5236;&#x66F2;&#x7EBF;&#x7684;&#x65B9;&#x6CD5;&#x3002; &#x5B83;&#x9700;&#x8981;&#x5F27;&#x7684;&#x4E2D;&#x5FC3;&#x7684;&#x4E00;&#x5BF9;&#x5750;&#x6807;&#xFF0C;&#x534A;&#x5F84;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x8D77;&#x59CB;&#x548C;&#x7EC8;&#x6B62;&#x89D2;&#x5EA6;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6700;&#x540E;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x753B;&#x51FA;&#x90E8;&#x5206;&#x5706;&#x3002;&#x89D2;&#x5EA6;&#x662F;&#x901A;&#x8FC7;&#x5F27;&#x5EA6;&#x6765;&#x6D4B;&#x91CF;&#x7684;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5EA6;&#x6570;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x5706;&#x62E5;&#x6709;<code>2&#x3C0;</code>&#x7684;&#x5F27;&#x5EA6;&#xFF0C;&#x6216;&#x8005;<code>2*Math.PI</code>&#xFF08;&#x5927;&#x7EA6;&#x4E3A; 6.28&#xFF09;&#x7684;&#x5F27;&#x5EA6;&#x3002;&#x5F27;&#x5EA6;&#x4ECE;&#x5706;&#x5FC3;&#x53F3;&#x8FB9;&#x7684;&#x70B9;&#x5F00;&#x59CB;&#x5E76;&#x4EE5;&#x987A;&#x65F6;&#x9488;&#x7684;&#x65B9;&#x5411;&#x8BA1;&#x6570;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4EE5; 0 &#x8D77;&#x59CB;&#x5E76;&#x4EE5;&#x4E00;&#x4E2A;&#x6BD4;<code>2&#x3C0;</code>&#x5927;&#x7684;&#x6570;&#x503C;&#xFF08;&#x6BD4;&#x5982; 7&#xFF09;&#x4F5C;&#x4E3A;&#x7EC8;&#x6B62;&#x503C;&#xFF0C;&#x753B;&#x51FA;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x5706;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> cx = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;canvas&quot;</span>).getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+  cx.beginPath();
+  <span class="hljs-comment">// center=(50,50) radius=40 angle=0 to 7</span>
+  cx.arc(<span class="hljs-number">50</span>, <span class="hljs-number">50</span>, <span class="hljs-number">40</span>, <span class="hljs-number">0</span>, <span class="hljs-number">7</span>);
+  <span class="hljs-comment">// center=(150,50) radius=40 angle=0 to &#xBD;&#x3C0;</span>
+  cx.arc(<span class="hljs-number">150</span>, <span class="hljs-number">50</span>, <span class="hljs-number">40</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.5</span> * <span class="hljs-built_in">Math</span>.PI);
+  cx.stroke();
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x7ED8;&#x5236;&#x51FA;&#x7684;&#x56FE;&#x5F62;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x6761;&#x4ECE;&#x5B8C;&#x6574;&#x5706;&#xFF08;&#x7B2C;&#x4E00;&#x6B21;&#x8C03;&#x7528;<code>arc</code>&#xFF09;&#x7684;&#x53F3;&#x4FA7;&#x5230;&#x56DB;&#x5206;&#x4E4B;&#x4E00;&#x5706;&#xFF08;&#x7B2C;&#x4E8C;&#x6B21;&#x8C03;&#x7528;<code>arc</code>&#xFF09;&#x7684;&#x5DE6;&#x4FA7;&#x7684;&#x76F4;&#x7EBF;&#x3002;<code>arc</code>&#x4E0E;&#x5176;&#x4ED6;&#x7ED8;&#x5236;&#x8DEF;&#x5F84;&#x7684;&#x65B9;&#x6CD5;&#x4E00;&#x6837;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x8FDE;&#x63A5;&#x5230;&#x4E0A;&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#x4E0A;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x8C03;&#x7528;<code>moveTo</code>&#x6216;&#x8005;&#x5F00;&#x542F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8DEF;&#x5F84;&#x6765;&#x907F;&#x514D;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x3002;</p>
+<h2 id="&#x7ED8;&#x5236;&#x997C;&#x72B6;&#x56FE;">&#x7ED8;&#x5236;&#x997C;&#x72B6;&#x56FE;</h2>
+<p>&#x8BBE;&#x60F3;&#x4F60;&#x521A;&#x521A;&#x4ECE; EconomiCorp &#x83B7;&#x5F97;&#x4E86;&#x4E00;&#x4EFD;&#x5DE5;&#x4F5C;&#xFF0C;&#x5E76;&#x4E14;&#x4F60;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#x662F;&#x753B;&#x51FA;&#x4E00;&#x4E2A;&#x63CF;&#x8FF0;&#x5176;&#x7528;&#x6237;&#x6EE1;&#x610F;&#x5EA6;&#x8C03;&#x67E5;&#x7ED3;&#x679C;&#x7684;&#x997C;&#x72B6;&#x56FE;&#x3002;<code>results</code>&#x7ED1;&#x5B9A;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;&#x8868;&#x793A;&#x8C03;&#x67E5;&#x7ED3;&#x679C;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> results = [
+  {name: <span class="hljs-string">&quot;Satisfied&quot;</span>, count: <span class="hljs-number">1043</span>, color: <span class="hljs-string">&quot;lightblue&quot;</span>},
+  {name: <span class="hljs-string">&quot;Neutral&quot;</span>, count: <span class="hljs-number">563</span>, color: <span class="hljs-string">&quot;lightgreen&quot;</span>},
+  {name: <span class="hljs-string">&quot;Unsatisfied&quot;</span>, count: <span class="hljs-number">510</span>, color: <span class="hljs-string">&quot;pink&quot;</span>},
+  {name: <span class="hljs-string">&quot;No comment&quot;</span>, count: <span class="hljs-number">175</span>, color: <span class="hljs-string">&quot;silver&quot;</span>}
+];
+</code></pre>
+<p>&#x8981;&#x60F3;&#x753B;&#x51FA;&#x4E00;&#x4E2A;&#x997C;&#x72B6;&#x56FE;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x753B;&#x51FA;&#x5F88;&#x591A;&#x4E2A;&#x997C;&#x72B6;&#x56FE;&#x7684;&#x5207;&#x7247;&#xFF0C;&#x6BCF;&#x4E2A;&#x5207;&#x7247;&#x7531;&#x4E00;&#x4E2A;&#x5706;&#x5F27;&#x4E0E;&#x4E24;&#x6761;&#x5230;&#x5706;&#x5FC3;&#x7684;&#x7EBF;&#x6BB5;&#x7EC4;&#x6210;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x628A;&#x4E00;&#x4E2A;&#x6574;&#x5706;&#xFF08;<code>2&#x3C0;</code>&#xFF09;&#x5206;&#x5272;&#x6210;&#x4EE5;&#x8C03;&#x67E5;&#x7ED3;&#x679C;&#x6570;&#x91CF;&#x4E3A;&#x5355;&#x4F4D;&#x7684;&#x82E5;&#x5E72;&#x4EFD;&#xFF0C;&#x7136;&#x540E;&#x4E58;&#x4EE5;&#x505A;&#x51FA;&#x76F8;&#x5E94;&#x9009;&#x62E9;&#x7684;&#x7528;&#x6237;&#x7684;&#x4E2A;&#x6570;&#x6765;&#x8BA1;&#x7B97;&#x6BCF;&#x4E2A;&#x5706;&#x5F27;&#x7684;&#x89D2;&#x5EA6;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;200&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;200&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> cx = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;canvas&quot;</span>).getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+  <span class="hljs-keyword">let</span> total = results
+    .reduce((sum, {count}) =&gt; sum + count, <span class="hljs-number">0</span>);
+  <span class="hljs-comment">// Start at the top</span>
+  <span class="hljs-keyword">let</span> currentAngle = <span class="hljs-number">-0.5</span> * <span class="hljs-built_in">Math</span>.PI;
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> result <span class="hljs-keyword">of</span> results) {
+    <span class="hljs-keyword">let</span> sliceAngle = (result.count / total) * <span class="hljs-number">2</span> * <span class="hljs-built_in">Math</span>.PI;
+    cx.beginPath();
+    <span class="hljs-comment">// center=100,100, radius=100</span>
+    <span class="hljs-comment">// from current angle, clockwise by slice&apos;s angle</span>
+    cx.arc(<span class="hljs-number">100</span>, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>,
+           currentAngle, currentAngle + sliceAngle);
+    currentAngle += sliceAngle;
+    cx.lineTo(<span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
+    cx.fillStyle = result.color;
+    cx.fill();
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x4F46;&#x8868;&#x683C;&#x5E76;&#x6CA1;&#x6709;&#x544A;&#x8BC9;&#x6211;&#x4EEC;&#x5207;&#x7247;&#x4EE3;&#x8868;&#x7684;&#x542B;&#x4E49;&#xFF0C;&#x5B83;&#x6BEB;&#x65E0;&#x7528;&#x5904;&#x3002;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5C06;&#x6587;&#x5B57;&#x753B;&#x5728;&#x753B;&#x5E03;&#x4E0A;&#x3002;</p>
+<h2 id="&#x6587;&#x672C;">&#x6587;&#x672C;</h2>
+<p>2D &#x753B;&#x5E03;&#x7684;<code>context</code>&#x5BF9;&#x8C61;&#x63D0;&#x4F9B;&#x4E86;<code>fillText</code>&#x65B9;&#x6CD5;&#x548C;<code>strokeText</code>&#x65B9;&#x6CD5;&#x3002;&#x7B2C;&#x4E8C;&#x4E2A;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x7ED8;&#x5236;&#x5B57;&#x6BCD;&#x8F6E;&#x5ED3;&#xFF0C;&#x4F46;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7684;&#x662F;<code>fillText</code>&#x65B9;&#x6CD5;&#x3002;&#x8BE5;&#x65B9;&#x6CD5;&#x4F7F;&#x7528;&#x5F53;&#x524D;&#x7684;<code>fillColor</code>&#x6765;&#x586B;&#x5145;&#x7279;&#x5B9A;&#x6587;&#x5B57;&#x7684;&#x8F6E;&#x5ED3;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> cx = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;canvas&quot;</span>).getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+  cx.font = <span class="hljs-string">&quot;28px Georgia&quot;</span>;
+  cx.fillStyle = <span class="hljs-string">&quot;fuchsia&quot;</span>;
+  cx.fillText(<span class="hljs-string">&quot;I can draw text, too!&quot;</span>, <span class="hljs-number">10</span>, <span class="hljs-number">50</span>);
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>font</code>&#x5C5E;&#x6027;&#x6765;&#x8BBE;&#x5B9A;&#x6587;&#x5B57;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x6837;&#x5F0F;&#x548C;&#x5B57;&#x4F53;&#x3002;&#x672C;&#x4F8B;&#x7ED9;&#x51FA;&#x4E86;&#x4E00;&#x4E2A;&#x5B57;&#x4F53;&#x7684;&#x5927;&#x5C0F;&#x548C;&#x5B57;&#x4F53;&#x65CF;&#x540D;&#x79F0;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;<code>italic</code>&#x6216;&#x8005;<code>bold</code>&#x6765;&#x9009;&#x62E9;&#x6837;&#x5F0F;&#x3002;</p>
+<p>&#x4F20;&#x9012;&#x7ED9;<code>fillText</code>&#x548C;<code>strokeText</code>&#x7684;&#x540E;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x7ED8;&#x5236;&#x6587;&#x5B57;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x4E2A;&#x4F4D;&#x7F6E;&#x6307;&#x5B9A;&#x4E86;&#x6587;&#x5B57;&#x7684;&#x5B57;&#x7B26;&#x57FA;&#x7EBF;&#xFF08;<code>baseline</code>&#xFF09;&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x5047;&#x60F3;&#x4E3A;&#x5B57;&#x7B26;&#x6240;&#x7AD9;&#x7ACB;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x57FA;&#x7EBF;&#x4E0D;&#x8003;&#x8651;<code>j</code>&#x6216;<code>p</code>&#x5B57;&#x6BCD;&#x4E2D;&#x90A3;&#x4E9B;&#x5411;&#x4E0B;&#x7A81;&#x51FA;&#x7684;&#x90E8;&#x5206;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;<code>textAlign</code>&#x5C5E;&#x6027;&#xFF08;<code>end</code>&#x6216;<code>center</code>&#xFF09;&#x6765;&#x6539;&#x53D8;&#x8D77;&#x59CB;&#x70B9;&#x7684;&#x6C34;&#x5E73;&#x4F4D;&#x7F6E;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;<code>textBaseline</code>&#x5C5E;&#x6027;&#xFF08;<code>top</code>&#x3001;<code>middle</code>&#x6216;<code>bottom</code>&#xFF09;&#x6765;&#x8BBE;&#x7F6E;&#x57FA;&#x7EBF;&#x7684;&#x7AD6;&#x76F4;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x5728;&#x672C;&#x7AE0;&#x672B;&#x5C3E;&#x7684;&#x7EC3;&#x4E60;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x56DE;&#x987E;&#x997C;&#x72B6;&#x56FE;&#xFF0C;&#x5E76;&#x89E3;&#x51B3;&#x7ED9;&#x997C;&#x72B6;&#x56FE;&#x5206;&#x7247;&#x6807;&#x6CE8;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<h2 id="&#x56FE;&#x50CF;">&#x56FE;&#x50CF;</h2>
+<p>&#x8BA1;&#x7B97;&#x673A;&#x56FE;&#x5F62;&#x5B66;&#x9886;&#x57DF;&#x7ECF;&#x5E38;&#x5C06;&#x77E2;&#x91CF;&#x56FE;&#x5F62;&#x548C;&#x4F4D;&#x56FE;&#x56FE;&#x5F62;&#x5206;&#x5F00;&#x6765;&#x8BA8;&#x8BBA;&#x3002;&#x672C;&#x7AE0;&#x4E00;&#x76F4;&#x5728;&#x8BA8;&#x8BBA;&#x7B2C;&#x4E00;&#x79CD;&#x56FE;&#x5F62;&#xFF0C;&#x5373;&#x901A;&#x8FC7;&#x5BF9;&#x56FE;&#x5F62;&#x7684;&#x903B;&#x8F91;&#x63CF;&#x8FF0;&#x6765;&#x7ED8;&#x56FE;&#x3002;&#x800C;&#x4F4D;&#x56FE;&#x5219;&#x76F8;&#x53CD;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x5B9E;&#x9645;&#x56FE;&#x5F62;&#xFF0C;&#x800C;&#x662F;&#x901A;&#x8FC7;&#x5904;&#x7406;&#x50CF;&#x7D20;&#x6570;&#x636E;&#x6765;&#x7ED8;&#x5236;&#x56FE;&#x50CF;&#xFF08;&#x5149;&#x6805;&#x5316;&#x7684;&#x7740;&#x8272;&#x70B9;&#xFF09;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>drawImage</code>&#x65B9;&#x6CD5;&#x5728;&#x753B;&#x5E03;&#x4E0A;&#x7ED8;&#x5236;&#x50CF;&#x7D20;&#x503C;&#x3002;&#x6B64;&#x5904;&#x7684;&#x50CF;&#x7D20;&#x6570;&#x503C;&#x53EF;&#x4EE5;&#x6765;&#x81EA;<code>&lt;img&gt;</code>&#x5143;&#x7D20;&#xFF0C;&#x6216;&#x8005;&#x6765;&#x81EA;&#x5176;&#x4ED6;&#x7684;&#x753B;&#x5E03;&#x3002;&#x4E0B;&#x4F8B;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;<code>&lt;img&gt;</code>&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x4E14;&#x52A0;&#x8F7D;&#x4E86;&#x4E00;&#x5F20;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x3002;&#x4F46;&#x6211;&#x4EEC;&#x65E0;&#x6CD5;&#x9A6C;&#x4E0A;&#x4F7F;&#x7528;&#x8BE5;&#x56FE;&#x7247;&#x8FDB;&#x884C;&#x7ED8;&#x5236;&#xFF0C;&#x56E0;&#x4E3A;&#x6D4F;&#x89C8;&#x5668;&#x53EF;&#x80FD;&#x8FD8;&#x6CA1;&#x6709;&#x5B8C;&#x6210;&#x56FE;&#x7247;&#x7684;&#x83B7;&#x53D6;&#x64CD;&#x4F5C;&#x3002;&#x4E3A;&#x4E86;&#x5904;&#x7406;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x56FE;&#x50CF;&#x5143;&#x7D20;&#x4E0A;&#x6CE8;&#x518C;&#x4E00;&#x4E2A;<code>&quot;load&quot;</code>&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x5E76;&#x4E14;&#x5728;&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x5B8C;&#x4E4B;&#x540E;&#x5F00;&#x59CB;&#x7ED8;&#x5236;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> cx = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;canvas&quot;</span>).getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+  <span class="hljs-keyword">let</span> img = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;img&quot;</span>);
+  img.src = <span class="hljs-string">&quot;img/hat.png&quot;</span>;
+  img.addEventListener(<span class="hljs-string">&quot;load&quot;</span>, () =&gt; {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> x = <span class="hljs-number">10</span>; x &lt; <span class="hljs-number">200</span>; x += <span class="hljs-number">30</span>) {
+      cx.drawImage(img, x, <span class="hljs-number">10</span>);
+    }
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>drawImage</code>&#x4F1A;&#x6839;&#x636E;&#x539F;&#x56FE;&#x7684;&#x5C3A;&#x5BF8;&#x7ED8;&#x5236;&#x56FE;&#x50CF;&#x3002;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x589E;&#x52A0;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x6765;&#x8BBE;&#x7F6E;&#x4E0D;&#x540C;&#x7684;&#x5BBD;&#x5EA6;&#x548C;&#x9AD8;&#x5EA6;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5411;<code>drawImage</code>&#x51FD;&#x6570;&#x4F20;&#x5165; 9 &#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x5176;&#x7ED8;&#x5236;&#x51FA;&#x4E00;&#x5F20;&#x56FE;&#x7247;&#x7684;&#x67D0;&#x4E00;&#x90E8;&#x5206;&#x3002;&#x7B2C;&#x4E8C;&#x4E2A;&#x5230;&#x7B2C;&#x4E94;&#x4E2A;&#x53C2;&#x6570;&#x8868;&#x793A;&#x9700;&#x8981;&#x62F7;&#x8D1D;&#x7684;&#x6E90;&#x56FE;&#x7247;&#x4E2D;&#x7684;&#x77E9;&#x5F62;&#x533A;&#x57DF;&#xFF08;<code>x</code>&#xFF0C;<code>y</code>&#x5750;&#x6807;&#xFF0C;&#x5BBD;&#x5EA6;&#x548C;&#x9AD8;&#x5EA6;&#xFF09;&#xFF0C;&#x540C;&#x65F6;&#x7B2C;&#x516D;&#x4E2A;&#x5230;&#x7B2C;&#x4E5D;&#x4E2A;&#x53C2;&#x6570;&#x7ED9;&#x51FA;&#x4E86;&#x9700;&#x8981;&#x62F7;&#x8D1D;&#x5230;&#x7684;&#x76EE;&#x6807;&#x77E9;&#x5F62;&#x7684;&#x4F4D;&#x7F6E;&#xFF08;&#x5728;&#x753B;&#x5E03;&#x4E0A;&#xFF09;&#x3002;</p>
+<p><img src="img/17-1.png" alt=""></p>
+<p>&#x8BE5;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5728;&#x5355;&#x4E2A;&#x56FE;&#x50CF;&#x6587;&#x4EF6;&#x4E2D;&#x653E;&#x5165;&#x591A;&#x4E2A;&#x7CBE;&#x7075;&#xFF08;&#x56FE;&#x50CF;&#x5355;&#x5143;&#xFF09;&#x5E76;&#x753B;&#x51FA;&#x4F60;&#x9700;&#x8981;&#x7684;&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6539;&#x53D8;&#x7ED8;&#x5236;&#x7684;&#x4EBA;&#x7269;&#x9020;&#x578B;&#xFF0C;&#x6765;&#x5C55;&#x73B0;&#x4E00;&#x6BB5;&#x770B;&#x4F3C;&#x4EBA;&#x7269;&#x5728;&#x8D70;&#x52A8;&#x7684;&#x52A8;&#x753B;&#x3002;</p>
+<p><code>clearRect</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x5728;&#x753B;&#x5E03;&#x4E0A;&#x7ED8;&#x5236;&#x52A8;&#x753B;&#x3002;&#x8BE5;&#x65B9;&#x6CD5;&#x7C7B;&#x4F3C;&#x4E8E;<code>fillRect</code>&#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x662F;<code>clearRect</code>&#x65B9;&#x6CD5;&#x4F1A;&#x5C06;&#x76EE;&#x6807;&#x77E9;&#x5F62;&#x900F;&#x660E;&#x5316;&#xFF0C;&#x5E76;&#x79FB;&#x9664;&#x6389;&#x4E4B;&#x524D;&#x7ED8;&#x5236;&#x7684;&#x50CF;&#x7D20;&#x503C;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7740;&#x8272;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x6BCF;&#x4E2A;&#x7CBE;&#x7075;&#x548C;&#x6BCF;&#x4E2A;&#x5B50;&#x753B;&#x9762;&#x7684;&#x5BBD;&#x5EA6;&#x90FD;&#x662F; 24 &#x50CF;&#x7D20;&#xFF0C;&#x9AD8;&#x5EA6;&#x90FD;&#x662F; 30 &#x50CF;&#x7D20;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x88C5;&#x8F7D;&#x4E86;&#x4E00;&#x5E45;&#x56FE;&#x7247;&#x5E76;&#x8BBE;&#x7F6E;&#x5B9A;&#x65F6;&#x5668;&#xFF08;&#x4F1A;&#x91CD;&#x590D;&#x89E6;&#x53D1;&#x7684;&#x5B9A;&#x65F6;&#x5668;&#xFF09;&#x6765;&#x5B9A;&#x65F6;&#x7ED8;&#x5236;&#x4E0B;&#x4E00;&#x5E27;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> cx = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;canvas&quot;</span>).getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+  <span class="hljs-keyword">let</span> img = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;img&quot;</span>);
+  img.src = <span class="hljs-string">&quot;img/player.png&quot;</span>;
+  <span class="hljs-keyword">let</span> spriteW = <span class="hljs-number">24</span>, spriteH = <span class="hljs-number">30</span>;
+  img.addEventListener(<span class="hljs-string">&quot;load&quot;</span>, () =&gt; {
+    <span class="hljs-keyword">let</span> cycle = <span class="hljs-number">0</span>;
+    setInterval(() =&gt; {
+      cx.clearRect(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, spriteW, spriteH);
+      cx.drawImage(img,
+                   <span class="hljs-comment">// source rectangle</span>
+                   cycle * spriteW, <span class="hljs-number">0</span>, spriteW, spriteH,
+                   <span class="hljs-comment">// destination rectangle</span>
+                   <span class="hljs-number">0</span>,               <span class="hljs-number">0</span>, spriteW, spriteH);
+      cycle = (cycle + <span class="hljs-number">1</span>) % <span class="hljs-number">8</span>;
+    }, <span class="hljs-number">120</span>);
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p><code>cycle</code>&#x7ED1;&#x5B9A;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x89D2;&#x8272;&#x5728;&#x52A8;&#x753B;&#x56FE;&#x50CF;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x6BCF;&#x663E;&#x793A;&#x4E00;&#x5E27;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x8981;&#x5C06;<code>cycle</code>&#x52A0; 1&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x53D6;&#x4F59;&#x6570;&#x786E;&#x4FDD;<code>cycle</code>&#x7684;&#x503C;&#x5728; 0~7 &#x8FD9;&#x4E2A;&#x8303;&#x56F4;&#x5185;&#x3002;&#x6211;&#x4EEC;&#x968F;&#x540E;&#x4F7F;&#x7528;&#x8BE5;&#x7ED1;&#x5B9A;&#x8BA1;&#x7B97;&#x7CBE;&#x7075;&#x5F53;&#x524D;&#x5F62;&#x8C61;&#x5728;&#x56FE;&#x7247;&#x4E2D;&#x7684;<code>x</code>&#x5750;&#x6807;&#x3002;</p>
+<h2 id="&#x53D8;&#x6362;">&#x53D8;&#x6362;</h2>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x89D2;&#x8272;&#x53EF;&#x4EE5;&#x5411;&#x5DE6;&#x8D70;&#x800C;&#x4E0D;&#x662F;&#x5411;&#x53F3;&#x8D70;&#x8BE5;&#x600E;&#x4E48;&#x529E;&#xFF1F;&#x8BDA;&#x7136;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7ED8;&#x5236;&#x53E6;&#x4E00;&#x7EC4;&#x7CBE;&#x7075;&#xFF0C;&#x4F46;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x53E6;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x5728;&#x753B;&#x5E03;&#x4E0A;&#x7ED8;&#x56FE;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8C03;&#x7528;<code>scale</code>&#x65B9;&#x6CD5;&#x6765;&#x7F29;&#x653E;&#x4E4B;&#x540E;&#x7ED8;&#x5236;&#x7684;&#x4EFB;&#x4F55;&#x5143;&#x7D20;&#x3002;&#x8BE5;&#x65B9;&#x6CD5;&#x63A5;&#x53D7;&#x4E24;&#x4E2A;&#x8F93;&#x5165;&#x53C2;&#x6570;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x6C34;&#x5E73;&#x7F29;&#x653E;&#x6BD4;&#x4F8B;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x7AD6;&#x76F4;&#x7F29;&#x653E;&#x6BD4;&#x4F8B;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> cx = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;canvas&quot;</span>).getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+  cx.scale(<span class="hljs-number">3</span>, <span class="hljs-number">.5</span>);
+  cx.beginPath();
+  cx.arc(<span class="hljs-number">50</span>, <span class="hljs-number">50</span>, <span class="hljs-number">40</span>, <span class="hljs-number">0</span>, <span class="hljs-number">7</span>);
+  cx.lineWidth = <span class="hljs-number">3</span>;
+  cx.stroke();
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x56E0;&#x4E3A;&#x8C03;&#x7528;&#x4E86;<code>scale</code>&#xFF0C;&#x56E0;&#x6B64;&#x5706;&#x5F62;&#x957F;&#x5EA6;&#x53D8;&#x4E3A;&#x539F;&#x6765;&#x7684; 3 &#x500D;&#xFF0C;&#x9AD8;&#x5EA6;&#x53D8;&#x4E3A;&#x539F;&#x6765;&#x7684;&#x4E00;&#x534A;&#x3002;<code>scale</code>&#x53EF;&#x4EE5;&#x8C03;&#x6574;&#x56FE;&#x50CF;&#x6240;&#x6709;&#x7279;&#x5F81;&#xFF0C;&#x5305;&#x62EC;&#x7EBF;&#x5BBD;&#x3001;&#x9884;&#x5B9A;&#x62C9;&#x4F38;&#x6216;&#x538B;&#x7F29;&#x3002;&#x5982;&#x679C;&#x5C06;&#x7F29;&#x653E;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;&#x8D1F;&#x503C;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x56FE;&#x50CF;&#x7FFB;&#x8F6C;&#x3002;&#x7531;&#x4E8E;&#x7FFB;&#x8F6C;&#x53D1;&#x751F;&#x5728;&#x5750;&#x6807;<code>(0,0)</code>&#x5904;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4E5F;&#x4F1A;&#x540C;&#x65F6;&#x53CD;&#x8F6C;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x65B9;&#x5411;&#x3002;&#x5F53;&#x6C34;&#x5E73;&#x7F29;&#x653E; &#x2013;1 &#x65F6;&#xFF0C;&#x5728;<code>x</code>&#x5750;&#x6807;&#x4E3A; 100 &#x7684;&#x4F4D;&#x7F6E;&#x753B;&#x51FA;&#x7684;&#x56FE;&#x5F62;&#x4F1A;&#x7ED8;&#x5236;&#x5728;&#x7F29;&#x653E;&#x4E4B;&#x524D;<code>x</code>&#x5750;&#x6807;&#x4E3A; &#x2013;100 &#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x7FFB;&#x8F6C;&#x4E00;&#x5F20;&#x56FE;&#x7247;&#xFF0C;&#x53EA;&#x662F;&#x5728;<code>drawImage</code>&#x4E4B;&#x524D;&#x6DFB;&#x52A0;<code>cx.scale(&#x2013;1,&#x2013;1)</code>&#x662F;&#x6CA1;&#x7528;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x4F1A;&#x5C06;&#x6211;&#x4EEC;&#x7684;&#x56FE;&#x7247;&#x79FB;&#x51FA;&#x5230;&#x753B;&#x5E03;&#x4E4B;&#x5916;&#xFF0C;&#x5BFC;&#x81F4;&#x56FE;&#x7247;&#x4E0D;&#x53EF;&#x89C1;&#x3002;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x8C03;&#x6574;&#x4F20;&#x9012;&#x7ED9;<code>drawImage</code>&#x7684;&#x5750;&#x6807;&#xFF0C;&#x5C06;&#x7ED8;&#x5236;&#x56FE;&#x5F62;&#x7684;<code>x</code>&#x5750;&#x6807;&#x6539;&#x4E3A; &#x2013;50 &#x800C;&#x4E0D;&#x662F; 0&#x3002;&#x53E6;&#x4E00;&#x4E2A;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x662F;&#x5728;&#x7F29;&#x653E;&#x65F6;&#x8C03;&#x6574;&#x5750;&#x6807;&#x8F74;&#xFF0C;&#x8FD9;&#x6837;&#x4EE3;&#x7801;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x77E5;&#x9053;&#x6574;&#x4E2A;&#x753B;&#x5E03;&#x7684;&#x7F29;&#x653E;&#x7684;&#x6539;&#x53D8;&#x3002;</p>
+<p>&#x9664;&#x4E86;<code>scale</code>&#x65B9;&#x6CD5;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5F71;&#x54CD;&#x753B;&#x5E03;&#x91CC;&#x5750;&#x6807;&#x7CFB;&#x7EDF;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>rotate</code>&#x65B9;&#x6CD5;&#x65CB;&#x8F6C;&#x7ED8;&#x5236;&#x5B8C;&#x7684;&#x56FE;&#x5F62;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>translate</code>&#x65B9;&#x6CD5;&#x79FB;&#x52A8;&#x56FE;&#x5F62;&#x3002;&#x6BD5;&#x7ADF;&#x6709;&#x8DA3;&#x4F46;&#x4E5F;&#x5BB9;&#x6613;&#x5F15;&#x8D77;&#x8BEF;&#x89E3;&#x7684;&#x662F;&#x8FD9;&#x4E9B;&#x53D8;&#x6362;&#x4EE5;&#x6808;&#x7684;&#x65B9;&#x5F0F;&#x5DE5;&#x4F5C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x6BCF;&#x4E2A;&#x53D8;&#x6362;&#x90FD;&#x4F1A;&#x4F5C;&#x7528;&#x4E8E;&#x524D;&#x4E00;&#x4E2A;&#x53D8;&#x6362;&#x7684;&#x7ED3;&#x679C;&#x4E4B;&#x4E0A;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6CBF;&#x6C34;&#x5E73;&#x65B9;&#x5411;&#x5C06;&#x753B;&#x5E03;&#x5E73;&#x79FB;&#x4E24;&#x6B21;&#xFF0C;&#x6BCF;&#x6B21;&#x79FB;&#x52A8; 10 &#x50CF;&#x7D20;&#xFF0C;&#x90A3;&#x4E48;&#x6240;&#x6709;&#x7684;&#x56FE;&#x5F62;&#x90FD;&#x4F1A;&#x5728;&#x53F3;&#x65B9; 20 &#x50CF;&#x7D20;&#x7684;&#x4F4D;&#x7F6E;&#x91CD;&#x65B0;&#x7ED8;&#x5236;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5148;&#x628A;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x539F;&#x70B9;&#x79FB;&#x52A8;&#x5230;<code>(50, 50)</code>&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x7136;&#x540E;&#x65CB;&#x8F6C; 20 &#x5EA6;&#xFF08;&#x5927;&#x7EA6;<code>0.1&#x3C0;</code>&#x5F27;&#x5EA6;&#xFF09;&#xFF0C;&#x6B64;&#x6B21;&#x7684;&#x65CB;&#x8F6C;&#x4F1A;&#x56F4;&#x7ED5;&#x70B9;<code>(50,50)</code>&#x8FDB;&#x884C;&#x3002;</p>
+<p><img src="img/17-2.svg" alt=""></p>
+<p>&#x4F46;&#x662F;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5148;&#x65CB;&#x8F6C; 20 &#x5EA6;&#xFF0C;&#x7136;&#x540E;&#x5E73;&#x79FB;&#x539F;&#x70B9;&#x5230;<code>(50,50)</code>&#xFF0C;&#x6B64;&#x6B21;&#x7684;&#x5E73;&#x79FB;&#x4F1A;&#x53D1;&#x751F;&#x5728;&#x5DF2;&#x7ECF;&#x65CB;&#x8F6C;&#x8FC7;&#x7684;&#x5750;&#x6807;&#x7CFB;&#x4E2D;&#xFF0C;&#x56E0;&#x6B64;&#x4F1A;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x5411;&#x3002;&#x53D8;&#x6362;&#x53D1;&#x751F;&#x987A;&#x5E8F;&#x4F1A;&#x5F71;&#x54CD;&#x6700;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x7684;<code>x</code>&#x5750;&#x6807;&#x5904;&#x7AD6;&#x76F4;&#x53CD;&#x8F6C;&#x4E00;&#x5F20;&#x56FE;&#x7247;&#x3002;</p>
+<pre><code class="lang-html">function flipHorizontally(context, around) {
+  context.translate(around, 0);
+  context.scale(-1, 1);
+  context.translate(-around, 0);
+}
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x5148;&#x628A;<code>y</code>&#x8F74;&#x79FB;&#x52A8;&#x5230;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x955C;&#x50CF;&#x6240;&#x5728;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x955C;&#x50CF;&#x7FFB;&#x8F6C;&#xFF0C;&#x6700;&#x540E;&#x628A;<code>y</code>&#x8F74;&#x79FB;&#x52A8;&#x5230;&#x88AB;&#x7FFB;&#x8F6C;&#x7684;&#x5750;&#x6807;&#x7CFB;&#x5F53;&#x4E2D;&#x76F8;&#x5E94;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x56FE;&#x7247;&#x89E3;&#x91CA;&#x4E86;&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x662F;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x7684;&#xFF1A;</p>
+<p><img src="img/17-3.svg" alt=""></p>
+<p>&#x4E0A;&#x56FE;&#x663E;&#x793A;&#x4E86;&#x901A;&#x8FC7;&#x4E2D;&#x7EBF;&#x8FDB;&#x884C;&#x955C;&#x50CF;&#x7FFB;&#x8F6C;&#x524D;&#x540E;&#x7684;&#x5750;&#x6807;&#x7CFB;&#x3002;&#x5BF9;&#x4E09;&#x89D2;&#x5F62;&#x7F16;&#x53F7;&#x6765;&#x8BF4;&#x660E;&#x6BCF;&#x4E00;&#x6B65;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5728;<code>x</code>&#x5750;&#x6807;&#x4E3A;&#x6B63;&#x503C;&#x7684;&#x4F4D;&#x7F6E;&#x7ED8;&#x5236;&#x4E00;&#x4E2A;&#x4E09;&#x89D2;&#x5F62;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x5B83;&#x4F1A;&#x51FA;&#x73B0;&#x5728;&#x56FE;&#x4E2D;&#x4E09;&#x89D2;&#x5F62; 1 &#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x8C03;&#x7528;<code>filpHorizontally</code>&#x9996;&#x5148;&#x505A;&#x4E00;&#x4E2A;&#x5411;&#x53F3;&#x7684;&#x5E73;&#x79FB;&#xFF0C;&#x5F97;&#x5230;&#x4E09;&#x89D2;&#x5F62; 2&#x3002;&#x7136;&#x540E;&#x5C06;&#x5176;&#x7FFB;&#x8F6C;&#x5230;&#x4E09;&#x89D2;&#x5F62; 3 &#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x8FD9;&#x4E0D;&#x662F;&#x5B83;&#x7684;&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;&#x4E2D;&#x7EBF;&#x7FFB;&#x8F6C;&#x4E4B;&#x540E;&#x5E94;&#x8BE5;&#x5728;&#x7684;&#x6700;&#x7EC8;&#x4F4D;&#x7F6E;&#x3002;&#x7B2C;&#x4E8C;&#x6B21;&#x8C03;&#x7528;<code>translate</code>&#x65B9;&#x6CD5;&#x89E3;&#x51B3;&#x4E86;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x5B83;&#x201C;&#x53BB;&#x9664;&#x201D;&#x4E86;&#x6700;&#x521D;&#x7684;&#x5E73;&#x79FB;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x5E76;&#x4E14;&#x4F7F;&#x4E09;&#x89D2;&#x5F62; 4 &#x53D8;&#x6210;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x7684;&#x6548;&#x679C;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6CBF;&#x7740;&#x7279;&#x5F81;&#x7684;&#x7AD6;&#x76F4;&#x4E2D;&#x5FC3;&#x7EBF;&#x7FFB;&#x8F6C;&#x6574;&#x4E2A;&#x5750;&#x6807;&#x7CFB;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x753B;&#x51FA;&#x4F4D;&#x7F6E;&#x4E3A;<code>(100,0)</code>&#x5904;&#x7684;&#x955C;&#x50CF;&#x7279;&#x5F81;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> cx = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;canvas&quot;</span>).getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+  <span class="hljs-keyword">let</span> img = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;img&quot;</span>);
+  img.src = <span class="hljs-string">&quot;img/player.png&quot;</span>;
+  <span class="hljs-keyword">let</span> spriteW = <span class="hljs-number">24</span>, spriteH = <span class="hljs-number">30</span>;
+  img.addEventListener(<span class="hljs-string">&quot;load&quot;</span>, () =&gt; {
+    flipHorizontally(cx, <span class="hljs-number">100</span> + spriteW / <span class="hljs-number">2</span>);
+    cx.drawImage(img, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, spriteW, spriteH,
+                 <span class="hljs-number">100</span>, <span class="hljs-number">0</span>, spriteW, spriteH);
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h2 id="&#x5B58;&#x50A8;&#x4E0E;&#x6E05;&#x9664;&#x56FE;&#x50CF;&#x7684;&#x53D8;&#x6362;&#x72B6;&#x6001;">&#x5B58;&#x50A8;&#x4E0E;&#x6E05;&#x9664;&#x56FE;&#x50CF;&#x7684;&#x53D8;&#x6362;&#x72B6;&#x6001;</h2>
+<p>&#x56FE;&#x50CF;&#x53D8;&#x6362;&#x7684;&#x6548;&#x679C;&#x4F1A;&#x4FDD;&#x7559;&#x4E0B;&#x6765;&#x3002;&#x6211;&#x4EEC;&#x7ED8;&#x5236;&#x51FA;&#x4E00;&#x6B21;&#x955C;&#x50CF;&#x7279;&#x5F81;&#x540E;&#xFF0C;&#x7ED8;&#x5236;&#x5176;&#x4ED6;&#x7279;&#x5F81;&#x65F6;&#x90FD;&#x4F1A;&#x4EA7;&#x751F;&#x955C;&#x50CF;&#x6548;&#x679C;&#xFF0C;&#x8FD9;&#x53EF;&#x80FD;&#x5E76;&#x4E0D;&#x65B9;&#x4FBF;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x9700;&#x8981;&#x4E34;&#x65F6;&#x8F6C;&#x6362;&#x5750;&#x6807;&#x7CFB;&#x7EDF;&#x7684;&#x51FD;&#x6570;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x7ECF;&#x5E38;&#x9700;&#x8981;&#x4FDD;&#x5B58;&#x5F53;&#x524D;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x753B;&#x4E00;&#x4E9B;&#x56FE;&#xFF0C;&#x53D8;&#x6362;&#x56FE;&#x50CF;&#x7136;&#x540E;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x4E4B;&#x524D;&#x7684;&#x56FE;&#x50CF;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5C06;&#x5F53;&#x524D;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7684;&#x6240;&#x6709;&#x56FE;&#x5F62;&#x53D8;&#x6362;&#x4FE1;&#x606F;&#x4FDD;&#x5B58;&#x8D77;&#x6765;&#x3002;&#x63A5;&#x7740;&#xFF0C;&#x51FD;&#x6570;&#x5B8C;&#x6210;&#x5176;&#x5DE5;&#x4F5C;&#xFF0C;&#x5E76;&#x6DFB;&#x52A0;&#x66F4;&#x591A;&#x7684;&#x53D8;&#x6362;&#x3002;&#x6700;&#x540E;&#x6211;&#x4EEC;&#x6062;&#x590D;&#x4E4B;&#x524D;&#x4FDD;&#x5B58;&#x7684;&#x53D8;&#x6362;&#x72B6;&#x6001;&#x3002;</p>
+<p>2D &#x753B;&#x5E03;&#x4E0A;&#x4E0B;&#x6587;&#x7684;<code>save</code>&#x4E0E;<code>restore</code>&#x65B9;&#x6CD5;&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x53D8;&#x6362;&#x7BA1;&#x7406;&#x3002;&#x8FD9;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x7EF4;&#x62A4;&#x53D8;&#x6362;&#x72B6;&#x6001;&#x5806;&#x6808;&#x3002;<code>save</code>&#x65B9;&#x6CD5;&#x5C06;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x538B;&#x5230;&#x5806;&#x6808;&#x4E2D;&#xFF0C;<code>restore</code>&#x65B9;&#x6CD5;&#x5C06;&#x5806;&#x6808;&#x9876;&#x90E8;&#x7684;&#x72B6;&#x6001;&#x5F39;&#x51FA;&#xFF0C;&#x5E76;&#x5C06;&#x8BE5;&#x72B6;&#x6001;&#x4F5C;&#x4E3A;&#x5F53;&#x524D;<code>context</code>&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x793A;&#x4F8B;&#x4E2D;&#x7684;<code>branch</code>&#x51FD;&#x6570;&#x9996;&#x5148;&#x4FEE;&#x6539;&#x53D8;&#x6362;&#x72B6;&#x6001;&#xFF0C;&#x7136;&#x540E;&#x8C03;&#x7528;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#xFF08;&#x672C;&#x4F8B;&#x4E2D;&#x5C31;&#x662F;&#x8BE5;&#x51FD;&#x6570;&#x81EA;&#x8EAB;&#xFF09;&#x7EE7;&#x7EED;&#x5728;&#x7279;&#x5B9A;&#x53D8;&#x6362;&#x72B6;&#x6001;&#x4E2D;&#x8FDB;&#x884C;&#x7ED8;&#x56FE;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x901A;&#x8FC7;&#x753B;&#x51FA;&#x4E00;&#x6761;&#x7EBF;&#x6BB5;&#xFF0C;&#x5E76;&#x628A;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x4E2D;&#x5FC3;&#x79FB;&#x52A8;&#x5230;&#x7EBF;&#x6BB5;&#x7684;&#x7AEF;&#x70B9;&#xFF0C;&#x7136;&#x540E;&#x8C03;&#x7528;&#x81EA;&#x8EAB;&#x4E24;&#x6B21;&#xFF0C;&#x5148;&#x5411;&#x5DE6;&#x65CB;&#x8F6C;&#xFF0C;&#x63A5;&#x7740;&#x5411;&#x53F3;&#x65CB;&#x8F6C;&#xFF0C;&#x6765;&#x753B;&#x51FA;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x6811;&#x4E00;&#x6837;&#x7684;&#x56FE;&#x5F62;&#x3002;&#x6BCF;&#x6B21;&#x8C03;&#x7528;&#x90FD;&#x4F1A;&#x51CF;&#x5C11;&#x6240;&#x753B;&#x5206;&#x652F;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x5F53;&#x957F;&#x5EA6;&#x5C0F;&#x4E8E; 8 &#x7684;&#x65F6;&#x5019;&#x9012;&#x5F52;&#x7ED3;&#x675F;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;600&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;300&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> cx = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;canvas&quot;</span>).getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">branch</span>(<span class="hljs-params">length, angle, scale</span>) </span>{
+    cx.fillRect(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, length);
+    <span class="hljs-keyword">if</span> (length &lt; <span class="hljs-number">8</span>) <span class="hljs-keyword">return</span>;
+    cx.save();
+    cx.translate(<span class="hljs-number">0</span>, length);
+    cx.rotate(-angle);
+    branch(length * scale, angle, scale);
+    cx.rotate(<span class="hljs-number">2</span> * angle);
+    branch(length * scale, angle, scale);
+    cx.restore();
+  }
+  cx.translate(<span class="hljs-number">300</span>, <span class="hljs-number">0</span>);
+  branch(<span class="hljs-number">60</span>, <span class="hljs-number">0.5</span>, <span class="hljs-number">0.8</span>);
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8C03;&#x7528;<code>save</code>&#x4E0E;<code>restore</code>&#x65B9;&#x6CD5;&#xFF0C;&#x7B2C;&#x4E8C;&#x6B21;&#x9012;&#x5F52;&#x8C03;&#x7528;<code>branch</code>&#x5C06;&#x4F1A;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x8C03;&#x7528;&#x7684;&#x4F4D;&#x7F6E;&#x7ED3;&#x675F;&#x3002;&#x5B83;&#x4E0D;&#x4F1A;&#x4E0E;&#x5F53;&#x524D;&#x7684;&#x5206;&#x652F;&#x76F8;&#x8FDE;&#x63A5;&#xFF0C;&#x800C;&#x662F;&#x66F4;&#x52A0;&#x9760;&#x8FD1;&#x4E2D;&#x5FC3;&#x504F;&#x53F3;&#x7B2C;&#x4E00;&#x6B21;&#x8C03;&#x7528;&#x6240;&#x753B;&#x51FA;&#x7684;&#x5206;&#x652F;&#x3002;&#x7ED3;&#x679C;&#x56FE;&#x50CF;&#x4F1A;&#x5F88;&#x6709;&#x8DA3;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x80AF;&#x5B9A;&#x4E0D;&#x662F;&#x4E00;&#x68F5;&#x6811;&#x3002;</p>
+<h2 id="&#x56DE;&#x5230;&#x6E38;&#x620F;">&#x56DE;&#x5230;&#x6E38;&#x620F;</h2>
+<p>&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x5DF2;&#x7ECF;&#x4E86;&#x89E3;&#x4E86;&#x8DB3;&#x591F;&#x591A;&#x7684;&#x753B;&#x5E03;&#x7ED8;&#x56FE;&#x77E5;&#x8BC6;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x57FA;&#x4E8E;&#x753B;&#x5E03;&#x7684;&#x663E;&#x793A;&#x7CFB;&#x7EDF;&#x6765;&#x6539;&#x9020;&#x524D;&#x9762;&#x51E0;&#x7AE0;&#x4E2D;&#x5F00;&#x53D1;&#x7684;&#x6E38;&#x620F;&#x4E86;&#x3002;&#x65B0;&#x7684;&#x754C;&#x9762;&#x4E0D;&#x4F1A;&#x518D;&#x662F;&#x4E00;&#x4E2A;&#x4E2A;&#x8272;&#x5757;&#xFF0C;&#x800C;&#x4F7F;&#x7528;<code>drawImage</code>&#x6765;&#x7ED8;&#x5236;&#x6E38;&#x620F;&#x4E2D;&#x5143;&#x7D20;&#x5BF9;&#x5E94;&#x7684;&#x56FE;&#x7247;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x79CD;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;&#xFF0C;&#x53EB;&#x505A;<code>CanvasDisplay</code>&#xFF0C;&#x652F;&#x6301;&#x7B2C; 14 &#x7AE0;&#x4E2D;&#x7684;<code>DOMDisplay</code>&#x7684;&#x76F8;&#x540C;&#x63A5;&#x53E3;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;<code>setState</code>&#x65B9;&#x6CD5;&#x4E0E;<code>clear</code>&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x9700;&#x8981;&#x6BD4;<code>DOMDisplay</code>&#x591A;&#x4FDD;&#x5B58;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#x3002;&#x8BE5;&#x5BF9;&#x8C61;&#x4E0D;&#x4EC5;&#x9700;&#x8981;&#x4F7F;&#x7528; DOM &#x5143;&#x7D20;&#x7684;&#x6EDA;&#x52A8;&#x4F4D;&#x7F6E;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x8FFD;&#x8E2A;&#x81EA;&#x5DF1;&#x7684;&#x89C6;&#x53E3;&#xFF08;viewport&#xFF09;&#x3002;&#x89C6;&#x53E3;&#x4F1A;&#x544A;&#x8BC9;&#x6211;&#x4EEC;&#x76EE;&#x524D;&#x5904;&#x4E8E;&#x54EA;&#x4E2A;&#x5173;&#x5361;&#x3002;&#x6700;&#x540E;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x4F1A;&#x4FDD;&#x5B58;&#x4E00;&#x4E2A;<code>filpPlayer</code>&#x5C5E;&#x6027;&#xFF0C;&#x786E;&#x4FDD;&#x5373;&#x4FBF;&#x73A9;&#x5BB6;&#x7AD9;&#x7ACB;&#x4E0D;&#x52A8;&#x65F6;&#xFF0C;&#x5B83;&#x9762;&#x671D;&#x7684;&#x65B9;&#x5411;&#x4E5F;&#x4F1A;&#x4E0E;&#x4E0A;&#x6B21;&#x79FB;&#x52A8;&#x6240;&#x9762;&#x5411;&#x7684;&#x65B9;&#x5411;&#x4E00;&#x81F4;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CanvasDisplay</span> </span>{
+  <span class="hljs-keyword">constructor</span>(parent, level) {
+    <span class="hljs-keyword">this</span>.canvas = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;canvas&quot;</span>);
+    <span class="hljs-keyword">this</span>.canvas.width = <span class="hljs-built_in">Math</span>.min(<span class="hljs-number">600</span>, level.width * scale);
+    <span class="hljs-keyword">this</span>.canvas.height = <span class="hljs-built_in">Math</span>.min(<span class="hljs-number">450</span>, level.height * scale);
+    parent.appendChild(<span class="hljs-keyword">this</span>.canvas);
+    <span class="hljs-keyword">this</span>.cx = <span class="hljs-keyword">this</span>.canvas.getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+
+    <span class="hljs-keyword">this</span>.flipPlayer = <span class="hljs-literal">false</span>;
+
+    <span class="hljs-keyword">this</span>.viewport = {
+      left: <span class="hljs-number">0</span>,
+      top: <span class="hljs-number">0</span>,
+      width: <span class="hljs-keyword">this</span>.canvas.width / scale,
+      height: <span class="hljs-keyword">this</span>.canvas.height / scale
+    };
+  }
+
+  clear() {
+    <span class="hljs-keyword">this</span>.canvas.remove();
+  }
+}
+</code></pre>
+<p><code>setState</code>&#x65B9;&#x6CD5;&#x9996;&#x5148;&#x8BA1;&#x7B97;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x89C6;&#x53E3;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x9002;&#x5F53;&#x7684;&#x4F4D;&#x7F6E;&#x7ED8;&#x5236;&#x6E38;&#x620F;&#x573A;&#x666F;&#x3002;</p>
+<pre><code class="lang-js">CanvasDisplay.prototype.setState = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">state</span>) </span>{
+  <span class="hljs-keyword">this</span>.updateViewport(state);
+  <span class="hljs-keyword">this</span>.clearDisplay(state.status);
+  <span class="hljs-keyword">this</span>.drawBackground(state.level);
+  <span class="hljs-keyword">this</span>.drawActors(state.actors);
+};
+</code></pre>
+<p>&#x4E0E;<code>DOMDisplay</code>&#x76F8;&#x53CD;&#xFF0C;&#x8FD9;&#x79CD;&#x663E;&#x793A;&#x98CE;&#x683C;&#x786E;&#x5B9E;&#x5FC5;&#x987B;&#x5728;&#x6BCF;&#x6B21;&#x66F4;&#x65B0;&#x65F6;&#x91CD;&#x65B0;&#x7ED8;&#x5236;&#x80CC;&#x666F;&#x3002; &#x56E0;&#x4E3A;&#x753B;&#x5E03;&#x4E0A;&#x7684;&#x5F62;&#x72B6;&#x53EA;&#x662F;&#x50CF;&#x7D20;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x6211;&#x4EEC;&#x7ED8;&#x5236;&#x5B83;&#x4EEC;&#x4E4B;&#x540E;&#xFF0C;&#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x65B9;&#x6CD5;&#x6765;&#x79FB;&#x52A8;&#x5B83;&#x4EEC;&#xFF08;&#x6216;&#x5C06;&#x5B83;&#x4EEC;&#x79FB;&#x9664;&#xFF09;&#x3002; &#x66F4;&#x65B0;&#x753B;&#x5E03;&#x663E;&#x793A;&#x7684;&#x552F;&#x4E00;&#x65B9;&#x6CD5;&#xFF0C;&#x662F;&#x6E05;&#x9664;&#x5B83;&#x5E76;&#x91CD;&#x65B0;&#x7ED8;&#x5236;&#x573A;&#x666F;&#x3002; &#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x4E86;&#x6EDA;&#x52A8;&#xFF0C;&#x8FD9;&#x8981;&#x6C42;&#x80CC;&#x666F;&#x5904;&#x4E8E;&#x4E0D;&#x540C;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p><code>updateViewport</code>&#x65B9;&#x6CD5;&#x4E0E;<code>DOMDisplay</code>&#x7684;<code>scrollPlayerintoView</code>&#x65B9;&#x6CD5;&#x76F8;&#x4F3C;&#x3002;&#x5B83;&#x68C0;&#x67E5;&#x73A9;&#x5BB6;&#x662F;&#x5426;&#x8FC7;&#x4E8E;&#x63A5;&#x8FD1;&#x5C4F;&#x5E55;&#x7684;&#x8FB9;&#x7F18;&#xFF0C;&#x5E76;&#x4E14;&#x5F53;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x53D1;&#x751F;&#x65F6;&#x79FB;&#x52A8;&#x89C6;&#x53E3;&#x3002;</p>
+<pre><code class="lang-js">CanvasDisplay.prototype.updateViewport = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">state</span>) </span>{
+  <span class="hljs-keyword">let</span> view = <span class="hljs-keyword">this</span>.viewport, margin = view.width / <span class="hljs-number">3</span>;
+  <span class="hljs-keyword">let</span> player = state.player;
+  <span class="hljs-keyword">let</span> center = player.pos.plus(player.size.times(<span class="hljs-number">0.5</span>));
+
+  <span class="hljs-keyword">if</span> (center.x &lt; view.left + margin) {
+    view.left = <span class="hljs-built_in">Math</span>.max(center.x - margin, <span class="hljs-number">0</span>);
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (center.x &gt; view.left + view.width - margin) {
+    view.left = <span class="hljs-built_in">Math</span>.min(center.x + margin - view.width,
+                         state.level.width - view.width);
+  }
+  <span class="hljs-keyword">if</span> (center.y &lt; view.top + margin) {
+    view.top = <span class="hljs-built_in">Math</span>.max(center.y - margin, <span class="hljs-number">0</span>);
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (center.y &gt; view.top + view.height - margin) {
+    view.top = <span class="hljs-built_in">Math</span>.min(center.y + margin - view.height,
+                        state.level.height - view.height);
+  }
+};
+</code></pre>
+<p>&#x5BF9;<code>Math.max</code>&#x548C;<code>Math.min</code>&#x7684;&#x8C03;&#x7528;&#x4FDD;&#x8BC1;&#x4E86;&#x89C6;&#x53E3;&#x4E0D;&#x4F1A;&#x663E;&#x793A;&#x5F53;&#x524D;&#x8FD9;&#x5C42;&#x4E4B;&#x5916;&#x7684;&#x7269;&#x4F53;&#x3002;<code>Math.max(x,0)&#x4FDD;&#x8BC1;&#x4E86;&#x7ED3;&#x679C;&#x6570;&#x503C;&#x4E0D;&#x4F1A;&#x5C0F;&#x4E8E; 0&#x3002;&#x540C;&#x6837;&#x5730;&#xFF0C;</code>Math.min`&#x4FDD;&#x8BC1;&#x4E86;&#x6570;&#x503C;&#x4FDD;&#x6301;&#x5728;&#x7ED9;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x3002;</p>
+<p>&#x5728;&#x6E05;&#x7A7A;&#x56FE;&#x50CF;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x4F9D;&#x636E;&#x6E38;&#x620F;&#x662F;&#x83B7;&#x80DC;&#xFF08;&#x660E;&#x4EAE;&#x7684;&#x989C;&#x8272;&#xFF09;&#x8FD8;&#x662F;&#x5931;&#x8D25;&#xFF08;&#x7070;&#x6697;&#x7684;&#x989C;&#x8272;&#xFF09;&#x6765;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x989C;&#x8272;&#x3002;</p>
+<pre><code class="lang-js">CanvasDisplay.prototype.clearDisplay = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">status</span>) </span>{
+  <span class="hljs-keyword">if</span> (status == <span class="hljs-string">&quot;won&quot;</span>) {
+    <span class="hljs-keyword">this</span>.cx.fillStyle = <span class="hljs-string">&quot;rgb(68, 191, 255)&quot;</span>;
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (status == <span class="hljs-string">&quot;lost&quot;</span>) {
+    <span class="hljs-keyword">this</span>.cx.fillStyle = <span class="hljs-string">&quot;rgb(44, 136, 214)&quot;</span>;
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">this</span>.cx.fillStyle = <span class="hljs-string">&quot;rgb(52, 166, 251)&quot;</span>;
+  }
+  <span class="hljs-keyword">this</span>.cx.fillRect(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>,
+                   <span class="hljs-keyword">this</span>.canvas.width, <span class="hljs-keyword">this</span>.canvas.height);
+};
+</code></pre>
+<p>&#x8981;&#x753B;&#x51FA;&#x4E00;&#x4E2A;&#x80CC;&#x666F;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x6765;&#x81EA;&#x4E0A;&#x4E00;&#x8282;&#x7684;<code>touches</code>&#x65B9;&#x6CD5;&#x4E2D;&#x7684;&#x76F8;&#x540C;&#x6280;&#x5DE7;&#xFF0C;&#x904D;&#x5386;&#x5728;&#x5F53;&#x524D;&#x89C6;&#x53E3;&#x4E2D;&#x53EF;&#x89C1;&#x7684;&#x6240;&#x6709;&#x74E6;&#x7247;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> otherSprites = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;img&quot;</span>);
+otherSprites.src = <span class="hljs-string">&quot;img/sprites.png&quot;</span>;
+
+CanvasDisplay.prototype.drawBackground = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">level</span>) </span>{
+  <span class="hljs-keyword">let</span> {left, top, width, height} = <span class="hljs-keyword">this</span>.viewport;
+  <span class="hljs-keyword">let</span> xStart = <span class="hljs-built_in">Math</span>.floor(left);
+  <span class="hljs-keyword">let</span> xEnd = <span class="hljs-built_in">Math</span>.ceil(left + width);
+  <span class="hljs-keyword">let</span> yStart = <span class="hljs-built_in">Math</span>.floor(top);
+  <span class="hljs-keyword">let</span> yEnd = <span class="hljs-built_in">Math</span>.ceil(top + height);
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> y = yStart; y &lt; yEnd; y++) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> x = xStart; x &lt; xEnd; x++) {
+      <span class="hljs-keyword">let</span> tile = level.rows[y][x];
+      <span class="hljs-keyword">if</span> (tile == <span class="hljs-string">&quot;empty&quot;</span>) <span class="hljs-keyword">continue</span>;
+      <span class="hljs-keyword">let</span> screenX = (x - left) * scale;
+      <span class="hljs-keyword">let</span> screenY = (y - top) * scale;
+      <span class="hljs-keyword">let</span> tileX = tile == <span class="hljs-string">&quot;lava&quot;</span> ? scale : <span class="hljs-number">0</span>;
+      <span class="hljs-keyword">this</span>.cx.drawImage(otherSprites,
+                        tileX,         <span class="hljs-number">0</span>, scale, scale,
+                        screenX, screenY, scale, scale);
+    }
+  }
+};
+</code></pre>
+<p>&#x975E;&#x7A7A;&#x7684;&#x74E6;&#x7247;&#x662F;&#x4F7F;&#x7528;<code>drawImage</code>&#x7ED8;&#x5236;&#x7684;&#x3002;<code>otherSprites</code>&#x5305;&#x542B;&#x4E86;&#x63CF;&#x8FF0;&#x9664;&#x4E86;&#x73A9;&#x5BB6;&#x4E4B;&#x5916;&#x9700;&#x8981;&#x7528;&#x5230;&#x7684;&#x56FE;&#x7247;&#x3002;&#x5B83;&#x5305;&#x542B;&#x4E86;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x7684;&#x5899;&#x4E0A;&#x7684;&#x74E6;&#x7247;&#xFF0C;&#x706B;&#x5C71;&#x5CA9;&#x74E6;&#x7247;&#x4EE5;&#x53CA;&#x7CBE;&#x7075;&#x786C;&#x5E01;&#x3002;</p>
+<p><img src="img/17-4.png" alt=""></p>
+<p>&#x80CC;&#x666F;&#x74E6;&#x7247;&#x662F;<code>20&#xD7;20</code>&#x50CF;&#x7D20;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5C06;&#x8981;&#x7528;&#x5230;<code>DOMDisplay</code>&#x4E2D;&#x7684;&#x76F8;&#x540C;&#x6BD4;&#x4F8B;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x706B;&#x5C71;&#x5CA9;&#x74E6;&#x7247;&#x7684;&#x504F;&#x79FB;&#x662F; 20&#xFF0C;&#x5899;&#x9762;&#x7684;&#x504F;&#x79FB;&#x662F; 0&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x7CBE;&#x7075;&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#x3002;&#x8C03;&#x7528;<code>drawImage</code>&#x65F6;&#x4F7F;&#x7528;&#x4E00;&#x5E45;&#x5E76;&#x672A;&#x52A0;&#x8F7D;&#x5B8C;&#x6BD5;&#x7684;&#x56FE;&#x7247;&#x4E0D;&#x4F1A;&#x6709;&#x4EFB;&#x4F55;&#x6548;&#x679C;&#x3002;&#x56E0;&#x4E3A;&#x56FE;&#x7247;&#x4ECD;&#x7136;&#x5728;&#x52A0;&#x8F7D;&#x5F53;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x6B63;&#x786E;&#x5730;&#x753B;&#x51FA;&#x6E38;&#x620F;&#x7684;&#x524D;&#x51E0;&#x5E27;&#x3002;&#x4F46;&#x662F;&#x8FD9;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x4E25;&#x91CD;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x6301;&#x7EED;&#x66F4;&#x65B0;&#x8367;&#x5E55;&#xFF0C;&#x6B63;&#x786E;&#x7684;&#x573A;&#x666F;&#x4F1A;&#x5728;&#x52A0;&#x8F7D;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#x7ACB;&#x5373;&#x51FA;&#x73B0;&#x3002;</p>
+<p>&#x524D;&#x9762;&#x5C55;&#x793A;&#x8FC7;&#x7684;&#x8D70;&#x8DEF;&#x7684;&#x7279;&#x5F81;&#x5C06;&#x4F1A;&#x88AB;&#x7528;&#x6765;&#x4EE3;&#x66FF;&#x73A9;&#x5BB6;&#x3002;&#x7ED8;&#x5236;&#x5B83;&#x7684;&#x4EE3;&#x7801;&#x9700;&#x8981;&#x6839;&#x636E;&#x73A9;&#x5BB6;&#x7684;&#x5F53;&#x524D;&#x52A8;&#x4F5C;&#x9009;&#x62E9;&#x6B63;&#x786E;&#x7684;&#x52A8;&#x4F5C;&#x548C;&#x65B9;&#x5411;&#x3002;&#x524D; 8 &#x4E2A;&#x5B50;&#x753B;&#x9762;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x8D70;&#x8DEF;&#x7684;&#x52A8;&#x753B;&#x3002;&#x5F53;&#x73A9;&#x5BB6;&#x6CBF;&#x7740;&#x5730;&#x677F;&#x79FB;&#x52A8;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x6839;&#x636E;&#x5F53;&#x524D;&#x65F6;&#x95F4;&#x628A;&#x4ED6;&#x56F4;&#x8D77;&#x6765;&#x3002;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x6BCF; 60 &#x6BEB;&#x79D2;&#x5207;&#x6362;&#x4E00;&#x6B21;&#x5E27;&#xFF0C;&#x6240;&#x4EE5;&#x65F6;&#x95F4;&#x5148;&#x9664;&#x4EE5; 60&#x3002;&#x5F53;&#x73A9;&#x5BB6;&#x7AD9;&#x7ACB;&#x4E0D;&#x52A8;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x753B;&#x51FA;&#x7B2C;&#x4E5D;&#x5F20;&#x5B50;&#x753B;&#x9762;&#x3002;&#x5F53;&#x7AD6;&#x76F4;&#x65B9;&#x5411;&#x7684;&#x901F;&#x5EA6;&#x4E0D;&#x4E3A; 0&#xFF0C;&#x4ECE;&#x800C;&#x88AB;&#x5224;&#x65AD;&#x4E3A;&#x8DF3;&#x8DC3;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7B2C; 10 &#x5F20;&#xFF0C;&#x4E5F;&#x662F;&#x6700;&#x53F3;&#x8FB9;&#x7684;&#x5B50;&#x753B;&#x9762;&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x5B50;&#x753B;&#x9762;&#x5BBD;&#x5EA6;&#x4E3A; 24 &#x50CF;&#x7D20;&#x800C;&#x4E0D;&#x662F; 16 &#x50CF;&#x7D20;&#xFF0C;&#x4F1A;&#x7A0D;&#x5FAE;&#x6BD4;&#x73A9;&#x5BB6;&#x7684;&#x5BF9;&#x8C61;&#x5BBD;&#xFF0C;&#x8FD9;&#x65F6;&#x4E3A;&#x4E86;&#x817E;&#x51FA;&#x811A;&#x548C;&#x624B;&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x6839;&#x636E;&#x67D0;&#x4E2A;&#x7ED9;&#x5B9A;&#x7684;&#x503C;&#xFF08;<code>playerXOverlap</code>&#xFF09;&#x8C03;&#x6574;<code>x</code>&#x5750;&#x6807;&#x7684;&#x503C;&#x4EE5;&#x53CA;&#x5BBD;&#x5EA6;&#x503C;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> playerSprites = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&quot;img&quot;</span>);
+playerSprites.src = <span class="hljs-string">&quot;img/player.png&quot;</span>;
+<span class="hljs-keyword">const</span> playerXOverlap = <span class="hljs-number">4</span>;
+
+CanvasDisplay.prototype.drawPlayer = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">player, x, y,
+                                              width, height</span>)</span>{
+  width += playerXOverlap * <span class="hljs-number">2</span>;
+  x -= playerXOverlap;
+  <span class="hljs-keyword">if</span> (player.speed.x != <span class="hljs-number">0</span>) {
+    <span class="hljs-keyword">this</span>.flipPlayer = player.speed.x &lt; <span class="hljs-number">0</span>;
+  }
+
+  <span class="hljs-keyword">let</span> tile = <span class="hljs-number">8</span>;
+  <span class="hljs-keyword">if</span> (player.speed.y != <span class="hljs-number">0</span>) {
+    tile = <span class="hljs-number">9</span>;
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (player.speed.x != <span class="hljs-number">0</span>) {
+    tile = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Date</span>.now() / <span class="hljs-number">60</span>) % <span class="hljs-number">8</span>;
+  }
+
+  <span class="hljs-keyword">this</span>.cx.save();
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.flipPlayer) {
+    flipHorizontally(<span class="hljs-keyword">this</span>.cx, x + width / <span class="hljs-number">2</span>);
+  }
+  <span class="hljs-keyword">let</span> tileX = tile * width;
+  <span class="hljs-keyword">this</span>.cx.drawImage(playerSprites, tileX, <span class="hljs-number">0</span>, width, height,
+                                   x,     y, width, height);
+  <span class="hljs-keyword">this</span>.cx.restore();
+};
+</code></pre>
+<p><code>drawPlayer</code>&#x65B9;&#x6CD5;&#x7531;<code>drawActors</code>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x8D1F;&#x8D23;&#x753B;&#x51FA;&#x6E38;&#x620F;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x89D2;&#x8272;&#x3002;</p>
+<pre><code class="lang-js">CanvasDisplay.prototype.drawActors = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">actors</span>) </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> actor <span class="hljs-keyword">of</span> actors) {
+    <span class="hljs-keyword">let</span> width = actor.size.x * scale;
+    <span class="hljs-keyword">let</span> height = actor.size.y * scale;
+    <span class="hljs-keyword">let</span> x = (actor.pos.x - <span class="hljs-keyword">this</span>.viewport.left) * scale;
+    <span class="hljs-keyword">let</span> y = (actor.pos.y - <span class="hljs-keyword">this</span>.viewport.top) * scale;
+    <span class="hljs-keyword">if</span> (actor.type == <span class="hljs-string">&quot;player&quot;</span>) {
+      <span class="hljs-keyword">this</span>.drawPlayer(actor, x, y, width, height);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">let</span> tileX = (actor.type == <span class="hljs-string">&quot;coin&quot;</span> ? <span class="hljs-number">2</span> : <span class="hljs-number">1</span>) * scale;
+      <span class="hljs-keyword">this</span>.cx.drawImage(otherSprites,
+                        tileX, <span class="hljs-number">0</span>, width, height,
+                        x,     y, width, height);
+    }
+  }
+};
+</code></pre>
+<p>&#x5F53;&#x9700;&#x8981;&#x7ED8;&#x5236;&#x4E00;&#x4E9B;&#x975E;&#x73A9;&#x5BB6;&#x5143;&#x7D20;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x68C0;&#x67E5;&#x5B83;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x6765;&#x627E;&#x5230;&#x4E0E;&#x6B63;&#x786E;&#x7684;&#x5B50;&#x753B;&#x9762;&#x7684;&#x504F;&#x79FB;&#x503C;&#x3002;&#x7194;&#x5CA9;&#x74F7;&#x7816;&#x51FA;&#x73B0;&#x5728;&#x504F;&#x79FB;&#x4E3A; 20 &#x7684;&#x5B50;&#x753B;&#x9762;&#xFF0C;&#x91D1;&#x5E01;&#x7684;&#x5B50;&#x753B;&#x9762;&#x51FA;&#x73B0;&#x5728;&#x504F;&#x79FB;&#x503C;&#x4E3A; 40 &#x7684;&#x5730;&#x65B9;&#xFF08;&#x653E;&#x5927;&#x4E86;&#x4E24;&#x500D;&#xFF09;&#x3002;</p>
+<p>&#x5F53;&#x8BA1;&#x7B97;&#x89D2;&#x8272;&#x7684;&#x4F4D;&#x7F6E;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x51CF;&#x6389;&#x89C6;&#x53E3;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x56E0;&#x4E3A;<code>(0,0)</code>&#x5728;&#x6211;&#x4EEC;&#x7684;&#x753B;&#x5E03;&#x5750;&#x6807;&#x7CFB;&#x4E2D;&#x4EE3;&#x8868;&#x7740;&#x89C6;&#x53E3;&#x5C42;&#x9762;&#x7684;&#x5DE6;&#x4E0A;&#x89D2;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x8BE5;&#x5173;&#x5361;&#x7684;&#x5DE6;&#x4E0A;&#x89D2;&#x3002;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>translate</code>&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x4F5C;&#x7528;&#x4E8E;&#x6240;&#x6709;&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x6587;&#x6863;&#x5C06;&#x65B0;&#x7684;&#x663E;&#x793A;&#x5C4F;&#x63D2;&#x5165;<code>runGame</code>&#x4E2D;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="undefined">
+    runGame(GAME_LEVELS, CanvasDisplay);
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<h2 id="&#x9009;&#x62E9;&#x56FE;&#x50CF;&#x63A5;&#x53E3;">&#x9009;&#x62E9;&#x56FE;&#x50CF;&#x63A5;&#x53E3;</h2>
+<p>&#x6240;&#x4EE5;&#x5F53;&#x4F60;&#x9700;&#x8981;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x7ED8;&#x56FE;&#x65F6;&#xFF0C;&#x4F60;&#x90FD;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x7EAF;&#x7CB9;&#x7684; HTML&#x3001;SVG &#x6216;&#x753B;&#x5E03;&#x3002;&#x6CA1;&#x6709;&#x552F;&#x4E00;&#x7684;&#x6700;&#x9002;&#x5408;&#x7684;&#x4E14;&#x5728;&#x6240;&#x6709;&#x52A8;&#x753B;&#x4E2D;&#x90FD;&#x662F;&#x6700;&#x597D;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x6BCF;&#x4E2A;&#x9009;&#x62E9;&#x90FD;&#x6709;&#x5B83;&#x7684;&#x5229;&#x4E0E;&#x5F0A;&#x3002;</p>
+<p>&#x5355;&#x7EAF;&#x7684; HTML &#x7684;&#x4F18;&#x70B9;&#x662F;&#x7B80;&#x5355;&#x3002;&#x5B83;&#x4E5F;&#x53EF;&#x4EE5;&#x5F88;&#x597D;&#x5730;&#x4E0E;&#x6587;&#x5B57;&#x96C6;&#x6210;&#x4F7F;&#x7528;&#x3002;SVG &#x4E0E;&#x753B;&#x5E03;&#x90FD;&#x53EF;&#x4EE5;&#x5141;&#x8BB8;&#x4F60;&#x7ED8;&#x5236;&#x6587;&#x5B57;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x4EEC;&#x4E0D;&#x4F1A;&#x53EA;&#x901A;&#x8FC7;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x6765;&#x5E2E;&#x52A9;&#x4F60;&#x653E;&#x7F6E;<code>text</code>&#x6216;&#x8005;&#x5305;&#x88C5;&#x5B83;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E; HTML &#x7684;&#x56FE;&#x50CF;&#x4E2D;&#xFF0C;&#x5305;&#x542B;&#x6587;&#x672C;&#x5757;&#x66F4;&#x52A0;&#x7B80;&#x5355;&#x3002;</p>
+<p>SVG &#x53EF;&#x4EE5;&#x88AB;&#x7528;&#x6765;&#x5236;&#x9020;&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x7F29;&#x653E;&#x800C;&#x4ECD;&#x7136;&#x6E05;&#x6670;&#x7684;&#x56FE;&#x50CF;&#x3002;&#x4E0E; HTML &#x76F8;&#x53CD;&#xFF0C;&#x5B83;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x4E3A;&#x7ED8;&#x56FE;&#x800C;&#x8BBE;&#x8BA1;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x66F4;&#x9002;&#x5408;&#x4E8E;&#x6B64;&#x76EE;&#x7684;&#x3002;</p>
+<p>SVG &#x4E0E; HTML &#x90FD;&#x4F1A;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF08;DOM&#xFF09;&#xFF0C;&#x5B83;&#x8868;&#x793A;&#x4F60;&#x7684;&#x56FE;&#x7247;&#x3002;&#x8FD9;&#x4F7F;&#x5F97;&#x5728;&#x7ED8;&#x5236;&#x5143;&#x7D20;&#x4E4B;&#x540E;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x66F4;&#x4E3A;&#x53EF;&#x80FD;&#x3002;&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x91CD;&#x590D;&#x7684;&#x4FEE;&#x6539;&#x5728;&#x4E00;&#x5F20;&#x5927;&#x56FE;&#x7247;&#x4E2D;&#x7684;&#x4E00;&#x5C0F;&#x90E8;&#x5206;&#xFF0C;&#x6765;&#x5BF9;&#x7528;&#x6237;&#x7684;&#x52A8;&#x4F5C;&#x8FDB;&#x884C;&#x54CD;&#x5E94;&#x6216;&#x8005;&#x4F5C;&#x4E3A;&#x52A8;&#x753B;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x65F6;&#xFF0C;&#x5728;&#x753B;&#x5E03;&#x91CC;&#x505A;&#x8FD9;&#x4EF6;&#x4E8B;&#x60C5;&#x5C06;&#x4F1A;&#x6781;&#x5176;&#x7684;&#x6602;&#x8D35;&#x3002;DOM &#x4E5F;&#x53EF;&#x4EE5;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x5728;&#x56FE;&#x7247;&#x4E0A;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF08;&#x751A;&#x81F3;&#x5728; SVG &#x753B;&#x51FA;&#x7684;&#x56FE;&#x5F62;&#x4E0A;&#xFF09;&#x6CE8;&#x518C;&#x9F20;&#x6807;&#x4E8B;&#x4EF6;&#x7684;&#x5904;&#x7406;&#x5668;&#x3002;&#x5728;&#x753B;&#x5E03;&#x91CC;&#x5219;&#x5B9E;&#x73B0;&#x4E0D;&#x4E86;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x753B;&#x5E03;&#x7684;&#x57FA;&#x4E8E;&#x50CF;&#x7D20;&#x7684;&#x65B9;&#x6CD5;&#x5728;&#x9700;&#x8981;&#x7ED8;&#x5236;&#x5927;&#x91CF;&#x7684;&#x5FAE;&#x5C0F;&#x5143;&#x7D20;&#x65F6;&#x4F1A;&#x6709;&#x4F18;&#x52BF;&#x3002;&#x5B83;&#x4E0D;&#x4F1A;&#x6784;&#x5EFA;&#x65B0;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x800C;&#x662F;&#x4EC5;&#x4EC5;&#x91CD;&#x590D;&#x7684;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x50CF;&#x7D20;&#x4E0A;&#x7ED8;&#x5236;&#xFF0C;&#x8FD9;&#x4F7F;&#x5F97;&#x753B;&#x5E03;&#x5728;&#x6BCF;&#x4E2A;&#x56FE;&#x5F62;&#x4E0A;&#x62E5;&#x6709;&#x66F4;&#x4F4E;&#x7684;&#x6D88;&#x8017;&#x3002;</p>
+<p>&#x6709;&#x4E00;&#x4E9B;&#x6548;&#x679C;&#xFF0C;&#x50CF;&#x5728;&#x9010;&#x50CF;&#x7D20;&#x7684;&#x6E32;&#x67D3;&#x4E00;&#x4E2A;&#x573A;&#x666F;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;&#x4F7F;&#x7528;&#x5149;&#x7EBF;&#x8FFD;&#x8E2A;&#xFF09;&#x6216;&#x8005;&#x4F7F;&#x7528; javaScript &#x5BF9;&#x4E00;&#x5F20;&#x56FE;&#x7247;&#x8FDB;&#x884C;&#x540E;&#x52A0;&#x5DE5;&#xFF08;&#x865A;&#x5316;&#x6216;&#x8005;&#x626D;&#x66F2;&#xFF09;&#xFF0C;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x57FA;&#x4E8E;&#x50CF;&#x7D20;&#x7684;&#x6280;&#x672F;&#x6765;&#x8FDB;&#x884C;&#x771F;&#x5B9E;&#x7684;&#x5904;&#x7406;&#x3002;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x60F3;&#x8981;&#x5C06;&#x8FD9;&#x4E9B;&#x6280;&#x672F;&#x6574;&#x5408;&#x8D77;&#x6765;&#x4F7F;&#x7528;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x7528; SVG &#x6216;&#x8005;&#x753B;&#x5E03;&#x753B;&#x51FA;&#x4E00;&#x4E2A;&#x56FE;&#x5F62;&#xFF0C;&#x4F46;&#x662F;&#x901A;&#x8FC7;&#x5C06;&#x4E00;&#x4E2A; HTML &#x5143;&#x7D20;&#x653E;&#x5728;&#x56FE;&#x7247;&#x7684;&#x9876;&#x7AEF;&#x6765;&#x5C55;&#x793A;&#x50CF;&#x7D20;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x4E00;&#x4E9B;&#x8981;&#x6C42;&#x4F4E;&#x7684;&#x7A0B;&#x5E8F;&#x6765;&#x8BF4;&#xFF0C;&#x9009;&#x62E9;&#x54EA;&#x4E2A;&#x63A5;&#x53E3;&#x5E76;&#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x592A;&#x5927;&#x7684;&#x533A;&#x522B;&#x3002;&#x56E0;&#x4E3A;&#x4E0D;&#x9700;&#x8981;&#x7ED8;&#x5236;&#x6587;&#x5B57;&#xFF0C;&#x5904;&#x7406;&#x9F20;&#x6807;&#x4EA4;&#x4E92;&#x6216;&#x8005;&#x5904;&#x7406;&#x5927;&#x91CF;&#x7684;&#x5143;&#x7D20;&#x3002;&#x6211;&#x4EEC;&#x5728;&#x672C;&#x7AE0;&#x4E3A;&#x6E38;&#x620F;&#x6784;&#x5EFA;&#x7684;&#x663E;&#x793A;&#x5C4F;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x4E09;&#x79CD;&#x56FE;&#x50CF;&#x6280;&#x672F;&#x4E2D;&#x7684;&#x4EFB;&#x610F;&#x4E00;&#x79CD;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<h2 id="&#x672C;&#x7AE0;&#x5C0F;&#x7ED3;">&#x672C;&#x7AE0;&#x5C0F;&#x7ED3;</h2>
+<p>&#x5728;&#x672C;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8BA8;&#x8BBA;&#x4E86;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x7ED8;&#x5236;&#x56FE;&#x5F62;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x91CD;&#x70B9;&#x5173;&#x6CE8;&#x4E86;<code>&lt;canvas&gt;</code>&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;<code>canvas</code>&#x8282;&#x70B9;&#x4EE3;&#x8868;&#x4E86;&#x6211;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x7ED8;&#x5236;&#x5728;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x4E00;&#x7247;&#x533A;&#x57DF;&#x3002;&#x8FD9;&#x4E2A;&#x7ED8;&#x56FE;&#x52A8;&#x4F5C;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x7531;<code>getContext</code>&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x7684;&#x7ED8;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;&#x5BF9;&#x8C61;&#x5B8C;&#x6210;&#x7684;&#x3002;</p>
+<p>2D &#x7ED8;&#x56FE;&#x63A5;&#x53E3;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x586B;&#x5145;&#x6216;&#x8005;&#x62C9;&#x4F38;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;&#x56FE;&#x5F62;&#x3002;&#x8FD9;&#x4E2A;&#x4E0A;&#x4E0B;&#x6587;&#x7684;<code>fillStyle</code>&#x5C5E;&#x6027;&#x51B3;&#x5B9A;&#x4E86;&#x56FE;&#x5F62;&#x7684;&#x586B;&#x5145;&#x65B9;&#x5F0F;&#x3002;<code>strokeStyle</code>&#x548C;<code>lineWidth</code>&#x5C5E;&#x6027;&#x7528;&#x6765;&#x63A7;&#x5236;&#x7EBF;&#x6761;&#x7684;&#x7ED8;&#x5236;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x77E9;&#x5F62;&#x4E0E;&#x6587;&#x5B57;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x6765;&#x7ED8;&#x5236;&#x3002;&#x91C7;&#x7528;<code>fillRect</code>&#x548C;<code>strokeRect</code>&#x65B9;&#x6CD5;&#x7ED8;&#x5236;&#x77E9;&#x5F62;&#xFF0C;&#x540C;&#x65F6;&#x91C7;&#x7528;<code>fillText</code>&#x548C;<code>strokeText</code>&#x65B9;&#x6CD5;&#x7ED8;&#x5236;&#x6587;&#x5B57;&#x3002;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x56FE;&#x5F62;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x9996;&#x5148;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#x3002;</p>
+<p>&#x8C03;&#x7528;<code>beginPath</code>&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8DEF;&#x5F84;&#x3002;&#x5F88;&#x591A;&#x5176;&#x4ED6;&#x7684;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5411;&#x5F53;&#x524D;&#x7684;&#x8DEF;&#x5F84;&#x6DFB;&#x52A0;&#x7EBF;&#x6761;&#x548C;&#x66F2;&#x7EBF;&#x3002;&#x6BD4;&#x5982;&#xFF0C;<code>lineTo</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x4E00;&#x6761;&#x76F4;&#x7EBF;&#x3002;&#x5F53;&#x4E00;&#x6761;&#x8DEF;&#x5F84;&#x753B;&#x5B8C;&#x65F6;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x88AB;<code>fill</code>&#x65B9;&#x6CD5;&#x586B;&#x5145;&#x6216;&#x8005;&#x88AB;<code>stroke</code>&#x65B9;&#x6CD5;&#x52FE;&#x52D2;&#x8F6E;&#x5ED3;&#x3002;</p>
+<p>&#x4ECE;&#x4E00;&#x5F20;&#x56FE;&#x7247;&#x6216;&#x8005;&#x53E6;&#x4E00;&#x4E2A;&#x753B;&#x5E03;&#x4E0A;&#x79FB;&#x52A8;&#x50CF;&#x7D20;&#x5230;&#x6211;&#x4EEC;&#x7684;&#x753B;&#x5E03;&#x4E0A;&#x53EF;&#x4EE5;&#x7528;<code>drawImage</code>&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7ED8;&#x5236;&#x4E86;&#x6574;&#x4E2A;&#x539F;&#x56FE;&#x50CF;&#xFF0C;&#x4F46;&#x662F;&#x901A;&#x8FC7;&#x7ED9;&#x5B83;&#x66F4;&#x591A;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x62F7;&#x8D1D;&#x4E00;&#x5F20;&#x56FE;&#x7247;&#x7684;&#x67D0;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x533A;&#x57DF;&#x3002;&#x6211;&#x4EEC;&#x5728;&#x6E38;&#x620F;&#x4E2D;&#x4F7F;&#x7528;&#x4E86;&#x8FD9;&#x9879;&#x6280;&#x672F;&#xFF0C;&#x4ECE;&#x5305;&#x62EC;&#x8BB8;&#x591A;&#x52A8;&#x4F5C;&#x7684;&#x56FE;&#x50CF;&#x4E2D;&#x62F7;&#x8D1D;&#x51FA;&#x6E38;&#x620F;&#x89D2;&#x8272;&#x7684;&#x5355;&#x4E2A;&#x72EC;&#x7ACB;&#x52A8;&#x4F5C;&#x3002;</p>
+<p>&#x56FE;&#x5F62;&#x53D8;&#x6362;&#x5141;&#x8BB8;&#x4F60;&#x5411;&#x591A;&#x4E2A;&#x65B9;&#x5411;&#x7ED8;&#x5236;&#x56FE;&#x7247;&#x3002;2D &#x7ED8;&#x5236;&#x4E0A;&#x4E0B;&#x6587;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x5F53;&#x524D;&#x7684;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>translate</code>&#x3001;<code>scale</code>&#x4E0E;<code>rotate</code>&#x8FDB;&#x884C;&#x53D8;&#x6362;&#x3002;&#x8FD9;&#x4E9B;&#x4F1A;&#x5F71;&#x54CD;&#x6240;&#x6709;&#x7684;&#x540E;&#x7EED;&#x7684;&#x7ED8;&#x5236;&#x64CD;&#x4F5C;&#x3002;&#x4E00;&#x4E2A;&#x53D8;&#x6362;&#x7684;&#x72B6;&#x6001;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>save</code>&#x65B9;&#x6CD5;&#x6765;&#x4FDD;&#x5B58;&#xFF0C;&#x901A;&#x8FC7;<code>restore</code>&#x65B9;&#x6CD5;&#x6765;&#x6062;&#x590D;&#x3002;</p>
+<p>&#x5728;&#x4E00;&#x4E2A;&#x753B;&#x5E03;&#x4E0A;&#x5C55;&#x793A;&#x52A8;&#x753B;&#x65F6;&#xFF0C;<code>clearRect</code>&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5728;&#x91CD;&#x7ED8;&#x4E4B;&#x524D;&#x6E05;&#x9664;&#x753B;&#x5E03;&#x7684;&#x67D0;&#x4E00;&#x90E8;&#x5206;&#x3002;</p>
+<h2 id="&#x4E60;&#x9898;">&#x4E60;&#x9898;</h2>
+<h3 id="&#x5F62;&#x72B6;">&#x5F62;&#x72B6;</h3>
+<p>&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#xFF0C;&#x5728;&#x753B;&#x5E03;&#x4E0A;&#x753B;&#x51FA;&#x4E0B;&#x9762;&#x7684;&#x56FE;&#x5F62;&#x3002;</p>
+<ol>
+<li><p>&#x4E00;&#x4E2A;&#x68AF;&#x5F62;&#xFF08;&#x4E00;&#x4E2A;&#x5728;&#x4E00;&#x8FB9;&#x6BD4;&#x8F83;&#x957F;&#x7684;&#x77E9;&#x5F62;&#xFF09;</p>
+</li>
+<li><p>&#x4E00;&#x4E2A;&#x7EA2;&#x8272;&#x7684;&#x94BB;&#x77F3;&#xFF08;&#x4E00;&#x4E2A;&#x77E9;&#x5F62;&#x65CB;&#x8F6C;45&#x5EA6;&#x89D2;&#xFF09;</p>
+</li>
+<li><p>&#x4E00;&#x4E2A;&#x952F;&#x9F7F;&#x7EBF;</p>
+</li>
+<li><p>&#x4E00;&#x4E2A;&#x7531; 100 &#x6761;&#x76F4;&#x7EBF;&#x7EBF;&#x6BB5;&#x6784;&#x6210;&#x7684;&#x87BA;&#x65CB;</p>
+</li>
+<li><p>&#x4E00;&#x4E2A;&#x9EC4;&#x8272;&#x7684;&#x661F;&#x661F;</p>
+</li>
+</ol>
+<p><img src="img/17-5.png" alt=""></p>
+<p>&#x5F53;&#x7ED8;&#x5236;&#x6700;&#x540E;&#x4E24;&#x4E2A;&#x56FE;&#x5F62;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x7B2C; 14 &#x7AE0;&#x4E2D;&#x7684;<code>Math.cos</code>&#x548C;<code>Math.sin</code>&#x7684;&#x89E3;&#x91CA;&#xFF0C;&#x5B83;&#x63CF;&#x8FF0;&#x4E86;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x8FD9;&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#x83B7;&#x5F97;&#x5706;&#x4E0A;&#x7684;&#x5750;&#x6807;&#x3002;</p>
+<p>&#x5EFA;&#x8BAE;&#x4F60;&#x4E3A;&#x6BCF;&#x4E00;&#x4E2A;&#x56FE;&#x5F62;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x4F20;&#x5165;&#x5750;&#x6807;&#x4FE1;&#x606F;&#xFF0C;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x7684;&#x4E00;&#x4E9B;&#x53C2;&#x6570;&#xFF0C;&#x6BD4;&#x5982;&#x5927;&#x5C0F;&#x6216;&#x8005;&#x70B9;&#x7684;&#x6570;&#x91CF;&#x3002;&#x53E6;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x786C;&#x7F16;&#x7801;&#xFF0C;&#x4F1A;&#x4F7F;&#x5F97;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x53D8;&#x5F97;&#x96BE;&#x4EE5;&#x9605;&#x8BFB;&#x548C;&#x4FEE;&#x6539;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;600&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;200&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> cx = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;canvas&quot;</span>).getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+
+  <span class="hljs-comment">// Your code here.</span>
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h3 id="&#x997C;&#x72B6;&#x56FE;">&#x997C;&#x72B6;&#x56FE;</h3>
+<p>&#x5728;&#x672C;&#x7AE0;&#x7684;&#x524D;&#x90E8;&#x5206;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x7ED8;&#x5236;&#x997C;&#x72B6;&#x56FE;&#x7684;&#x6837;&#x4F8B;&#x7A0B;&#x5E8F;&#x3002;&#x4FEE;&#x6539;&#x8FD9;&#x4E2A;&#x7A0B;&#x5E8F;&#xFF0C;&#x4F7F;&#x5F97;&#x6BCF;&#x4E2A;&#x90E8;&#x5206;&#x7684;&#x540D;&#x5B57;&#x53EF;&#x4EE5;&#x88AB;&#x663E;&#x793A;&#x5728;&#x76F8;&#x5E94;&#x7684;&#x5207;&#x7247;&#x65C1;&#x8FB9;&#x3002;&#x8BD5;&#x7740;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x5408;&#x9002;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x81EA;&#x52A8;&#x653E;&#x7F6E;&#x8FD9;&#x4E9B;&#x6587;&#x5B57;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x53EF;&#x4EE5;&#x9002;&#x7528;&#x4E8E;&#x5176;&#x4ED6;&#x6570;&#x636E;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5047;&#x8BBE;&#x5206;&#x7C7B;&#x5927;&#x5230;&#x8DB3;&#x4EE5;&#x4E3A;&#x6807;&#x7B7E;&#x7559;&#x51FA;&#x7A7A;&#x95F4;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x80FD;&#x8FD8;&#x4F1A;&#x9700;&#x8981;<code>Math.sin</code>&#x548C;<code>Math.cos</code>&#x65B9;&#x6CD5;&#xFF0C;&#x50CF;&#x7B2C; 14 &#x7AE0;&#x63CF;&#x8FF0;&#x7684;&#x4E00;&#x6837;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;600&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;300&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> cx = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;canvas&quot;</span>).getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+  <span class="hljs-keyword">let</span> total = results
+    .reduce((sum, {count}) =&gt; sum + count, <span class="hljs-number">0</span>);
+  <span class="hljs-keyword">let</span> currentAngle = <span class="hljs-number">-0.5</span> * <span class="hljs-built_in">Math</span>.PI;
+  <span class="hljs-keyword">let</span> centerX = <span class="hljs-number">300</span>, centerY = <span class="hljs-number">150</span>;
+
+  <span class="hljs-comment">// Add code to draw the slice labels in this loop.</span>
+  results.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>) </span>{
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> result <span class="hljs-keyword">of</span> results) {
+    <span class="hljs-keyword">let</span> sliceAngle = (result.count / total) * <span class="hljs-number">2</span> * <span class="hljs-built_in">Math</span>.PI;
+    cx.arc(centerX, centerY, <span class="hljs-number">100</span>,
+           currentAngle, currentAngle + sliceAngle);
+    currentAngle += sliceAngle;
+    cx.lineTo(centerX, centerY);
+    cx.fillStyle = result.color;
+    cx.fill();
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h3 id="&#x5F39;&#x529B;&#x7403;">&#x5F39;&#x529B;&#x7403;</h3>
+<p>&#x4F7F;&#x7528;&#x5728;&#x7B2C; 14 &#x7AE0;&#x548C;&#x7B2C; 16 &#x7AE0;&#x51FA;&#x73B0;&#x7684;<code>requestAnimationFrame</code>&#x65B9;&#x6CD5;&#x753B;&#x51FA;&#x4E00;&#x4E2A;&#x88C5;&#x6709;&#x5F39;&#x529B;&#x7403;&#x7684;&#x76D2;&#x5B50;&#x3002;&#x8FD9;&#x4E2A;&#x7403;&#x5300;&#x901F;&#x8FD0;&#x52A8;&#x5E76;&#x4E14;&#x5F53;&#x649E;&#x5230;&#x76D2;&#x5B50;&#x7684;&#x8FB9;&#x7F18;&#x7684;&#x65F6;&#x5019;&#x53CD;&#x5F39;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;400&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;400&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">let</span> cx = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;canvas&quot;</span>).getContext(<span class="hljs-string">&quot;2d&quot;</span>);
+
+  <span class="hljs-keyword">let</span> lastTime = <span class="hljs-literal">null</span>;
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">frame</span>(<span class="hljs-params">time</span>) </span>{
+    <span class="hljs-keyword">if</span> (lastTime != <span class="hljs-literal">null</span>) {
+      updateAnimation(<span class="hljs-built_in">Math</span>.min(<span class="hljs-number">100</span>, time - lastTime) / <span class="hljs-number">1000</span>);
+    }
+    lastTime = time;
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateAnimation</span>(<span class="hljs-params">step</span>) </span>{
+    <span class="hljs-comment">// Your code here.</span>
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<h3 id="&#x9884;&#x5904;&#x7406;&#x955C;&#x50CF;">&#x9884;&#x5904;&#x7406;&#x955C;&#x50CF;</h3>
+<p>&#x5F53;&#x8FDB;&#x884C;&#x56FE;&#x5F62;&#x53D8;&#x6362;&#x65F6;&#xFF0C;&#x7ED8;&#x5236;&#x4F4D;&#x56FE;&#x56FE;&#x50CF;&#x4F1A;&#x5F88;&#x6162;&#x3002;&#x6BCF;&#x4E2A;&#x50CF;&#x7D20;&#x7684;&#x4F4D;&#x7F6E;&#x548C;&#x5927;&#x5C0F;&#x90FD;&#x5FC5;&#x987B;&#x8FDB;&#x884C;&#x53D8;&#x6362;&#xFF0C;&#x5C3D;&#x7BA1;&#x5C06;&#x6765;&#x6D4F;&#x89C8;&#x5668;&#x53EF;&#x80FD;&#x4F1A;&#x66F4;&#x52A0;&#x806A;&#x660E;&#xFF0C;&#x4F46;&#x8FD9;&#x4F1A;&#x5BFC;&#x81F4;&#x7ED8;&#x5236;&#x4F4D;&#x56FE;&#x6240;&#x9700;&#x7684;&#x65F6;&#x95F4;&#x663E;&#x7740;&#x589E;&#x52A0;&#x3002;</p>
+<p>&#x5728;&#x4E00;&#x4E2A;&#x50CF;&#x6211;&#x4EEC;&#x8FD9;&#x6837;&#x7684;&#x53EA;&#x7ED8;&#x5236;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x5B50;&#x753B;&#x9762;&#x56FE;&#x50CF;&#x53D8;&#x6362;&#x7684;&#x6E38;&#x620F;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E0D;&#x662F;&#x95EE;&#x9898;&#x3002;&#x4F46;&#x662F;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7ED8;&#x5236;&#x6210;&#x767E;&#x4E0A;&#x5343;&#x7684;&#x89D2;&#x8272;&#x6216;&#x8005;&#x7206;&#x70B8;&#x4EA7;&#x751F;&#x7684;&#x65CB;&#x8F6C;&#x7C92;&#x5B50;&#x65F6;&#xFF0C;&#x8FD9;&#x5C06;&#x4F1A;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x601D;&#x8003;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x6765;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x52A0;&#x8F7D;&#x66F4;&#x591A;&#x7684;&#x56FE;&#x7247;&#x6587;&#x4EF6;&#x5C31;&#x53EF;&#x4EE5;&#x753B;&#x51FA;&#x4E00;&#x4E2A;&#x5012;&#x7F6E;&#x7684;&#x89D2;&#x8272;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x6BCF;&#x4E00;&#x5E27;&#x8C03;&#x7528;<code>drawImage</code>&#x65B9;&#x6CD5;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="16.html" class="navigation navigation-prev " aria-label="Previous page: 十六、项目：平台游戏">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="18.html" class="navigation navigation-next " aria-label="Next page: 十八、HTTP 和表单">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"十七、在画布上绘图","level":"1.19","depth":1,"next":{"title":"十八、HTTP 和表单","level":"1.20","depth":1,"path":"18.md","ref":"18.md","articles":[]},"previous":{"title":"十六、项目：平台游戏","level":"1.18","depth":1,"path":"16.md","ref":"16.md","articles":[]},"dir":"ltr"},"config":{"plugins":["encourage@1.0.1"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"encourage":{"title":"","button":"打赏","wechat":"img/qr_alipay.png","alipay":"","wechatText":"欢迎鼓励项目一杯 coffee~","alipayText":"支付宝打赏"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Marijn Haverbeke","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"JavaScript 编程精解 中文第三版","language":"zh-hans","gitbook":"*"},"file":{"path":"17.md","mtime":"2019-12-08T16:07:04.989Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2019-12-08T16:21:15.068Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-encourage/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
